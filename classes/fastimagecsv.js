@@ -17,8 +17,8 @@ class FastImageCsv extends FastImageFile {
         super()
     }
 
-    async processCSV(filename) {
-        this.logger.info(`Processing CSV file: [${filename}]`)
+    async processCSV(filename, serverDetail) {
+        this.logger.info(`Processing CSV file: [${filename}]. ${serverDetail.ilomConfig ? 'Custom configuration selected: ' + serverDetail.ilomConfig : ''}`)
         // const fastImageBash = new FastImageBash()
         const bashConfig = this.config.bash
         const fastImageSSH = new FastImageSSH({
@@ -35,7 +35,7 @@ class FastImageCsv extends FastImageFile {
         // });
 
         var updatedCSV = ''
-        var csvTableData = []
+        // var csvTableData = []
         var csvTable = new Table({
             chars: { 'mid': '', 'left-mid': '', 'mid-mid': '', 'right-mid': '' },
             head: [
@@ -57,10 +57,13 @@ class FastImageCsv extends FastImageFile {
                         this.logger.info(`Rack: ${version}`)
                         this.logger.info(`Rack config: ${rackConfig}`)
                         this.logger.info(`Rack model: ${rackModel}`)
+                        serverDetail.rackConfig = rackConfig
+                        serverDetail.rackModel = rackModel
+                        serverDetail.version = version
                     }
                 })
                 try {
-                    reimageConfig = this.config.get(`ilom.${rackConfig}`);
+                    reimageConfig = this.config.get(`ilom.${serverDetail.ilomConfig ? serverDetail.ilomConfig : rackConfig}`);
                 }
                 catch (e) {
                     this.logger.error(e.message.indexOf(
@@ -91,7 +94,7 @@ class FastImageCsv extends FastImageFile {
                     }
                 }
                 element = line.join(',')
-                csvTableData.push([nodeType, line[0], line[6], line[7], ilomIp])
+                serverDetail.csvTableData.push([nodeType, line[0], line[6], line[7], ilomIp])
                 csvTable.push([nodeType, line[0], line[6], line[7], ilomIp])
                 x++
             }

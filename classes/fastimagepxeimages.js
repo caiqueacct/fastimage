@@ -103,6 +103,7 @@ class FastImagePXEImages extends FastImageBash {
 
     async createGrubFiles() {
         console.log()
+        this.logger.info(`Using template of server [${_serverModel}]`)
         const fileTemplate = this.config.pxe.templates[_serverModel]
         const pxecfg = this.config.pxe.path.pxecfg
         for await (var element of _reimageData) {
@@ -195,7 +196,7 @@ class FastImagePXEImages extends FastImageBash {
                 console.log(result.output)
             }
             const timeoutSeconds = this.config.pxe.reimage.timeout
-            this.logger.info(`Sleeping for ${timeoutSeconds} seconds to don't overload the server`)
+            this.logger.info(`Sleeping for ${timeoutSeconds} seconds to avoid overload the server`)
             await this.runCmd(`sleep ${timeoutSeconds}`)
         }
     }
@@ -204,39 +205,39 @@ class FastImagePXEImages extends FastImageBash {
      * 
      */
     async startWorkflow() {
-        // await this.useOvsPrompt()
-        // if (_uniqNodeTypes.includes('cell'))
-        //     await this.getAvailableImages()
-        // if (_uniqNodeTypes.includes('db'))
-        //     await this.getAvailableImages('db', _selected.cell.version)
-        // await this.createGrubFiles()
+        await this.useOvsPrompt()
+        if (_uniqNodeTypes.includes('cell'))
+            await this.getAvailableImages()
+        if (_uniqNodeTypes.includes('db'))
+            await this.getAvailableImages('db', _selected.cell.version)
+        await this.createGrubFiles()
         await this.startReimage()
     }
 }
 
 module.exports = FastImagePXEImages
 
-async function runCmd() {
-    const serverModel = 'X10M-2'
-    const reimageData = [
-        [
-            'cell',
-            'rag0p205c07mgmt',
-            'a8:69:8c:10:76:44',
-            '10.14.16.164',
-            '127.0.0.1'
-        ],
-        [
-            'db',
-            'rag0p205db02mgmt',
-            '3e:22:fb:e0:b9:65',
-            '10.14.16.157',
-            '192.168.99.2'
-        ]
-    ]
-    const fastImagePXEImages = new FastImagePXEImages(reimageData, serverModel)
-    await fastImagePXEImages.startWorkflow()
-    // console.log(_selected)
-}
+// async function runCmd() {
+//     const serverModel = 'X10M-2'
+//     const reimageData = [
+//         [
+//             'cell',
+//             'rag0p205c07mgmt',
+//             'a8:69:8c:10:76:44',
+//             '10.14.16.164',
+//             '127.0.0.1'
+//         ],
+//         [
+//             'db',
+//             'rag0p205db02mgmt',
+//             '3e:22:fb:e0:b9:65',
+//             '10.14.16.157',
+//             '192.168.99.2'
+//         ]
+//     ]
+//     const fastImagePXEImages = new FastImagePXEImages(reimageData, serverModel)
+//     await fastImagePXEImages.startWorkflow()
+//     // console.log(_selected)
+// }
 
-runCmd()
+// runCmd()
