@@ -75,6 +75,7 @@ class FastImageCsv extends FastImageFile {
             if (nodeType == 'db' || nodeType == 'cell') {
                 let ilomIp = reimageConfig[x]
                 fastImageSSH.setHost(ilomIp)
+                // FIND AND CHANGE
                 const result = await fastImageSSH.run('/usr/local/bin/show /SYS/MB/NET0 fru_macaddress')
                 if (result.code == 1) {
                     this.logger.error(result.err)

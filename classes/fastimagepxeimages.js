@@ -1,5 +1,6 @@
 
 const FastImageBash = require('./fastimagebash')
+const FastImageSSH = require('./fastimagessh.js')
 const inquirer = require('inquirer');
 
 let _selected = {
@@ -174,13 +175,42 @@ class FastImagePXEImages extends FastImageBash {
         }
     }
 
+    async startReimage() {
+        this.logger.info('Starting the re-image...')
+        const bashConfig = this.config.bash
+        const fastImageSSH = new FastImageSSH({
+            host: '',
+            port: 22,
+            username: bashConfig.user,
+            password: bashConfig.password
+        })
+        // FIND AND CHANGE
+        const reimageCommands = ['/usr/local/bin/set /HOST boot_device=pxe',
+            '/usr/local/bin/reset -script /SYS',
+            '/usr/local/bin/set /SYSTEM locator_indicator=on']
+        for await (var server of _reimageData) {
+            fastImageSSH.setHost(server[4])
+            for await (var cmd of reimageCommands) {
+                var result = await fastImageSSH.run(cmd)
+                console.log(result.output)
+            }
+            const timeoutSeconds = this.config.pxe.reimage.timeout
+            this.logger.info(`Sleeping for ${timeoutSeconds} seconds to don't overload the server`)
+            await this.runCmd(`sleep ${timeoutSeconds}`)
+        }
+    }
+
+    /**
+     * 
+     */
     async startWorkflow() {
-        await this.useOvsPrompt()
-        if (_uniqNodeTypes.includes('cell'))
-            await this.getAvailableImages()
-        if (_uniqNodeTypes.includes('db'))
-            await this.getAvailableImages('db', _selected.cell.version)
-        await this.createGrubFiles()
+        // await this.useOvsPrompt()
+        // if (_uniqNodeTypes.includes('cell'))
+        //     await this.getAvailableImages()
+        // if (_uniqNodeTypes.includes('db'))
+        //     await this.getAvailableImages('db', _selected.cell.version)
+        // await this.createGrubFiles()
+        await this.startReimage()
     }
 }
 

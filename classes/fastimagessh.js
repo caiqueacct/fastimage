@@ -25,11 +25,12 @@ class FastImageSSH extends FastImageObject {
   }
 
   // 'show /SYS/MB/NET0 fru_macaddress'
-  async run(cmd, cb) {
+  async run(cmd) {
     this.logger.info(`Connecting to ${_sshInfo.username}@${_sshInfo.host}`)
     const conn = new Client();
     return new Promise((resolve, reject) => {
       conn.on('ready', async () => {
+        this.logger.info(`Running [${cmd}]`)
         conn.exec(cmd,
           (err, stream) => {
             if (err) throw err;
@@ -39,7 +40,6 @@ class FastImageSSH extends FastImageObject {
               conn.end();
               resolve({ code, output });
             }).on('data', (data) => {
-              // cb(data.toString(), null);
               output += data.toString();
             }).stderr.on('data', (data) => {
               output += data.toString();

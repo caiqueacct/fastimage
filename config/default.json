@@ -8,6 +8,9 @@
         "password": "caique1234"
     },
     "pxe": {
+        "reimage": {
+            "timeout": 60
+        },
         "preconf": "preconf.csv",
         "efi": {
             "db": "/usr/local/fastimage/db/",
