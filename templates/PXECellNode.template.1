@@ -1,0 +1,10 @@
+set default 0
+set timeout=10
+
+menuentry 'Exadata Cell <NODE> - <VERSION>' {
+  echo "Loading efi/<VMLINUX_FILE>"
+  linuxefi efi/<VMLINUX_FILE> stit dhcp pxe boot-from=uefi factory reboot-on-success notests=diskgroup preconf=<HTTP_SERVER>/iso/preconf.csv iso_uri=<HTTP_SERVER>/iso/<ISO_FILE> console=ttyS0,115200n8
+  echo "Loading efi/<INITRD_FILE>"
+  initrdefi efi/<INITRD_FILE>
+  echo "Oracle Exadata Reimaging....."
+}

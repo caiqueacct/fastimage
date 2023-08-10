@@ -1,0 +1,10 @@
+https://www.npmjs.com/package/inquirer
+
+[root@AutoImage conf]# ls -ltr /var/www/html/
+total 4
+lrwxrwxrwx 1 root root   20 May  8  2018 iso -> /u01/exadata_nfs/iso
+
+# Start the required servers
+sudo tftpd -L -s /usr/local/fastimage/tftpboot/
+sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist
+sudo /usr/local/sbin/dhcpd -d -4 -f -cf /usr/local/etc/dhcpd.conf
