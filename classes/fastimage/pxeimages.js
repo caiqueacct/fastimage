@@ -1,6 +1,6 @@
 
-const FastImageBash = require('./fastimagebash')
-const FastImageSSH = require('./fastimagessh.js')
+const BashUtil = require('../common/bash')
+const SSHUtil = require('../common/sshutl.js')
 const inquirer = require('inquirer');
 
 let _selected = {
@@ -31,7 +31,7 @@ var _uniqNodeTypes = []
 /**
  * 
  */
-class FastImagePXEImages extends FastImageBash {
+class FastImagePXEImages extends BashUtil {
     constructor(reimageData, serverModel) {
         super()
         _reimageData = reimageData
@@ -66,6 +66,7 @@ class FastImagePXEImages extends FastImageBash {
      */
     async getAvailableImages(nodeType = 'cell', defaultValue) {
         console.log()
+        this.logger.info(`ISO location [${this.config.pxe.path.iso}]`)
         const cmd = `cd ${this.config.pxe.path.iso};ls ${this.decodeNodeType(nodeType)}*.iso | cut -d '_' -f2 | sort -r`
         var { stdout, stderr } = await this.runCmd(cmd)
 
@@ -145,7 +146,7 @@ class FastImagePXEImages extends FastImageBash {
 
     async extractEfi(nodeType) {
         const inputFile = this.config.pxe.path.efi + _selected[nodeType].initrd
-        var cmd = `bin/extract_efi_from_initrd.sh -i ${inputFile} -e ${this.config.pxe.efi[nodeType]}`
+        var cmd = `${this.config.pxe.efi.extractbin} -i ${inputFile} -e ${this.config.pxe.efi[nodeType]}`
 
         this.logger.info(`Extracting EFI: ${cmd}`)
         try {
@@ -179,20 +180,20 @@ class FastImagePXEImages extends FastImageBash {
     async startReimage() {
         this.logger.info('Starting the re-image...')
         const bashConfig = this.config.bash
-        const fastImageSSH = new FastImageSSH({
+        const sshUtil = new SSHUtil({
             host: '',
             port: 22,
             username: bashConfig.user,
             password: bashConfig.password
         })
         // FIND AND CHANGE
-        const reimageCommands = ['/usr/local/bin/set /HOST boot_device=pxe',
-            '/usr/local/bin/reset -script /SYS',
-            '/usr/local/bin/set /SYSTEM locator_indicator=on']
+        const reimageCommands = ['set /HOST boot_device=pxe',
+            'reset -script /SYS',
+            'set /SYSTEM locator_indicator=on']
         for await (var server of _reimageData) {
-            fastImageSSH.setHost(server[4])
+            sshUtil.setHost(server[4])
             for await (var cmd of reimageCommands) {
-                var result = await fastImageSSH.run(cmd)
+                var result = await sshUtil.run(cmd)
                 console.log(result.output)
             }
             const timeoutSeconds = this.config.pxe.reimage.timeout

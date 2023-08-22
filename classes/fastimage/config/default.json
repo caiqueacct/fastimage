@@ -4,8 +4,8 @@
     },
     "bash": {
         "ipmitool": "oraipmitool",
-        "user": "carlosduarte",
-        "password": "caique1234"
+        "user": "root",
+        "password": "welcome1"
     },
     "pxe": {
         "reimage": {
@@ -14,7 +14,8 @@
         "preconf": "preconf.csv",
         "efi": {
             "db": "/usr/local/fastimage/db/",
-            "cell": "/usr/local/fastimage/cell/"
+            "cell": "/usr/local/fastimage/cell/",
+            "extractbin": "/usr/local/bin/extract_efi_from_initrd.sh"
         },
         "path": {
             "iso": "/usr/local/fastimage/u01/exadata_nfs/iso/",
@@ -82,6 +83,13 @@
             "10.14.16.180",
             "10.14.16.179",
             "10.14.16.178"
+        ],
+        "EighthRack": [
+            "192.168.1.109",
+            "192.168.1.108",
+            "192.168.1.103",
+            "192.168.1.102",
+            "192.168.1.101"
         ],
         "FullRack": [
             "192.168.1.122",

@@ -1,9 +1,9 @@
-const FastImageObject = require('./fastimageobj.js')
+const CommonObject = require('./obj.js')
 
 const fs = require('fs');
 const readline = require('readline');
 
-class FastImageFile extends FastImageObject {
+class FileUtil extends CommonObject {
     constructor() {
         super()
     }
@@ -31,4 +31,4 @@ class FastImageFile extends FastImageObject {
 
 }
 
-module.exports = FastImageFile
+module.exports = FileUtil

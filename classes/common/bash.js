@@ -1,18 +1,44 @@
 const { exec } = require('child_process');
+const { spawn } = require('child_process');
+
 const util = require('util');
 
-const FastImageFile = require('./fastimagefile')
+const FileUtil = require('./fileutl')
 
-class FastImageBash extends FastImageFile {
-    
+class BashUtil extends FileUtil {
+
     constructor() {
         super()
     }
 
-    async runCmd(cmd){
+    async runCmd(cmd) {
         this.logger.debug(cmd)
         const asyncExec = util.promisify(exec);
         return await asyncExec(`${cmd}`);
+    }
+
+    async runCmdLive(cmd) {
+        const promisifiedSpawn = util.promisify(spawn);
+        try {
+            const scriptPath = '/path/to/your/script.sh';
+            const args = ['arg1', 'arg2', 'arg3'];
+
+            const childProcess = spawn(cmd, { stdio: 'pipe', shell: true });
+
+            childProcess.stdout.on('data', data => {
+                console.log(data.toString()); // Print stdout in real-time
+            });
+
+            childProcess.stderr.on('data', data => {
+                console.error(data.toString()); // Print stderr in real-time
+            });
+
+            const exitCode = await promisifiedSpawn(scriptPath, args, { stdio: 'inherit', shell: true });
+
+            console.log('Script finished with exit code:', exitCode);
+        } catch (error) {
+            console.error('Error:', error);
+        }
     }
 
     async runIpmi(ipAddress) {
@@ -42,4 +68,4 @@ class FastImageBash extends FastImageFile {
     }
 }
 
-module.exports = FastImageBash
+module.exports = BashUtil

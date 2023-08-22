@@ -11,9 +11,9 @@ const { Client } = require('ssh2');
 
 var _sshInfo
 
-const FastImageObject = require('./fastimageobj.js')
+const CommonObject = require('./obj.js')
 
-class FastImageSSH extends FastImageObject {
+class SSHUtil extends CommonObject {
 
   constructor(sshInfo) {
     super()
@@ -71,9 +71,9 @@ class FastImageSSH extends FastImageObject {
 
 }
 
-module.exports = FastImageSSH
+module.exports = SSHUtil
 
-// const fastImageSSH = new FastImageSSH({
+// const SSHUtil = new SSHUtil({
 //   // host: '10.14.16.194',
 //   host: '192.168.1.101',
 //   port: 22,
@@ -82,7 +82,7 @@ module.exports = FastImageSSH
 // })
 
 // async function main() {
-//   const result = await fastImageSSH.run('show /SYS/MB/NET0 fru_macaddress')
+//   const result = await SSHUtil.run('show /SYS/MB/NET0 fru_macaddress')
 //   console.debug(result)
 //   console.log('acabou')
 // }

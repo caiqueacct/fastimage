@@ -1,0 +1,22 @@
+{
+    "app": {
+        "logger": "info",
+        "name": "FastInstall"
+    },
+    "patches": {
+        "localDir": "/Users/carlosduarte/Downloads/oracle/",
+        "system": [
+            {
+                "number": 30166242,
+                "notes": "Autonomous Health Framework",
+                "found": false,
+                "file": "AHF-LINUX"
+            },
+            {
+                "number": 30640393,
+                "notes": "OEDA",
+                "found": false
+            }
+        ]
+    }
+}

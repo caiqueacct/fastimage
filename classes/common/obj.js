@@ -4,7 +4,7 @@ var logger = log4js.getLogger();
 const config = require('config');
 logger.level = config.app.logger
 
-class FastImageObject {
+class CommonObject {
 
     constructor() {
         this.logger = logger;
@@ -13,4 +13,4 @@ class FastImageObject {
 
 }
 
-module.exports = FastImageObject
+module.exports = CommonObject

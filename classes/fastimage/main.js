@@ -1,7 +1,7 @@
 
-const FastImageObject = require('./fastimageobj.js')
-const FastImageCsv = require('./fastimagecsv.js')
-const FastImagePXEImages = require('./fastimagepxeimages')
+const CommonObject = require('../common/obj.js')
+const CsvUtil = require('../common/csv.js')
+const FastImagePXEImages = require('./pxeimages.js')
 
 var _serverDetail = {
     ilomConfig: '',
@@ -12,10 +12,7 @@ var _serverDetail = {
     csvTableData: []
 }
 
-
-
-
-class FastImage extends FastImageObject {
+class FastImage extends CommonObject {
     constructor() {
         super()
         this.logger.info(`FastImage starting...`)
@@ -35,8 +32,8 @@ options:
     async processCsv(filename, ilomConfig, customModel) {
         _serverDetail.ilomConfig = ilomConfig
         _serverDetail.customModel = customModel
-        const fastImageCsv = new FastImageCsv(filename)
-        await fastImageCsv.processCSV(filename, _serverDetail)
+        const csvUtil = new CsvUtil(filename)
+        await csvUtil.processCSV(filename, _serverDetail)
         await this.selectImage()
     }
 

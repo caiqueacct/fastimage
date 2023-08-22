@@ -1,6 +1,6 @@
 
-const FastImageFile = require('./fastimagefile')
-const FastImageSSH = require('./fastimagessh.js')
+const FileUtil = require('./fileutl')
+const SSHUtil = require('./sshutl.js')
 
 const _ = require('underscore')
 
@@ -12,16 +12,16 @@ var reimageConfig
 
 const Table = require('cli-table');
 
-class FastImageCsv extends FastImageFile {
+class CsvUtil extends FileUtil {
     constructor() {
         super()
     }
 
     async processCSV(filename, serverDetail) {
         this.logger.info(`Processing CSV file: [${filename}]. ${serverDetail.ilomConfig ? 'Custom configuration selected: ' + serverDetail.ilomConfig : ''}`)
-        // const fastImageBash = new FastImageBash()
+        // const BashUtil = new BashUtil()
         const bashConfig = this.config.bash
-        const fastImageSSH = new FastImageSSH({
+        const sshUtil = new SSHUtil({
             host: '',
             port: 22,
             username: bashConfig.user,
@@ -77,9 +77,9 @@ class FastImageCsv extends FastImageFile {
             const nodeType = line[2]
             if (nodeType == 'db' || nodeType == 'cell') {
                 let ilomIp = reimageConfig[x]
-                fastImageSSH.setHost(ilomIp)
+                sshUtil.setHost(ilomIp)
                 // FIND AND CHANGE
-                const result = await fastImageSSH.run('/usr/local/bin/show /SYS/MB/NET0 fru_macaddress')
+                const result = await sshUtil.run('show /SYS/MB/NET0 fru_macaddress')
                 if (result.code == 1) {
                     this.logger.error(result.err)
                     line[6] = 'ERROR'
@@ -112,4 +112,4 @@ class FastImageCsv extends FastImageFile {
 
 }
 
-module.exports = FastImageCsv
+module.exports = CsvUtil
