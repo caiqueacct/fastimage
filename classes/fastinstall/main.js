@@ -1,16 +1,14 @@
 const BashUtil = require('../common/bash')
 
-const fs = require('fs');
 const path = require('path');
 
-const cheerio = require('cheerio');
-
 const Table = require('cli-table');
+const PatchLink = require('./tasks/patchlink');
 
-var _LOGIN_DATA = {
-    username: 'carlos.h.duarte@oracle.com',
-    password: '0r@cl3F3d3Mu1t0!'
-}
+// var _LOGIN_DATA = {
+//     username: 'carlos.h.duarte@oracle.com',
+//     password: '0r@cl3F3d3Mu1t0!'
+// }
 
 class FastInstall extends BashUtil {
     constructor() {
@@ -23,8 +21,8 @@ class FastInstall extends BashUtil {
 fastinstall <HTML file> [options]
 options:
         -h -help           Print this help
-        -s <step #>        Run only the specified step
-        -l                 List all the steps that exist
+        -t <task #>        Run only the specified task
+        -l                 List all the available tasks
         `)
         process.exit(0)
     }
@@ -102,69 +100,6 @@ options:
 
     }
 
-    async getPatchLink(patchNumber) {
-        this.logger.info(`Downloading links for patch [${patchNumber}]`)
-        // https://updates.oracle.com/Orion/SimpleSearch/process_form?search_type=patch&patch_number=33456946&plat_lang=226P&display_type=&search_style=8&orderby=&direction=&old_type_list=&gobuttonpressed=&sortcolpressed=&tab_number=&email=carlos.h.duarte%40oracle.com&userid=O-carlos.h.duarte%40oracle.com&c_release_parent=product&c_product_child=release
-        // https://updates.oracle.com/Orion/SimpleSearch/process_form?search_type=patch&patch_number=30640393&plat_lang=226P
-        // const url = 'https://updates.oracle.com/Orion/SimpleSearch/process_form?search_type=patch&patch_number=30640393&plat_lang=226P'
-
-        // const patchNumber = 30640393
-        const cmd = `SSO_USERNAME=${_LOGIN_DATA.username}
-SSO_PASSWORD=${_LOGIN_DATA.password}
-wget -c --no-check-certificate --http-user=\$\{SSO_USERNAME\} --http-password=\$\{SSO_PASSWORD\} "https://updates.oracle.com/Orion/SimpleSearch/process_form?search_type=patch&patch_number=${patchNumber}&plat_lang=226P" -O tmp/${patchNumber}.html --keep-session-cookies`
-
-        var { stdout, stderr } = await this.runCmd(cmd)
-        console.log(stdout, stderr)
-        this.extractLinkToDownload(patchNumber)
-    }
-
-    async extractLinkToDownload(patchNumber) {
-        // const patchNumber = 30640393
-
-        fs.readFile(`tmp/${patchNumber}.html`, 'utf8', async (err, htmlContent) => {
-            if (err) {
-                console.error('Error reading HTML file:', err);
-                return;
-            }
-            const $ = cheerio.load(htmlContent);
-            var availablePatches = []
-            var patchLine = []
-            $('tbody tr.OraBGAccentLight').each((index, row) => {
-                const tds = $(row).find('td');
-                tds.each((index, td) => {
-                    const content = $(td).text().trim();
-                    if (content.length == 0) {
-                        if (patchLine.length > 0)
-                            availablePatches.push(patchLine)
-                        patchLine = []
-                    }
-                    else
-                        patchLine.push(content)
-                    // console.log(content.length == 0 ? '#####' : content)
-                    // console.log(`->${content}<-`);
-                });
-            });
-            // console.log(availablePatches)
-            const links = $('a[href]');
-
-            var line = 0
-            links.each((index, link) => {
-                const href = $(link).attr('href');
-                try {
-                    if (href.startsWith('/Orion') || href.startsWith('https://updates.oracle.com/Orion')) {
-                        availablePatches[line].push(`https://updates.oracle.com${href}`)
-                        line++
-                    }
-                }
-                catch (e) {
-                    console.log(href)
-                }
-            });
-
-            console.log(availablePatches)
-        })
-    }
-
 }
 
 const fastInstall = new FastInstall()
@@ -173,8 +108,8 @@ if (args.length < 2 || args.indexOf('-h') != -1 || args.indexOf('-help') != -1)
     fastInstall.printUsage()
 
 const listOptions = args[args.indexOf('-l')]
-const runStep = parseInt(args[args.indexOf('-o') + 1])
-const stepOption = args[args.indexOf('-o') + 2]
+const runStep = parseInt(args[args.indexOf('-t') + 1])
+const stepOption = args[args.indexOf('-t') + 2]
 // console.log(listOptions, runStep)
 if (listOptions)
     fastInstall.listOptions()
@@ -189,7 +124,8 @@ switch (runStep) {
         fastInstall.extractLinkToDownload()
         break
     case 3:
-        fastInstall.getPatchLink(stepOption)
+        // fastInstall.getPatchLink(stepOption)
+        new PatchLink().getPatchLink(stepOption)
         break
     default:
         fastInstall.listOptions(true)

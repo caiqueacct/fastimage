@@ -1,0 +1,540 @@
+<!--
+  Copyright (c) 2002, 2015 by Oracle Corporation. All Rights Reserved.
+  
+-->
+
+
+<html dir="LTR" lang="en-US">
+<head>
+<title>Patch 30640393</title>
+
+<noscript>
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+     <tr>
+        <td width=32 height=13>
+            <img src="/images/clear_dot.gif" width=32 height=13></td>
+        <td width=8 height=13>
+            <img src="/images/clear_dot.gif" width=8 height=13></td>
+        <td><img src="/images/clear_dot.gif" width=1 height=13></td>
+        <td><img src="/images/clear_dot.gif" width=5 height=13></td>
+     </tr>
+     <tr>
+        <td height=32 width=13>
+          <img src="/images/clear_dot.gif" width=13 height=32></td>
+        <td valign="top" width=32><img width=32 height=32
+            src="/olaf/images/forms/erroricon_pagetitle.gif"></td>
+        <td width=8>&nbsp;</td>
+        <td class="OraErrorHeader" valign=bottom>
+        Error</td>
+        <td>&nbsp;</td>
+     </tr>
+     <tr><td colspan=3></td><td class="OraBGColorDark" valign=top>
+        <img src="/images/clear_dot.gif" width=1 height=1></td><td></td></tr>
+     <tr><td height=5></td></tr>
+     <tr><td colspan=3></td>
+        <td class=OraErrorText>
+            Your browser does not have <i>Javascript</i> enabled. <i>Javascript</i> is required to use this application.
+        </td>
+     </tr>
+        <tr><td height=5></td></tr>
+</table>
+</noscript>
+
+</head>
+<body class="OraBody">
+
+
+<link rel=stylesheet href="/olaf/css/blaf.css" type="text/css">
+<script language="JavaScript" src="/arucommon.js">
+</script>
+<script language=JavaScript src="/js/arulink.js">
+</script>
+
+<script>
+function showDetails(winURL, wd, ht)
+{
+  wd = wd || 680;
+  ht = ht || 550;
+  var win =  window.open(winURL, '_blank',
+                         'resizable,scrollbars,width='+wd+',height='+ht);
+
+  if ( win.opener == null ) {
+        win.opener = self;
+  }
+  win.focus();
+}
+</script>
+
+<script language=javascript><!--
+
+if (false && top.frames.length > 1 && top.ARUNavigator &&
+    top.ARUNavigator.navigator_unselect) {
+  top.ARUNavigator.navigator_unselect();
+}
+
+//-->
+</script>
+
+<CENTER>
+<!-- Metalink Navigation -->
+
+<script language="JavaScript">
+ if (window.parent.frames.length == 0)
+ {
+   document.writeln('<table border=0 cellpadding=0 cellspacing=0 width=100%' +
+        ' background="/images/metalink/lines.gif">');
+   document.writeln('<tr>');
+   document.writeln('<td width=12 align=left valign=top rowspan=2>');
+   document.writeln('<img width=12 height=59 border=0 ' +
+        'src="/images/metalink/top_left.gif">');
+   document.writeln('</td>');
+   document.writeln('<td align=left width=100% valign=top>');
+   document.writeln('<font face="Arial, Geneva" size=2 color=#FFFFFF>');
+   document.writeln('<b>' +
+        'Patches</b>');
+   document.writeln('</font></td>');
+   document.writeln('</tr></table>');
+ }
+</script>
+
+
+<p align=right class="OraErrorNameText"></p>
+<table class="OraBody" border=0 cellspacing=0 cellpadding=0 width=50%>
+
+<TR><TD COLSPAN=3 WIDTH=100% VALIGN=TOP class=OraBody>&nbsp;
+
+<table CELLPADDING=0 CELLSPACING=0 BORDER=0 class="OraBody" width=100%>
+
+<tr><td  class="OraBody" align=left valign=top>
+
+<form method="GET"
+      target="_self"
+      action="/Orion/PatchDetails/process_form"
+      name=ARULink>
+
+<!--
+  Copyright (c) 2002, 2015 by Oracle Corporation. All Rights Reserved.
+  
+-->
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+
+<!-- Notice Begins -->
+
+<!-- Notice Ends -->
+
+<tr>
+<td colspan=2 valign=top class=OraBody><b>
+<font class=OraHeaderSub>
+Patch 30640393</b></font>
+</td>
+</tr>
+
+<tr>
+<td colspan=2 height=1 class=OraBGAccentDark>
+<img src="/images/clear_dot.gif" width=1 height=1></td>
+</tr>
+<td class=OraBody colspan=2 align=right valign=top nowrap>
+         <table width=100% cellpadding=1><tr>
+         <td class=OraBody colspan=2 align=right valign=top nowrap><a id="btn_Simple_Search" class="submitButtonEnable" href= "javascript:aruforms_submit('switch_to_simple');" onclick="" onmouseover="" onmouseout="">Simple Search</a>&nbsp;
+ <a id="btn_Advanced_Search" class="submitButtonEnable" href= "javascript:aruforms_submit('switch_to_advanced');" onclick="" onmouseover="" onmouseout="">Advanced Search</a>&nbsp;
+ <a id="btn_Quick_Links" class="submitButtonEnable" href= "javascript:aruforms_submit('switch_to_quick_links');" onclick="" onmouseover="" onmouseout="">Quick Links</a>&nbsp;
+ <a id="btn_Saved_Searches" class="submitButtonEnable" href= "javascript:aruforms_submit('switch_to_saved_searches');" onclick="" onmouseover="" onmouseout="">Saved Searches</a>&nbsp;
+</td></tr></table></td>
+
+<tr><td colspan=2 class=OraBody><br></td></tr>
+<tr>
+<td class=OraBody valign=top nowrap><font class=OraPromptText>
+Description</font></td>
+<td class=OraBody><font class=OraDataText>OEDA Release
+</font></td>
+</tr>
+
+<tr>
+<td class=OraBody nowrap><font class=OraPromptText>
+Product</font></td>
+<td class=OraBody><font class=OraDataText>Oracle Exadata Storage Server Software
+</font></td></tr>
+
+<tr>
+<td class=OraBody nowrap><font class=OraPromptText>Select a Release
+</font></td>
+   <td class=OraBody>
+	<table  class=OraBody nowrap cellpadding="0" border="0">
+	 <tr font class=OraDataText>
+		<td class=OraBody><select name=release   onchange="javascript:on_change_rel()" size="1">
+<option value="600000000185162" >Oracle Exadata Storage Server 23.1.0.0.0
+<option value="600000000202217" selected="selected">Oracle Exadata Storage Server 23.1.3.0.0
+<option value="600000000199776" >Oracle Exadata Storage Server 23.1.1.0.0
+<option value="600000000201076" >Oracle Exadata Storage Server 23.1.2.0.0
+<option value="600000000203256" >Oracle Exadata Storage Server 23.1.4.0.0
+</select>
+<td>
+	</font>
+	</tr>
+	</table>
+  </td>
+</tr>
+
+
+
+
+<tr>
+<td class=OraBody nowrap><font class=OraPromptText>
+
+Platform or Language
+<a href=javascript:ARULinkBalloonHelp('/Orion/Help/get?help_id=40009')
+target=_self>
+<img name=platform_info
+src="/olaf/images/forms/infoicon_active.gif"
+valign="bottom"
+border=0
+title="Click for more information about this option"
+alt="Click for more information about this option"></a>
+</font></td>
+<td class=OraBody><select name=plat_lang   onchange="javascript:on_change_plat_lang()" size="1">
+<option value="" >----------- Platforms -----------
+<option value="559P" >Apple macOS ARM (64-bit)
+<option value="522P" >Apple Mac OS X (Intel) (64-bit)
+<option value="226P" selected="selected">Linux x86-64
+<option value="912P" >Microsoft Windows (32-bit)
+</select>
+</td>
+</tr>
+
+
+
+<tr>
+<td class=OraBody nowrap><font class=OraPromptText>
+
+</font></td></tr>
+
+<tr>
+<td class=OraBody><font class=OraPromptText>
+Last Updated</font></td>
+<td class=OraBody><font class=OraDataText><b>24-JUL-2023
+</b></font></td></tr>
+
+<tr>
+<td class=OraBody><font class=OraPromptText>
+Size</font></td>
+<td class=OraBody><class=OraDataText><b>N/A
+</b></font></td></tr>
+
+
+<tr>
+<td class=OraBody><font class=OraPromptText>
+Entitlement Class</font>
+<a href=javascript:ARULinkBalloonHelp('/Orion/Help/get?help_id=40024')
+target=_self>
+<img name=search_by_info
+src="/olaf/images/forms/infoicon_active.gif"
+valign="bottom"
+border=0
+title="Click for more information about this option"
+alt="Click for more information about this option"></a>
+</td>
+<td class=OraBody><b><font face="Arial, Helvetica, Geneva, sans-serif"
+       point-size=10>Software</font>
+</b></td>
+</tr>
+
+
+<tr>
+<td class=OraBody><font class=OraPromptText>
+Classification</font>
+<a href=javascript:ARULinkBalloonHelp('/Orion/Help/get?help_id=40018')
+target=_self>
+<img name=search_by_info
+src="/olaf/images/forms/infoicon_active.gif"
+valign="bottom"
+border=0
+title="Click for more information about this option"
+alt="Click for more information about this option"></a>
+</td>
+<td class=OraBody><b><font face="Arial, Helvetica, Geneva, sans-serif"
+       point-size=10>General</font>
+</b></td>
+</tr>
+
+
+
+<tr>
+<td class=OraBody></td>
+
+<td nowrap class=OraBody ><br>
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td colspan=2 align="left" class=OraBody>
+<font class=OraInstructionText color=red><b>
+
+This patch is obsolete in this platform and language. Please see the reason stated below.
+
+
+
+Please contact Oracle Support for replacement patch.
+</b></font></td></tr>
+
+
+<tr><td class=OraBody>&nbsp;</td></tr>
+
+<tr>
+<td colspan=2 align="left" class=OraBody>
+<b><font color=red class=OraInstructionText><u>
+Reason for Obsolescence
+</u></font></b><br>
+Replaced with Jul23 OEDA release patches
+</td></tr>
+
+
+
+
+<tr><td class=OraBody>&nbsp;</td></tr>
+
+
+
+
+
+
+
+<tr>
+<td colspan=2 class=OraBody>
+<table width=100% border=0 cellpadding=0>
+
+<tr>
+<td class=OraBody nowrap><font class=OraHeaderSubSub>
+Patchsets known to include or supersede Patch 30640393
+<a href=javascript:ARULinkBalloonHelp('/Orion/Help/get?help_id=40007')
+target=_self>
+<img name=includes_info
+src="/olaf/images/forms/infoicon_active.gif"
+valign="bottom"
+border=0
+title="Click for more information about this option"
+alt="Click for more information about this option"></a>
+</font>
+</td>
+</tr>
+
+<tr>
+<td colspan=2 height=1 class=OraBGAccentDark>
+<img src="/images/clear_dot.gif" width=1 height=1></td>
+</tr>
+<tr><td colspan=2 class=OraBody>
+<tr><td class=OraBody><font class="OraInstructiontext">No information available from the patch repository</font></td></tr>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr><td colspan=2 class=OraBody>&nbsp;</td></tr>
+
+<!--
+Keep this in sync with the URL for Info-ZIP utilities in ARU::Download.frm.
+-->
+<tr><td colspan=2 class=OraBody><font class=OraHeaderSubSub>
+Download Notes
+</font></td></tr>
+<tr>
+<td colspan=2 height=1 class=OraBGAccentDark>
+<img src="/images/clear_dot.gif" width=1 height=1></td>
+</tr>
+<tr><td colspan=2 align="left" class=OraBody><p>
+
+
+
+<p>
+
+
+</td></tr>
+
+</td></tr>
+
+</td>
+</tr>
+
+</table>
+
+<input type="hidden" name="patch_file" value="" />
+<input type="hidden" name="file_id" value=""/>
+<input type="hidden" name="password_required"
+  value="" />
+<input type="hidden" name="password_required_readme"
+  value="" />
+<input type="hidden" name="merged_trans"
+  value="" />
+<input type="hidden" name="aru" value="25286058" />
+<input type="hidden" name="patch_num" value="30640393" />
+<input type="hidden" name="patch_num_id" value="4195790" />
+<input type="hidden" name="default_release"
+  value="600000000202217" />
+<input type="hidden" name="default_plat_lang"
+  value="226P" />
+<input type="hidden" name="default_compatible_with"
+  value="" />
+
+
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td height=10 class=OraBody>
+</td>
+</tr>
+</table>
+<script>
+
+function on_change_plat_lang()
+{
+var index = document.ARULink.plat_lang.selectedIndex;
+if (index == '')
+{
+document.ARULink.plat_lang.selected = 
+                      document.ARULink.default_plat_lang.value;
+}
+var new_plat_lang = document.ARULink.plat_lang.options[index].value;
+var old_plat_lang = document.ARULink.default_plat_lang.value;
+var plat_list= document.ARULink.plat_lang.options;
+for (var i = 0; i < plat_list.length; i++)
+{
+if (plat_list[i].value == old_plat_lang)
+{
+plat_list[i].selected = true;
+}
+}
+document.ARULink.default_plat_lang.value = new_plat_lang;
+javascript:aruforms_submit('handle_plat_lang_change');
+}
+
+
+// For the selected release of the patch, popup all the available platforms
+// and languages, and display the details of aru obtained from the selected
+// release, platform, and language combination.
+function on_change_rel()
+{
+      var index = document.ARULink.release.selectedIndex;
+      var new_rel = document.ARULink.release.options[index].value;
+     
+      document.ARULink.default_release.value = new_rel;
+      javascript:aruforms_submit('handle_rel_change');
+}
+
+// Populate all the results when the compatible_with is changed.
+function on_change_compatible()
+{
+      var index = document.ARULink.compatible_with.selectedIndex;
+      var new_com = document.ARULink.compatible_with.options[index].value;
+     
+      document.ARULink.default_compatible_with.value = new_com;
+      javascript:aruforms_submit('handle_com_change');
+}
+
+
+</script>
+<input type="hidden" name="patch_password"
+value="" />
+<input type="hidden" name="orderby" value="" />
+<input type="hidden" name="direction" value="" />
+<input type="hidden" name="no_header" value="0" />
+
+<input type="hidden" name="sortcolpressed">
+<script language="javascript">
+function sortByColumn(col,table_name)
+{
+  var form = document.forms[0];
+  eval("var order = form.orderby"+table_name+".value;");
+  var index = order.indexOf(col);
+  eval("var dir = form.direction"+table_name+".value;");
+  eval("form.sortcolpressed"+table_name+".value = true;");
+
+  if (index == -1) {
+  eval("form.orderby"+table_name+".value = col + order;");
+
+  eval("form.direction"+table_name+".value = 'a' + dir;");
+
+  }
+  else {
+    var chr = dir.charAt(index);
+    if (chr == "a") {chr = "d";}
+    else {chr = "a";}
+  eval("form.direction"+table_name+".value = chr+dir.slice(0, index)+dir.slice(index+1);");
+  eval("form.orderby"+table_name+".value = col+order.slice(0, index)+order.slice(index+1);");
+  }
+  if (0)
+  {
+    submitLOVSelector(0);
+  }
+  aruforms_submit("process_form");
+}
+</script>
+
+
+
+
+
+<input type="hidden" name="tab_number" />
+
+<!-- save state here -->
+
+
+</form>
+</td>
+<td class="OraBody">
+&nbsp;&nbsp;&nbsp;
+</td>
+
+<td width=1% valign=top align=right class="OraBody">
+<br><br><br>
+
+</td>
+</tr>
+</table>
+
+</TD></TR>
+
+<script language="Javascript">
+
+</script>
+
+
+<script language="JavaScript">
+ if (window.parent.frames.length == 0)
+ {
+   document.writeln('<TR>');
+   document.writeln('<TD class="OraBody" VALIGN="BOTTOM"><SMALL>');
+   document.writeln
+        ('Copyright (c) 2015, Oracle.');
+   document.writeln
+        ('All Rights Reserved.<br/>');
+   document.writeln('<a target="_blank" href' +
+        '="http://www.oracle.com/pls/topic/lookup?ctx=mos_en&id=MOSHP983">');
+   document.writeln
+('Legal Notices and Terms of Use</a><br/>');
+   document.writeln('<a target="_blank" href' +
+        '="http://www.oracle.com/us/legal/privacy/index.html">');
+   document.writeln
+  ('Privacy Statement</a>');
+   document.writeln('</SMALL></TD></TR>');
+ }
+</script>
+
+</TABLE></CENTER>
+
+
+
+</body>
+</html>

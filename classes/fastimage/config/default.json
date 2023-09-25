@@ -1,119 +1,110 @@
 {
-    "app": {
-        "logger": "info"
+  "app": {
+    "logger": "info"
+  },
+  "bash": {
+    "ipmitool": "oraipmitool",
+    "user": "root",
+    "password": "welcome1"
+  },
+  "pxe": {
+    "reimage": {
+      "timeout": 60
     },
-    "bash": {
-        "ipmitool": "oraipmitool",
-        "user": "root",
-        "password": "welcome1"
+    "preconf": "preconf.csv",
+    "efi": {
+      "db": "/usr/local/fastimage/db/",
+      "cell": "/usr/local/fastimage/cell/",
+      "extractbin": "/usr/local/bin/extract_efi_from_initrd.sh"
     },
-    "pxe": {
-        "reimage": {
-            "timeout": 60
-        },
-        "preconf": "preconf.csv",
-        "efi": {
-            "db": "/usr/local/fastimage/db/",
-            "cell": "/usr/local/fastimage/cell/",
-            "extractbin": "/usr/local/bin/extract_efi_from_initrd.sh"
-        },
-        "path": {
-            "iso": "/usr/local/fastimage/u01/exadata_nfs/iso/",
-            "efi": "/usr/local/fastimage/tftpboot/efi/",
-            "pxecfg": "/usr/local/fastimage/tftpboot/pxelinux.cfg/"
-        },
-        "httpServer": "http://192.168.1.251",
-        "templates": {
-            "X5-2": {
-                "db": "PXEComputeNode.template.1",
-                "cell": "PXECellNode.template.1"
-            },
-            "X6-2": {
-                "db": "PXEComputeNode.template.1",
-                "cell": "PXECellNode.template.1"
-            },
-            "X7-2": {
-                "db": "PXEComputeNode.template.1",
-                "cell": "PXECellNode.template.1"
-            },
-            "X8-2": {
-                "db": "PXEComputeNode.template.1",
-                "cell": "PXECellNode.template.1"
-            },
-            "X9-2": {
-                "db": "PXEComputeNode.template.1",
-                "cell": "PXECellNode.template.1"
-            },
-            "X8M-2": {
-                "db": "PXEComputeNode.template.1",
-                "cell": "PXECellNode.template.1"
-            },
-            "X9M-2": {
-                "db": "PXEComputeNode.template.1",
-                "cell": "PXECellNode.template.1"
-            },
-            "X10M-2": {
-                "db": "PXEComputeNode.template.1",
-                "cell": "PXECellNode.template.1"
-            }
-        }
+    "path": {
+      "iso": "/usr/local/fastimage/u01/exadata_nfs/iso/",
+      "efi": "/usr/local/fastimage/tftpboot/efi/",
+      "pxecfg": "/usr/local/fastimage/tftpboot/pxelinux.cfg/"
     },
-    "ilom": {
-        "custom": [
-            "192.168.99.2",
-            "127.0.0.1"
-        ],
-        "ElasticRack": [
-            "127.0.0.1",
-            "192.168.99.2",
-            "10.14.16.192",
-            "10.14.16.191",
-            "10.14.16.190",
-            "10.14.16.189",
-            "10.14.16.188",
-            "10.14.16.187",
-            "10.14.16.186",
-            "10.14.16.185",
-            "10.14.16.184",
-            "10.14.16.177",
-            "10.14.16.176",
-            "10.14.16.183",
-            "10.14.16.182",
-            "10.14.16.181",
-            "10.14.16.180",
-            "10.14.16.179",
-            "10.14.16.178"
-        ],
-        "EighthRack": [
-            "192.168.1.109",
-            "192.168.1.108",
-            "192.168.1.103",
-            "192.168.1.102",
-            "192.168.1.101"
-        ],
-        "FullRack": [
-            "192.168.1.122",
-            "192.168.1.121",
-            "192.168.1.120",
-            "192.168.1.119",
-            "192.168.1.118",
-            "192.168.1.117",
-            "192.168.1.116",
-            "192.168.1.115",
-            "192.168.1.114",
-            "192.168.1.113",
-            "192.168.1.112",
-            "192.168.1.111",
-            "192.168.1.110",
-            "192.168.1.109",
-            "192.168.1.108",
-            "192.168.1.107",
-            "192.168.1.106",
-            "192.168.1.105",
-            "192.168.1.104",
-            "192.168.1.103",
-            "192.168.1.102",
-            "192.168.1.101"
-        ]
+    "httpServer": "http://192.168.1.251",
+    "templates": {
+      "X5-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X6-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X7-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X8-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X9-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X8M-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X9M-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X10M-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      }
     }
+  },
+  "ilom": {
+    "reimage": [
+      "10.215.33.21",
+      "10.215.33.20",
+      "10.215.33.24",
+      "10.215.33.23",
+      "10.215.33.22"
+    ],
+    "ElasticRack": [
+      "192.168.1.110",
+      "192.168.1.109",
+      "192.168.1.108",
+      "192.168.1.104",
+      "192.168.1.103",
+      "192.168.1.102",
+      "192.168.1.101"
+    ],
+    "EighthRack": [
+      "192.168.1.109",
+      "192.168.1.108",
+      "192.168.1.103",
+      "192.168.1.102",
+      "192.168.1.101"
+    ],
+    "FullRack": [
+      "192.168.1.122",
+      "192.168.1.121",
+      "192.168.1.120",
+      "192.168.1.119",
+      "192.168.1.118",
+      "192.168.1.117",
+      "192.168.1.116",
+      "192.168.1.115",
+      "192.168.1.114",
+      "192.168.1.113",
+      "192.168.1.112",
+      "192.168.1.111",
+      "192.168.1.110",
+      "192.168.1.109",
+      "192.168.1.108",
+      "192.168.1.107",
+      "192.168.1.106",
+      "192.168.1.105",
+      "192.168.1.104",
+      "192.168.1.103",
+      "192.168.1.102",
+      "192.168.1.101"
+    ]
+  }
 }
