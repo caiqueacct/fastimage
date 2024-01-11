@@ -19,6 +19,7 @@ let _selected = {
 };
 
 var _useOvs = "No";
+var _readyToStart = "No";
 
 var _ovsOptions = {
   Yes: "ovs=only",
@@ -75,7 +76,7 @@ class FastImagePXEImages extends BashUtil {
     this.logger.info(`ISO location [${this.config.pxe.path.iso}]`);
     const cmd = `cd ${this.config.pxe.path.iso};ls ${this.decodeNodeType(
       nodeType
-    )}*.iso | cut -d '_' -f2 | sort -r`;
+    )}*.iso | sed 's/^compute_//;s/^cell_//;s/.x86_64.iso$//' | cut -d'-' -f1 | sort -r`;
     var { stdout, stderr } = await this.runCmd(cmd);
 
     const availableImages = [
@@ -100,10 +101,12 @@ class FastImagePXEImages extends BashUtil {
   }
 
   async getImageDetails(nodeType = "cell") {
+    // console.log(_selected)
+    // return
     const cmd = `cd ${this.config.pxe.path.iso};ls ${this.decodeNodeType(
       nodeType
     )}*${_selected[nodeType].version}*.iso;cd ${this.config.pxe.path.efi};ls *${
-      _selected[nodeType].version
+      _selected[nodeType].version.replace(/_LINUX\.X64_/g, '-')
     }*${this.decodeNodeType(nodeType)}* | sort`;
     this.logger.debug(cmd);
     var { stdout, stderr } = await this.runCmd(cmd);
@@ -191,7 +194,28 @@ class FastImagePXEImages extends BashUtil {
     }
   }
 
+  async proceedWithReimage() {
+    const ovsOptions = [
+      {
+        type: "list",
+        name: "startProc",
+        message: `Ready to start the re-image?`,
+        default: _readyToStart,
+        choices: ["Yes", "No"],
+      },
+    ];
+    await inquirer.prompt(ovsOptions).then(async (answers) => {
+      _readyToStart = answers.startProc;
+    });
+  }
+
   async startReimage() {
+    console.log("");
+    await this.proceedWithReimage(_readyToStart);
+    if (_readyToStart === "No") {
+      this.logger.info("Okay. Take your time! Cheers 🍺");
+      return;
+    }
     this.logger.info("Starting the re-image...");
     const bashConfig = this.config.bash;
     const sshUtil = new SSHUtil({

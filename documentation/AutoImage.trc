@@ -1,0 +1,4076 @@
+--------------- AutoImage Trace File --------------- 
+ Version 24.0.01.0-0
+Press <Enter> to continue
+[VAR] localTime: 1704868764 
+[VAR] cutOffTime: 1412164800 
+Validating keyfile Line:
+[Start ] 5f9ce3a720185cf61468aa5db21ca87943c9d4b6dcef832346aa2f0860b533cb
+Validating keyfile Line:
+[Append] 57de2fa94b75e7c2ada5369d495fa2c0e7ef760bbdcdcae891d148c30f2dd0c9
+Validating keyfile Line:
+[Append] 2f519d47a823d287716dce37076e64e0cf85652e30d1b529880da6fbcfcb8e5b
+Validating keyfile Line:
+[Append] 344e3cdd470a690469e7d9a81baa13f6cd05708bdc1733553c056559c3efb2bd
+Validating keyfile Line:
+[Append] 32d74c40a7c42c0bdbd7c315d1b4787d710c8a3896a3f8c1a58c36b71ee260c5
+Validating keyfile Line:
+[Append] e3cad30b1832c21109a63b7261b1f4ac41f246efba10b7b2179bae68d36fc8e8
+Validating keyfile Line:
+[Append] de0a309bddc586f2b48f7c15b433f3eb3a567da680c9b181236cf260643cf416
+Validating keyfile Line:
+[Append] 4f897c6756ccab9308d705a6dc2ca13658c107b5ab7713da26e51b10a87204d2
+Validating keyfile Line:
+[Append] eba8340fcd2082d8667c3ffdc76f5609a0ef01fc061fc18cf8babe6403436d02
+Validating keyfile Line:
+[Append] af86bdbc4bd05d7797ed9264a34c4b332d3c1a963b6df07c41d4297096b5b6f5
+Validating keyfile Line:
+[Append] e1ab224d0d388c21e7445fcb74b4f931caa9799c81ba2727f373c343e5403023
+Validating keyfile Line:
+[Append] dc8db2c10605f8869e73705c6670ca75880ba065943618456c9e245f6ac1292c
+Validating keyfile Line:
+[Append] 1680db79fab1e0b3630852fa4ef17735dfd8ecd792ced701b5425462a93d2387
+Validating keyfile Line:
+[Append] f784ddb5adee284303de162fe522a922d112153e1d3bee4b70a4b65430f07f6d
+Validating keyfile Line:
+[Append] ec6fc4e3a87ed2f31e5b0cfb31d75ca894d6442f5fcbcec3e388201c0e352d85
+Decrypted Expire Date 1709048107
+ : Tue Feb 27 09:35:07 2024
+ : expires in 48 days
+
+[-->Sub] (Wed Jan 10 00:39:24 2024) _checkAutoInstallVersion: None
+'        ReqdAutoInstallVer: 21.5.0'
+/usr/local/bin/imageinfo
+########################################################
+Oracle ACS AutoInstall
+                        Version: 23.5.0.0.1
+                       Release date: 11-MAY-2023
+See Readme.txt in /u01
+* This program is for use by the Oracle ACS Team ONLY
+########################################################
+[<--Sub] (Wed Jan 10 00:39:24 2024) _checkAutoInstallVersion: None
+
+Press <Enter> to continue
+Press <Enter> to continue
+
+[-->Sub] (Wed Jan 10 00:39:25 2024) imageExadata: None
+AutoImage ExadataImaging 
+Execution Started: Wed Jan 10 00:39:25 2024
+
+[VAR] manualMAC = 0
+
+[VAR] USEipmiTool mode = 1
+
+
+[-->Sub] (Wed Jan 10 00:39:25 2024) _getChoice: None
+
+    Choose a number: 2
+  2 was a valid answer.
+
+'        RETURN_menuChoice: X7-X10-ZDLRA'
+[<--Sub] (Wed Jan 10 00:39:28 2024) _getChoice: None
+
+
+[-->Sub] (Wed Jan 10 00:39:28 2024) _serviceDHCPDrestart: None
+User input: y
+
+'service dhcpd restart' requested. 
+
+
+    Issuing copy command
+
+cp /etc/dhcp/dhcpd.conf.x8 /etc/dhcp/dhcpd.conf
+
+
+    Issuing service command
+
+service dhcpd restart
+
+   [STDOUT]:Shutting down dhcpd: [  OK  ]
+
+
+   [STDOUT]:Starting dhcpd: [  OK  ]
+
+
+[<--Sub] (Wed Jan 10 00:39:30 2024) _serviceDHCPDrestart: None
+
+Exadata Imaging.  Simple Mode Started
+
+[VAR] skipSetBootDevice           = 0
+
+[VAR] skipSystemReboot            = 0
+
+[VAR] skipSetCommandsSL6          = 0
+
+[VAR] skipHostStorageDeviceStatus = 0
+
+
+[-->Sub] (Wed Jan 10 00:39:30 2024) _loadAvailablePreConfs: None
+  preConfCount: 3
+
+  preconfFiles Dump:
+[   'Anthem-va10px16-preconf_daf15a52-7fa2-5f30-7adb-b0defded7b99.csv',
+    'KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv',
+    'preconf.csv']
+"        RETURN_preconfFiles: ['Anthem-va10px16-preconf_daf15a52-7fa2-5f30-7adb-b0defded7b99.csv', 'KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv', 'preconf.csv']"
+[<--Sub] (Wed Jan 10 00:39:30 2024) _loadAvailablePreConfs: None
+
+
+[-->Sub] (Wed Jan 10 00:39:30 2024) _printPreconfMenu: None
+"        preconfFiles: ['Anthem-va10px16-preconf_daf15a52-7fa2-5f30-7adb-b0defded7b99.csv', 'KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv', 'preconf.csv']"
+  Length of preconfFiles is > 1.  Printing PreConf Menu
+
+
+    Preconf File Number: 2
+  2 was a valid answer.
+
+  preconfToUse = KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv
+
+    Running command /usr/bin/dos2unix KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv > /dev/null 2>&1
+
+    Command was successful
+
+'        RETURN_preconfToUse: KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv'
+[<--Sub] (Wed Jan 10 00:39:32 2024) _printPreconfMenu: None
+
+
+[-->Sub] (Wed Jan 10 00:39:33 2024) _loadAvailableImages: None
+
+[-->Sub] (Wed Jan 10 00:39:33 2024) _getImageFiles: None
+'        imageMask: None'
+'        imageDir: NFSDir'
+'        RETURN2_imageFiles: []'
+'        RETURN1_imagedir: /u01/exadata_nfs'
+[<--Sub] (Wed Jan 10 00:39:33 2024) _getImageFiles: None
+
+
+[-->Sub] (Wed Jan 10 00:39:33 2024) _getImageFiles: None
+'        imageMask: None'
+'        imageDir: ISODir'
+"        RETURN2_imageFiles: ['/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso', '/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso']"
+'        RETURN1_imagedir: /u01/exadata_nfs/iso'
+[<--Sub] (Wed Jan 10 00:39:33 2024) _getImageFiles: None
+
+  Image Type: iso
+
+  Working on ISO Image Files
+
+  [VAR] tempRemCell: /u01/exadata_nfs/iso/cell_
+
+  [VAR] tempRemCompute: /u01/exadata_nfs/iso/compute_
+
+  [VAR] images START: /u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso
+
+  [VAR] images END: 23.1.8.0.0_LINUX.X64_231109-1
+
+  NEW IMAGE Found (Push): 23.1.8.0.0_LINUX.X64_231109-1
+
+  Working on ISO Image Files
+
+  [VAR] tempRemCell: /u01/exadata_nfs/iso/cell_
+
+  [VAR] tempRemCompute: /u01/exadata_nfs/iso/compute_
+
+  [VAR] images START: /u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso
+
+  [VAR] images END: 23.1.8.0.0_LINUX.X64_231109-1
+
+  DUPE IMAGE Found (Ignore): 23.1.8.0.0_LINUX.X64_231109-1
+
+"        RETURN_imageVersions: ['23.1.8.0.0_LINUX.X64_231109-1']"
+[<--Sub] (Wed Jan 10 00:39:33 2024) _loadAvailableImages: None
+
+
+[-->Sub] (Wed Jan 10 00:39:33 2024) _deleteHistoryFiles: None
+[<--Sub] (Wed Jan 10 00:39:33 2024) _deleteHistoryFiles: None
+
+
+[-->Sub] (Wed Jan 10 00:39:33 2024) _printImageMenu: ['23.1.8.0.0_LINUX.X64_231109-1']
+  Length of imageVersions is 1.
+
+  imageVersionToDeploy: 23.1.8.0.0_LINUX.X64_231109-1
+
+"        RETURN_imageVersionToDeploy: {'cell': '23.1.8.0.0_LINUX.X64_231109-1', 'compute': '23.1.8.0.0_LINUX.X64_231109-1'}"
+[<--Sub] (Wed Jan 10 00:39:33 2024) _printImageMenu: None
+
+
+[-->Sub] (Wed Jan 10 00:39:34 2024) _runSecureBootScript: None
+"        imageVersion2Deploy: {'cell': '23.1.8.0.0_LINUX.X64_231109-1', 'compute': '23.1.8.0.0_LINUX.X64_231109-1'}"
+
+
+-=[ Extracting EFI Files From Image ]=-
+
+    Removed: /opt/AutoImage/compute/grubx64.efi
+
+    Removed: /opt/AutoImage/compute/shim.efi
+
+    >> /opt/AutoImage/extract_efi_from_initrd.sh -i /tftpboot/efi/initrd-iso-23.1.8.0.0-231109-compute.img -e /opt/AutoImage/compute 
+    [INFO] Created soft link shim.efi to shimx64.efi
+    [INFO] Extracted grubx64.efi shimx64.efi  from initrd file /tftpboot/efi/initrd-iso-23.1.8.0.0-231109-compute.img to /opt/AutoImage/compute
+
+    Removed: /opt/AutoImage/cell/grubx64.efi
+
+    Removed: /opt/AutoImage/cell/shim.efi
+
+    >> /opt/AutoImage/extract_efi_from_initrd.sh -i /tftpboot/efi/initrd-iso-23.1.8.0.0-231109-cell.img -e /opt/AutoImage/cell 
+    [INFO] Created soft link shim.efi to shimx64.efi
+    [INFO] Extracted grubx64.efi shimx64.efi  from initrd file /tftpboot/efi/initrd-iso-23.1.8.0.0-231109-cell.img to /opt/AutoImage/cell
+
+    Removed: /tftpboot/pxelinux.cfg/bootx64.efi
+
+    Removed: /tftpboot/pxelinux.cfg/shim.efi
+    Copying: /opt/AutoImage/compute/grubx64.efi 
+         to: /tftpboot/pxelinux.cfg/bootx64.efi
+    Permission change for /tftpboot/pxelinux.cfg/bootx64.efi successful
+
+    Copying: /opt/AutoImage/compute/grubx64.efi 
+         to: /tftpboot/pxelinux.cfg/grubx64.efi
+    Permission change for /tftpboot/pxelinux.cfg/grubx64.efi successful
+
+    Copying: /opt/AutoImage/compute/shim.efi 
+         to: /tftpboot/pxelinux.cfg/shim.efi
+    Permission change for /tftpboot/pxelinux.cfg/shim.efi successful
+
+[<--Sub] (Wed Jan 10 00:39:49 2024) _runSecureBootScript: None
+
+
+[-->Sub] (Wed Jan 10 00:39:49 2024) _buildPXETemplates: None
+'        ip: 192.168.1.250'
+'        celltag: cell_'
+"        imageVersionToDeploy: {'cell': '23.1.8.0.0_LINUX.X64_231109-1', 'compute': '23.1.8.0.0_LINUX.X64_231109-1'}"
+'        computetag: compute_'
+    Since we are using ISO Image we will use the X7 Template Files for cell nodes
+
+    Since we are using ISO Image we will use the X7 Template Files for compute nodes
+
+  [VAR] dbMachineModel     = X7-X10-ZDLRA
+
+  [VAR] tempPXECellNode    = /tmp/PXECellNode.1704868789
+
+  [VAR] tempPXEComputeNode = /tmp/PXEComputeNode.1704868789
+
+  [VAR] cellFile    = PXECellNode.template.ISOX7
+
+  [VAR] computeFile = PXEComputeNode.template.ISOX7
+
+  [VAR] imageVersionToDeploy['cell']    = 23.1.8.0.0_LINUX.X64_231109-1
+
+  [VAR] imageVersionToDeploy['compute'] = 23.1.8.0.0_LINUX.X64_231109-1
+
+  Replacing cell <VERSION>    with 23.1.8.0.0_LINUX.X64_231109-1
+
+  Replacing compute <VERSION> with 23.1.8.0.0_LINUX.X64_231109-1
+
+  Replacing <COMPUTETAG>      with compute
+
+  Replacing <CELLTAG>         with cell
+
+  Replacing <PXEIP>           with 192.168.1.250
+
+  Replacing <NFSDIR>          with /u01/exadata_nfs
+
+  Replacing <ISODIR>          with /u01/exadata_nfs/iso
+
+  Replacing <PRECONFDIR>      with /u01/exadata_nfs/config
+
+  Processing Cell Node Template
+
+
+[-->Sub] (Wed Jan 10 00:39:49 2024) _editTempPXEfile: None
+'        nodeIP: 192.168.1.250'
+'        nodeType: cell'
+'        PXEfileName: /tmp/PXECellNode.1704868789'
+  Processing Cell Node Template
+
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+    [VAR] tag: 'cell'
+
+    Temporary Cell Template File Written to /tmp/PXECellNode.1704868789
+[<--Sub] (Wed Jan 10 00:39:49 2024) _editTempPXEfile: None
+
+
+[-->Sub] (Wed Jan 10 00:39:49 2024) _editTempPXEfile: None
+'        nodeIP: 192.168.1.250'
+'        nodeType: compute'
+'        PXEfileName: /tmp/PXEComputeNode.1704868789'
+  Processing Compute Node Template
+
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+User input: n
+
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+    [VAR] tag: 'compute'
+
+    Temporary Compute Template File Written to /tmp/PXEComputeNode.1704868789
+[<--Sub] (Wed Jan 10 00:39:55 2024) _editTempPXEfile: None
+
+'        RETURN1_tempPXEComputeNode: /tmp/PXEComputeNode.1704868789'
+'        RETURN2_tempPXECellNode: /tmp/PXECellNode.1704868789'
+[<--Sub] (Wed Jan 10 00:39:55 2024) _buildPXETemplates: None
+
+
+[-->Sub] (Wed Jan 10 00:39:56 2024) _processPreConfConfig: None
+'        preconfToUse: KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv'
+
+[-->Sub] (Wed Jan 10 00:39:56 2024) loadPreconfHeader: PreconfReader.
+'        fileName: KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv'
+    Loading file: KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv
+  lines DUMP:
+[   'Cell,Preconfig,version,11.2.2.1.0,,,,,,,',
+    '',
+    '# WARNING - DO NOT EDIT THIS FILE USING EXCEL',
+    '',
+    '# IMPORTANT - YOU DO NOT NEED TO MERGE THE MAC ADDRESSES INTO THIS FILE',
+    '',
+    '# OneCommand,XXX,ZDLRA RA23 Elastic Rack HC 22TB',
+    '',
+    '# This is a main format for 11.2.2.1.0',
+    '',
+    'hostname,domain,node type,gateway device,eth interface,eth type,mac address,ip,netmask,gateway,bondib hostname,bondib type,bondib ip,bondib netmask,nameservers,ntps,timezone',
+    '',
+    '# DO NOT edit the above lines',
+    '#',
+    '',
+    '#',
+    '#comp',
+    'nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org',
+    'nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org',
+    '#',
+    '#cell',
+    'nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,',
+    'nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,',
+    'nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,',
+    '',
+    '# Do NOT edit below this line',
+    ',,,,,,,,,,']
+    Preconf Machine Description: # OneCommand,XXX,ZDLRA RA23 Elastic Rack HC 22TB
+    Preconf Machine Base Model: ZDLRA
+    User specified Machine Type for Imaging: X7-X10-ZDLRA
+    Found OneCommand version: XXX
+    Found OneCommand machineDescription: ZDLRA RA23 Elastic Rack HC 22TB
+    DB Machine Model Description: ZDLRA
+[<--Sub] (Wed Jan 10 00:39:56 2024) loadPreconfHeader: PreconfReader.
+
+'        RETURN1_configuringXn8: 0'
+'        RETURN4_configuringRA23: 1'
+'        RETURN2_configuringZDLRA: 0'
+'        RETURN3_configuringX10M: 0'
+[<--Sub] (Wed Jan 10 00:39:56 2024) _processPreConfConfig: None
+
+
+[-->Sub] (Wed Jan 10 00:39:56 2024) _loadIPs: None
+'        configuringRA23: 1'
+'        configuringZDLRA: 0'
+'        configuringX10M: 0'
+'        configuringXn8: 0'
+    configuringXn8:   [0]
+
+    configuringZDLRA: [0]
+
+    configuringX10M:  [0]
+
+    configuringRA23:  [1]
+
+    'systemIPsRA23' configGetIP for node[cel01]: 192.168.1.101
+
+    'systemIPsRA23' configGetIP for node[cel02]: 192.168.1.102
+
+    'systemIPsRA23' configGetIP for node[cel03]: 192.168.1.103
+
+    'systemIPsRA23' configGetIP for node[cel04]: 192.168.1.104
+
+    'systemIPsRA23' configGetIP for node[cel05]: 192.168.1.105
+
+    'systemIPsRA23' configGetIP for node[cel06]: 192.168.1.106
+
+    'systemIPsRA23' configGetIP for node[cel07]: 192.168.1.113
+
+  Override: AutoImage.cfg IP 192.168.1.113 != Factory IP 192.168.1.107 for cel07.
+
+    'systemIPsRA23' configGetIP for node[cel08]: 192.168.1.114
+
+  Override: AutoImage.cfg IP 192.168.1.114 != Factory IP 192.168.1.116 for cel08.
+
+    'systemIPsRA23' configGetIP for node[cel09]: 192.168.1.115
+
+  Override: AutoImage.cfg IP 192.168.1.115 != Factory IP 192.168.1.117 for cel09.
+
+    'systemIPsRA23' configGetIP for node[cel10]: 192.168.1.116
+
+  Override: AutoImage.cfg IP 192.168.1.116 != Factory IP 192.168.1.118 for cel10.
+
+    'systemIPsRA23' configGetIP for node[cel11]: 192.168.1.117
+
+  Override: AutoImage.cfg IP 192.168.1.117 != Factory IP 192.168.1.119 for cel11.
+
+    'systemIPsRA23' configGetIP for node[cel12]: 192.168.1.118
+
+  Override: AutoImage.cfg IP 192.168.1.118 != Factory IP 192.168.1.120 for cel12.
+
+    'systemIPsRA23' configGetIP for node[cel13]: 192.168.1.112
+
+  Override: AutoImage.cfg IP 192.168.1.112 != Factory IP 192.168.1.121 for cel13.
+
+    'systemIPsRA23' configGetIP for node[cel14]: 192.168.1.111
+
+  Override: AutoImage.cfg IP 192.168.1.111 != Factory IP 192.168.1.122 for cel14.
+
+    'systemIPsRA23' configGetIP for node[cel15]: 192.168.1.110
+
+  Override: AutoImage.cfg IP 192.168.1.110 != Factory IP 192.168.1.134 for cel15.
+
+    'systemIPsRA23' configGetIP for node[cel16]: 192.168.1.109
+
+  Override: AutoImage.cfg IP 192.168.1.109 != Factory IP 192.168.1.135 for cel16.
+
+    'systemIPsRA23' configGetIP for node[cel17]: 192.168.1.119
+
+  Override: AutoImage.cfg IP 192.168.1.119 != Factory IP 192.168.1.136 for cel17.
+
+    'systemIPsRA23' configGetIP for node[cel18]: 
+
+    'systemIPs' configGetIP for node[cel18]: 192.168.1.137
+
+    'systemIPsRA23' configGetIP for node[db01]: 192.168.1.107
+
+  Override: AutoImage.cfg IP 192.168.1.107 != Factory IP 192.168.1.108 for db01.
+
+    'systemIPsRA23' configGetIP for node[db02]: 192.168.1.108
+
+  Override: AutoImage.cfg IP 192.168.1.108 != Factory IP 192.168.1.109 for db02.
+
+    'systemIPsRA23' configGetIP for node[db03]: 
+
+    'systemIPs' configGetIP for node[db03]: 192.168.1.110
+
+    'systemIPsRA23' configGetIP for node[db04]: 
+
+    'systemIPs' configGetIP for node[db04]: 192.168.1.111
+
+    'systemIPsRA23' configGetIP for node[db05]: 
+
+    'systemIPs' configGetIP for node[db05]: 192.168.1.112
+
+    'systemIPsRA23' configGetIP for node[db06]: 
+
+    'systemIPs' configGetIP for node[db06]: 192.168.1.113
+
+    'systemIPsRA23' configGetIP for node[db07]: 
+
+    'systemIPs' configGetIP for node[db07]: 192.168.1.114
+
+    'systemIPsRA23' configGetIP for node[db08]: 
+
+    'systemIPs' configGetIP for node[db08]: 192.168.1.115
+
+    'systemIPsRA23' configGetIP for node[db09]: 
+
+    'systemIPs' configGetIP for node[db09]: 192.168.1.123
+
+    'systemIPsRA23' configGetIP for node[db10]: 
+
+    'systemIPs' configGetIP for node[db10]: 192.168.1.124
+
+    'systemIPsRA23' configGetIP for node[db11]: 
+
+    'systemIPs' configGetIP for node[db11]: 192.168.1.125
+
+    'systemIPsRA23' configGetIP for node[db12]: 
+
+    'systemIPs' configGetIP for node[db12]: 192.168.1.126
+
+    'systemIPsRA23' configGetIP for node[db13]: 
+
+    'systemIPs' configGetIP for node[db13]: 192.168.1.127
+
+    'systemIPsRA23' configGetIP for node[db14]: 
+
+    'systemIPs' configGetIP for node[db14]: 192.168.1.128
+
+    'systemIPsRA23' configGetIP for node[db15]: 
+
+    'systemIPs' configGetIP for node[db15]: 192.168.1.129
+
+    'systemIPsRA23' configGetIP for node[db16]: 
+
+    'systemIPs' configGetIP for node[db16]: 192.168.1.130
+
+    'systemIPsRA23' configGetIP for node[db17]: 
+
+    'systemIPs' configGetIP for node[db17]: 192.168.1.131
+
+    'systemIPsRA23' configGetIP for node[db18]: 
+
+    'systemIPs' configGetIP for node[db18]: 192.168.1.132
+
+    'systemIPsRA23' configGetIP for node[db19]: 
+
+    'systemIPs' configGetIP for node[db19]: 192.168.1.133
+
+    'systemIPsRA23' configGetIP for node[exp01]: 
+
+    'systemIPs' configGetIP for node[exp01]: 192.168.1.151
+
+    'systemIPsRA23' configGetIP for node[exp02]: 
+
+    'systemIPs' configGetIP for node[exp02]: 192.168.1.152
+
+    'systemIPsRA23' configGetIP for node[exp03]: 
+
+    'systemIPs' configGetIP for node[exp03]: 192.168.1.153
+
+    'systemIPsRA23' configGetIP for node[exp04]: 
+
+    'systemIPs' configGetIP for node[exp04]: 192.168.1.154
+
+    'systemIPsRA23' configGetIP for node[exp05]: 
+
+    'systemIPs' configGetIP for node[exp05]: 192.168.1.155
+
+    'systemIPsRA23' configGetIP for node[exp06]: 
+
+    'systemIPs' configGetIP for node[exp06]: 192.168.1.156
+
+    'systemIPsRA23' configGetIP for node[exp07]: 
+
+    'systemIPs' configGetIP for node[exp07]: 192.168.1.157
+
+    'systemIPsRA23' configGetIP for node[exp08]: 
+
+    'systemIPs' configGetIP for node[exp08]: 192.168.1.158
+
+    'systemIPsRA23' configGetIP for node[exp09]: 
+
+    'systemIPs' configGetIP for node[exp09]: 192.168.1.159
+
+    'systemIPsRA23' configGetIP for node[exp10]: 
+
+    'systemIPs' configGetIP for node[exp10]: 192.168.1.160
+
+    'systemIPsRA23' configGetIP for node[exp11]: 
+
+    'systemIPs' configGetIP for node[exp11]: 192.168.1.161
+
+    'systemIPsRA23' configGetIP for node[exp12]: 
+
+    'systemIPs' configGetIP for node[exp12]: 192.168.1.162
+
+    'systemIPsRA23' configGetIP for node[exp13]: 
+
+    'systemIPs' configGetIP for node[exp13]: 192.168.1.163
+
+    'systemIPsRA23' configGetIP for node[exp14]: 
+
+    'systemIPs' configGetIP for node[exp14]: 192.168.1.164
+
+    'systemIPsRA23' configGetIP for node[exp15]: 
+
+    'systemIPs' configGetIP for node[exp15]: 192.168.1.165
+
+    'systemIPsRA23' configGetIP for node[exp16]: 
+
+    'systemIPs' configGetIP for node[exp16]: 192.168.1.166
+
+    'systemIPsRA23' configGetIP for node[exp17]: 
+
+    'systemIPs' configGetIP for node[exp17]: 192.168.1.167
+
+    'systemIPsRA23' configGetIP for node[exp18]: 
+
+    'systemIPs' configGetIP for node[exp18]: 192.168.1.168
+
+    'systemIPsRA23' configGetIP for node[exp19]: 
+
+    'systemIPs' configGetIP for node[exp19]: 192.168.1.169
+
+
+  systemIPs DUMP:
+{   'cel01': '192.168.1.101',
+    'cel02': '192.168.1.102',
+    'cel03': '192.168.1.103',
+    'cel04': '192.168.1.104',
+    'cel05': '192.168.1.105',
+    'cel06': '192.168.1.106',
+    'cel07': '192.168.1.113',
+    'cel08': '192.168.1.114',
+    'cel09': '192.168.1.115',
+    'cel10': '192.168.1.116',
+    'cel11': '192.168.1.117',
+    'cel12': '192.168.1.118',
+    'cel13': '192.168.1.112',
+    'cel14': '192.168.1.111',
+    'cel15': '192.168.1.110',
+    'cel16': '192.168.1.109',
+    'cel17': '192.168.1.119',
+    'cel18': '192.168.1.137',
+    'db01': '192.168.1.107',
+    'db02': '192.168.1.108',
+    'db03': '192.168.1.110',
+    'db04': '192.168.1.111',
+    'db05': '192.168.1.112',
+    'db06': '192.168.1.113',
+    'db07': '192.168.1.114',
+    'db08': '192.168.1.115',
+    'db09': '192.168.1.123',
+    'db10': '192.168.1.124',
+    'db11': '192.168.1.125',
+    'db12': '192.168.1.126',
+    'db13': '192.168.1.127',
+    'db14': '192.168.1.128',
+    'db15': '192.168.1.129',
+    'db16': '192.168.1.130',
+    'db17': '192.168.1.131',
+    'db18': '192.168.1.132',
+    'db19': '192.168.1.133',
+    'exp01': '192.168.1.151',
+    'exp02': '192.168.1.152',
+    'exp03': '192.168.1.153',
+    'exp04': '192.168.1.154',
+    'exp05': '192.168.1.155',
+    'exp06': '192.168.1.156',
+    'exp07': '192.168.1.157',
+    'exp08': '192.168.1.158',
+    'exp09': '192.168.1.159',
+    'exp10': '192.168.1.160',
+    'exp11': '192.168.1.161',
+    'exp12': '192.168.1.162',
+    'exp13': '192.168.1.163',
+    'exp14': '192.168.1.164',
+    'exp15': '192.168.1.165',
+    'exp16': '192.168.1.166',
+    'exp17': '192.168.1.167',
+    'exp18': '192.168.1.168',
+    'exp19': '192.168.1.169'}
+[<--Sub] (Wed Jan 10 00:39:56 2024) _loadIPs: None
+
+
+[-->Sub] (Wed Jan 10 00:39:57 2024) _processPreConf: None
+'        preconfToUse: KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv'
+
+[-->Sub] (Wed Jan 10 00:39:57 2024) loadPreconf: PreconfReader.
+'        fileName: KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv'
+  lines DUMP:
+[   'Cell,Preconfig,version,11.2.2.1.0,,,,,,,',
+    '',
+    '# WARNING - DO NOT EDIT THIS FILE USING EXCEL',
+    '',
+    '# IMPORTANT - YOU DO NOT NEED TO MERGE THE MAC ADDRESSES INTO THIS FILE',
+    '',
+    '# OneCommand,XXX,ZDLRA RA23 Elastic Rack HC 22TB',
+    '',
+    '# This is a main format for 11.2.2.1.0',
+    '',
+    'hostname,domain,node type,gateway device,eth interface,eth type,mac address,ip,netmask,gateway,bondib hostname,bondib type,bondib ip,bondib netmask,nameservers,ntps,timezone',
+    '',
+    '# DO NOT edit the above lines',
+    '#',
+    '',
+    '#',
+    '#comp',
+    'nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org',
+    'nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org',
+    '#',
+    '#cell',
+    'nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,',
+    'nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,',
+    'nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,',
+    '',
+    '# Do NOT edit below this line',
+    ',,,,,,,,,,']
+
+[-->Sub] (Wed Jan 10 00:39:57 2024) _loadXXX: PreconfReader.
+"        lines: ['Cell,Preconfig,version,11.2.2.1.0,,,,,,,', '', '# WARNING - DO NOT EDIT THIS FILE USING EXCEL', '', '# IMPORTANT - YOU DO NOT NEED TO MERGE THE MAC ADDRESSES INTO THIS FILE', '', '# OneCommand,XXX,ZDLRA RA23 Elastic Rack HC 22TB', '', '# This is a main format for 11.2.2.1.0', '', 'hostname,domain,node type,gateway device,eth interface,eth type,mac address,ip,netmask,gateway,bondib hostname,bondib type,bondib ip,bondib netmask,nameservers,ntps,timezone', '', '# DO NOT edit the above lines', '#', '', '#', '#comp', 'nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org', 'nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org', '#', '#cell', 'nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,', 'nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,', 'nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,', '', '# Do NOT edit below this line', ',,,,,,,,,,']"
+
+-=[ Loading PreConf Reader XXX ]=-
+
+[-->Sub] (Wed Jan 10 00:39:57 2024) _loadKeys: PreconfReader.
+"        lines: ['Cell,Preconfig,version,11.2.2.1.0,,,,,,,', '', '# WARNING - DO NOT EDIT THIS FILE USING EXCEL', '', '# IMPORTANT - YOU DO NOT NEED TO MERGE THE MAC ADDRESSES INTO THIS FILE', '', '# OneCommand,XXX,ZDLRA RA23 Elastic Rack HC 22TB', '', '# This is a main format for 11.2.2.1.0', '', 'hostname,domain,node type,gateway device,eth interface,eth type,mac address,ip,netmask,gateway,bondib hostname,bondib type,bondib ip,bondib netmask,nameservers,ntps,timezone', '', '# DO NOT edit the above lines', '#', '', '#', '#comp', 'nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org', 'nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org', '#', '#cell', 'nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,', 'nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,', 'nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,', '', '# Do NOT edit below this line', ',,,,,,,,,,']"
+    preconf Header Data found
+"        RETURN: ['hostname', 'domain', 'node type', 'gateway device', 'eth interface', 'eth type', 'mac address', 'ip', 'netmask', 'gateway', 'bondib hostname', 'bondib type', 'bondib ip', 'bondib netmask', 'nameservers', 'ntps', 'timezone']"
+[<--Sub] (Wed Jan 10 00:39:57 2024) _loadKeys: PreconfReader.
+
+  keys pre-replace DUMP:
+[   'hostname',
+    'domain',
+    'node type',
+    'gateway device',
+    'eth interface',
+    'eth type',
+    'mac address',
+    'ip',
+    'netmask',
+    'gateway',
+    'bondib hostname',
+    'bondib type',
+    'bondib ip',
+    'bondib netmask',
+    'nameservers',
+    'ntps',
+    'timezone']
+  keys post-replace DUMP:
+[   'hostname',
+    'domain',
+    'node_type',
+    'gateway_device',
+    'eth_interface',
+    'eth_type',
+    'mac_address',
+    'ip',
+    'netmask',
+    'gateway',
+    'bondib_hostname',
+    'bondib_type',
+    'bondib_ip',
+    'bondib_netmask',
+    'nameservers',
+    'ntps',
+    'timezone']
+  Processing Lines.  Run 1/2
+  Processing 'line' Cell,Preconfig,version,11.2.2.1.0,,,,,,,
+  data (split /,/) DUMP:
+['Cell', 'Preconfig', 'version', '11.2.2.1.0', '', '', '', '', '', '', '']
+  Processing 'line' hostname,domain,node type,gateway device,eth interface,eth type,mac address,ip,netmask,gateway,bondib hostname,bondib type,bondib ip,bondib netmask,nameservers,ntps,timezone
+  data (split /,/) DUMP:
+[   'hostname',
+    'domain',
+    'node type',
+    'gateway device',
+    'eth interface',
+    'eth type',
+    'mac address',
+    'ip',
+    'netmask',
+    'gateway',
+    'bondib hostname',
+    'bondib type',
+    'bondib ip',
+    'bondib netmask',
+    'nameservers',
+    'ntps',
+    'timezone']
+  Processing 'line' nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org
+  data (split /,/) DUMP:
+[   'nzrpdb902xe1',
+    'nndc.kp.org',
+    'db',
+    'eth0',
+    'bondeth0:lacp:::::',
+    'SCAN',
+    'eth1 eth2',
+    '10.18.33.240',
+    '255.255.240.0',
+    '10.18.32.1',
+    'nzrpdb902priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.3',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpdb902x-rb.nndc.kp.org',
+    '10.18.53.224',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    'eth0:::ssh-listen-disabled:::',
+    'Management',
+    '',
+    '10.18.53.223',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpdb902xm.nndc.kp.org',
+    'bondeth1:::ssh-listen-disabled:::',
+    'Other',
+    'eth9 eth10',
+    '10.31.0.134',
+    '255.255.254.0',
+    '10.31.0.1',
+    'nzrpdb902xdr.nndc.kp.org']
+  Found a Compute.  dbCount: 1
+  Processing 'line' nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org
+  data (split /,/) DUMP:
+[   'nzrpdb901xe1',
+    'nndc.kp.org',
+    'db',
+    'eth0',
+    'bondeth0:lacp:::::',
+    'SCAN',
+    'eth1 eth2',
+    '10.18.33.237',
+    '255.255.240.0',
+    '10.18.32.1',
+    'nzrpdb901priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.1',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpdb901x-rb.nndc.kp.org',
+    '10.18.53.219',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    'eth0:::ssh-listen-disabled:::',
+    'Management',
+    '',
+    '10.18.53.218',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpdb901xm.nndc.kp.org',
+    'bondeth1:::ssh-listen-disabled:::',
+    'Other',
+    'eth9 eth10',
+    '10.31.0.132',
+    '255.255.254.0',
+    '10.31.0.1',
+    'nzrpdb901xdr.nndc.kp.org']
+  Found a Compute.  dbCount: 2
+  Processing 'line' nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+  data (split /,/) DUMP:
+[   'nzrpce903xm',
+    'nndc.kp.org',
+    'cell',
+    'eth0',
+    'eth0:::::::',
+    'Management',
+    '',
+    '10.18.53.229',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpce903priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.9',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpce903x-rb.nndc.kp.org',
+    '10.18.53.230',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    '']
+  Found a Cell.  cellCount: 1
+  Processing 'line' nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+  data (split /,/) DUMP:
+[   'nzrpce902xm',
+    'nndc.kp.org',
+    'cell',
+    'eth0',
+    'eth0:::::::',
+    'Management',
+    '',
+    '10.18.53.227',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpce902priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.7',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpce902x-rb.nndc.kp.org',
+    '10.18.53.228',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    '']
+  Found a Cell.  cellCount: 2
+  Processing 'line' nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+  data (split /,/) DUMP:
+[   'nzrpce901xm',
+    'nndc.kp.org',
+    'cell',
+    'eth0',
+    'eth0:::::::',
+    'Management',
+    '',
+    '10.18.53.225',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpce901priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.5',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpce901x-rb.nndc.kp.org',
+    '10.18.53.226',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    '']
+  Found a Cell.  cellCount: 3
+    * preconf has 2 Compute Nodes defined
+    * preconf has 3 Cell Nodes defined
+  Total Cells Nodes Found: cellCount: 3
+  Total Compute Nodes Found: dbCount: 2
+  Processing Lines.  Run 2/2
+  Processing 'line' Cell,Preconfig,version,11.2.2.1.0,,,,,,,
+  data (split /,/) DUMP:
+['Cell', 'Preconfig', 'version', '11.2.2.1.0', '', '', '', '', '', '', '']
+  Processing 'line' hostname,domain,node type,gateway device,eth interface,eth type,mac address,ip,netmask,gateway,bondib hostname,bondib type,bondib ip,bondib netmask,nameservers,ntps,timezone
+  data (split /,/) DUMP:
+[   'hostname',
+    'domain',
+    'node type',
+    'gateway device',
+    'eth interface',
+    'eth type',
+    'mac address',
+    'ip',
+    'netmask',
+    'gateway',
+    'bondib hostname',
+    'bondib type',
+    'bondib ip',
+    'bondib netmask',
+    'nameservers',
+    'ntps',
+    'timezone']
+  Processing 'line' nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org
+  data (split /,/) DUMP:
+[   'nzrpdb902xe1',
+    'nndc.kp.org',
+    'db',
+    'eth0',
+    'bondeth0:lacp:::::',
+    'SCAN',
+    'eth1 eth2',
+    '10.18.33.240',
+    '255.255.240.0',
+    '10.18.32.1',
+    'nzrpdb902priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.3',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpdb902x-rb.nndc.kp.org',
+    '10.18.53.224',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    'eth0:::ssh-listen-disabled:::',
+    'Management',
+    '',
+    '10.18.53.223',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpdb902xm.nndc.kp.org',
+    'bondeth1:::ssh-listen-disabled:::',
+    'Other',
+    'eth9 eth10',
+    '10.31.0.134',
+    '255.255.254.0',
+    '10.31.0.1',
+    'nzrpdb902xdr.nndc.kp.org']
+    Adding Compute 'db02' to Hash
+  Adding Compute 'db02' to machine dictionary.
+  Processing X (from xrange): 0
+    Value working on: nzrpdb902xe1
+    keys[x] is defined as hostname
+    Adding 'nzrpdb902xe1' to dict machine[compute][db02][hostname]
+  Processing X (from xrange): 1
+    Value working on: nndc.kp.org
+    keys[x] is defined as domain
+    Adding 'nndc.kp.org' to dict machine[compute][db02][domain]
+  Processing X (from xrange): 2
+    Value working on: db
+    keys[x] is defined as node_type
+    Adding 'db' to dict machine[compute][db02][node_type]
+  Processing X (from xrange): 3
+    Value working on: eth0
+    keys[x] is defined as gateway_device
+    Adding 'eth0' to dict machine[compute][db02][gateway_device]
+  Processing X (from xrange): 4
+    Value working on: bondeth0:lacp:::::
+    keys[x] is defined as eth_interface
+    Adding 'bondeth0:lacp:::::' to dict machine[compute][db02][eth_interface]
+  Processing X (from xrange): 5
+    Value working on: SCAN
+    keys[x] is defined as eth_type
+    Adding 'SCAN' to dict machine[compute][db02][eth_type]
+  Processing X (from xrange): 6
+    Value working on: eth1 eth2
+    keys[x] is defined as mac_address
+    Adding 'eth1 eth2' to dict machine[compute][db02][mac_address]
+  Processing X (from xrange): 7
+    Value working on: 10.18.33.240
+    keys[x] is defined as ip
+    Adding '10.18.33.240' to dict machine[compute][db02][ip]
+  Processing X (from xrange): 8
+    Value working on: 255.255.240.0
+    keys[x] is defined as netmask
+    Adding '255.255.240.0' to dict machine[compute][db02][netmask]
+  Processing X (from xrange): 9
+    Value working on: 10.18.32.1
+    keys[x] is defined as gateway
+    Adding '10.18.32.1' to dict machine[compute][db02][gateway]
+  Processing X (from xrange): 10
+    Value working on: nzrpdb902priv1.nndc.kp.org
+    keys[x] is defined as bondib_hostname
+    Adding 'nzrpdb902priv1.nndc.kp.org' to dict machine[compute][db02][bondib_hostname]
+  Processing X (from xrange): 11
+    Value working on: Private:active-bond-ib:
+    keys[x] is defined as bondib_type
+    Adding 'Private:active-bond-ib:' to dict machine[compute][db02][bondib_type]
+  Processing X (from xrange): 12
+    Value working on: 192.168.10.3
+    keys[x] is defined as bondib_ip
+    Adding '192.168.10.3' to dict machine[compute][db02][bondib_ip]
+  Processing X (from xrange): 13
+    Value working on: 255.255.252.0
+    keys[x] is defined as bondib_netmask
+    Adding '255.255.252.0' to dict machine[compute][db02][bondib_netmask]
+  Processing X (from xrange): 14
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] is defined as nameservers
+    Adding '172.18.44.21 10.21.13.54' to dict machine[compute][db02][nameservers]
+  Processing X (from xrange): 15
+    Value working on: 172.18.33.225 172.21.128.95 172.18.33.227
+    keys[x] is defined as ntps
+    Adding '172.18.33.225 172.21.128.95 172.18.33.227' to dict machine[compute][db02][ntps]
+  Processing X (from xrange): 16
+    Value working on: America/Los_Angeles
+    keys[x] is defined as timezone
+    Adding 'America/Los_Angeles' to dict machine[compute][db02][timezone]
+  Processing X (from xrange): 17
+    Value working on: ilom:
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'ilom:' to dict machine[compute][db02][Key17]
+  Processing X (from xrange): 18
+    Value working on: nzrpdb902x-rb.nndc.kp.org
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'nzrpdb902x-rb.nndc.kp.org' to dict machine[compute][db02][Key18]
+  Processing X (from xrange): 19
+    Value working on: 10.18.53.224
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.53.224' to dict machine[compute][db02][Key19]
+  Processing X (from xrange): 20
+    Value working on: 255.255.240.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.240.0' to dict machine[compute][db02][Key20]
+  Processing X (from xrange): 21
+    Value working on: 10.18.48.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.48.1' to dict machine[compute][db02][Key21]
+  Processing X (from xrange): 22
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.44.21 10.21.13.54' to dict machine[compute][db02][Key22]
+  Processing X (from xrange): 23
+    Value working on: enabled
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'enabled' to dict machine[compute][db02][Key23]
+  Processing X (from xrange): 24
+    Value working on: 172.18.33.225
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.33.225' to dict machine[compute][db02][Key24]
+  Processing X (from xrange): 25
+    Value working on: 172.21.128.95
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.21.128.95' to dict machine[compute][db02][Key25]
+  Processing X (from xrange): 27
+    Value working on: eth0:::ssh-listen-disabled:::
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'eth0:::ssh-listen-disabled:::' to dict machine[compute][db02][Key27]
+  Processing X (from xrange): 28
+    Value working on: Management
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'Management' to dict machine[compute][db02][Key28]
+  Processing X (from xrange): 30
+    Value working on: 10.18.53.223
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.53.223' to dict machine[compute][db02][Key30]
+  Processing X (from xrange): 31
+    Value working on: 255.255.240.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.240.0' to dict machine[compute][db02][Key31]
+  Processing X (from xrange): 32
+    Value working on: 10.18.48.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.48.1' to dict machine[compute][db02][Key32]
+  Processing X (from xrange): 33
+    Value working on: nzrpdb902xm.nndc.kp.org
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'nzrpdb902xm.nndc.kp.org' to dict machine[compute][db02][Key33]
+  Processing X (from xrange): 34
+    Value working on: bondeth1:::ssh-listen-disabled:::
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'bondeth1:::ssh-listen-disabled:::' to dict machine[compute][db02][Key34]
+  Processing X (from xrange): 35
+    Value working on: Other
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'Other' to dict machine[compute][db02][Key35]
+  Processing X (from xrange): 36
+    Value working on: eth9 eth10
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'eth9 eth10' to dict machine[compute][db02][Key36]
+  Processing X (from xrange): 37
+    Value working on: 10.31.0.134
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.31.0.134' to dict machine[compute][db02][Key37]
+  Processing X (from xrange): 38
+    Value working on: 255.255.254.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.254.0' to dict machine[compute][db02][Key38]
+  Processing X (from xrange): 39
+    Value working on: 10.31.0.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.31.0.1' to dict machine[compute][db02][Key39]
+  Processing 'line' nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org
+  data (split /,/) DUMP:
+[   'nzrpdb901xe1',
+    'nndc.kp.org',
+    'db',
+    'eth0',
+    'bondeth0:lacp:::::',
+    'SCAN',
+    'eth1 eth2',
+    '10.18.33.237',
+    '255.255.240.0',
+    '10.18.32.1',
+    'nzrpdb901priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.1',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpdb901x-rb.nndc.kp.org',
+    '10.18.53.219',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    'eth0:::ssh-listen-disabled:::',
+    'Management',
+    '',
+    '10.18.53.218',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpdb901xm.nndc.kp.org',
+    'bondeth1:::ssh-listen-disabled:::',
+    'Other',
+    'eth9 eth10',
+    '10.31.0.132',
+    '255.255.254.0',
+    '10.31.0.1',
+    'nzrpdb901xdr.nndc.kp.org']
+    Adding Compute 'db01' to Hash
+  Adding Compute 'db01' to machine dictionary.
+  Processing X (from xrange): 0
+    Value working on: nzrpdb901xe1
+    keys[x] is defined as hostname
+    Adding 'nzrpdb901xe1' to dict machine[compute][db01][hostname]
+  Processing X (from xrange): 1
+    Value working on: nndc.kp.org
+    keys[x] is defined as domain
+    Adding 'nndc.kp.org' to dict machine[compute][db01][domain]
+  Processing X (from xrange): 2
+    Value working on: db
+    keys[x] is defined as node_type
+    Adding 'db' to dict machine[compute][db01][node_type]
+  Processing X (from xrange): 3
+    Value working on: eth0
+    keys[x] is defined as gateway_device
+    Adding 'eth0' to dict machine[compute][db01][gateway_device]
+  Processing X (from xrange): 4
+    Value working on: bondeth0:lacp:::::
+    keys[x] is defined as eth_interface
+    Adding 'bondeth0:lacp:::::' to dict machine[compute][db01][eth_interface]
+  Processing X (from xrange): 5
+    Value working on: SCAN
+    keys[x] is defined as eth_type
+    Adding 'SCAN' to dict machine[compute][db01][eth_type]
+  Processing X (from xrange): 6
+    Value working on: eth1 eth2
+    keys[x] is defined as mac_address
+    Adding 'eth1 eth2' to dict machine[compute][db01][mac_address]
+  Processing X (from xrange): 7
+    Value working on: 10.18.33.237
+    keys[x] is defined as ip
+    Adding '10.18.33.237' to dict machine[compute][db01][ip]
+  Processing X (from xrange): 8
+    Value working on: 255.255.240.0
+    keys[x] is defined as netmask
+    Adding '255.255.240.0' to dict machine[compute][db01][netmask]
+  Processing X (from xrange): 9
+    Value working on: 10.18.32.1
+    keys[x] is defined as gateway
+    Adding '10.18.32.1' to dict machine[compute][db01][gateway]
+  Processing X (from xrange): 10
+    Value working on: nzrpdb901priv1.nndc.kp.org
+    keys[x] is defined as bondib_hostname
+    Adding 'nzrpdb901priv1.nndc.kp.org' to dict machine[compute][db01][bondib_hostname]
+  Processing X (from xrange): 11
+    Value working on: Private:active-bond-ib:
+    keys[x] is defined as bondib_type
+    Adding 'Private:active-bond-ib:' to dict machine[compute][db01][bondib_type]
+  Processing X (from xrange): 12
+    Value working on: 192.168.10.1
+    keys[x] is defined as bondib_ip
+    Adding '192.168.10.1' to dict machine[compute][db01][bondib_ip]
+  Processing X (from xrange): 13
+    Value working on: 255.255.252.0
+    keys[x] is defined as bondib_netmask
+    Adding '255.255.252.0' to dict machine[compute][db01][bondib_netmask]
+  Processing X (from xrange): 14
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] is defined as nameservers
+    Adding '172.18.44.21 10.21.13.54' to dict machine[compute][db01][nameservers]
+  Processing X (from xrange): 15
+    Value working on: 172.18.33.225 172.21.128.95 172.18.33.227
+    keys[x] is defined as ntps
+    Adding '172.18.33.225 172.21.128.95 172.18.33.227' to dict machine[compute][db01][ntps]
+  Processing X (from xrange): 16
+    Value working on: America/Los_Angeles
+    keys[x] is defined as timezone
+    Adding 'America/Los_Angeles' to dict machine[compute][db01][timezone]
+  Processing X (from xrange): 17
+    Value working on: ilom:
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'ilom:' to dict machine[compute][db01][Key17]
+  Processing X (from xrange): 18
+    Value working on: nzrpdb901x-rb.nndc.kp.org
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'nzrpdb901x-rb.nndc.kp.org' to dict machine[compute][db01][Key18]
+  Processing X (from xrange): 19
+    Value working on: 10.18.53.219
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.53.219' to dict machine[compute][db01][Key19]
+  Processing X (from xrange): 20
+    Value working on: 255.255.240.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.240.0' to dict machine[compute][db01][Key20]
+  Processing X (from xrange): 21
+    Value working on: 10.18.48.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.48.1' to dict machine[compute][db01][Key21]
+  Processing X (from xrange): 22
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.44.21 10.21.13.54' to dict machine[compute][db01][Key22]
+  Processing X (from xrange): 23
+    Value working on: enabled
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'enabled' to dict machine[compute][db01][Key23]
+  Processing X (from xrange): 24
+    Value working on: 172.18.33.225
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.33.225' to dict machine[compute][db01][Key24]
+  Processing X (from xrange): 25
+    Value working on: 172.21.128.95
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.21.128.95' to dict machine[compute][db01][Key25]
+  Processing X (from xrange): 27
+    Value working on: eth0:::ssh-listen-disabled:::
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'eth0:::ssh-listen-disabled:::' to dict machine[compute][db01][Key27]
+  Processing X (from xrange): 28
+    Value working on: Management
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'Management' to dict machine[compute][db01][Key28]
+  Processing X (from xrange): 30
+    Value working on: 10.18.53.218
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.53.218' to dict machine[compute][db01][Key30]
+  Processing X (from xrange): 31
+    Value working on: 255.255.240.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.240.0' to dict machine[compute][db01][Key31]
+  Processing X (from xrange): 32
+    Value working on: 10.18.48.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.48.1' to dict machine[compute][db01][Key32]
+  Processing X (from xrange): 33
+    Value working on: nzrpdb901xm.nndc.kp.org
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'nzrpdb901xm.nndc.kp.org' to dict machine[compute][db01][Key33]
+  Processing X (from xrange): 34
+    Value working on: bondeth1:::ssh-listen-disabled:::
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'bondeth1:::ssh-listen-disabled:::' to dict machine[compute][db01][Key34]
+  Processing X (from xrange): 35
+    Value working on: Other
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'Other' to dict machine[compute][db01][Key35]
+  Processing X (from xrange): 36
+    Value working on: eth9 eth10
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'eth9 eth10' to dict machine[compute][db01][Key36]
+  Processing X (from xrange): 37
+    Value working on: 10.31.0.132
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.31.0.132' to dict machine[compute][db01][Key37]
+  Processing X (from xrange): 38
+    Value working on: 255.255.254.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.254.0' to dict machine[compute][db01][Key38]
+  Processing X (from xrange): 39
+    Value working on: 10.31.0.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.31.0.1' to dict machine[compute][db01][Key39]
+  Processing 'line' nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+  data (split /,/) DUMP:
+[   'nzrpce903xm',
+    'nndc.kp.org',
+    'cell',
+    'eth0',
+    'eth0:::::::',
+    'Management',
+    '',
+    '10.18.53.229',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpce903priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.9',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpce903x-rb.nndc.kp.org',
+    '10.18.53.230',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    '']
+    Adding Cell 'cel03' to Hash
+  Adding Cell 'cel03' to machine dictionary.
+  Processing X (from xrange): 0
+    Value working on: nzrpce903xm
+    keys[x] is defined as hostname
+    Adding 'nzrpce903xm' to dict machine[cell][cel03][hostname]
+  Processing X (from xrange): 1
+    Value working on: nndc.kp.org
+    keys[x] is defined as domain
+    Adding 'nndc.kp.org' to dict machine[cell][cel03][domain]
+  Processing X (from xrange): 2
+    Value working on: cell
+    keys[x] is defined as node_type
+    Adding 'cell' to dict machine[cell][cel03][node_type]
+  Processing X (from xrange): 3
+    Value working on: eth0
+    keys[x] is defined as gateway_device
+    Adding 'eth0' to dict machine[cell][cel03][gateway_device]
+  Processing X (from xrange): 4
+    Value working on: eth0:::::::
+    keys[x] is defined as eth_interface
+    Adding 'eth0:::::::' to dict machine[cell][cel03][eth_interface]
+  Processing X (from xrange): 5
+    Value working on: Management
+    keys[x] is defined as eth_type
+    Adding 'Management' to dict machine[cell][cel03][eth_type]
+  Processing X (from xrange): 7
+    Value working on: 10.18.53.229
+    keys[x] is defined as ip
+    Adding '10.18.53.229' to dict machine[cell][cel03][ip]
+  Processing X (from xrange): 8
+    Value working on: 255.255.240.0
+    keys[x] is defined as netmask
+    Adding '255.255.240.0' to dict machine[cell][cel03][netmask]
+  Processing X (from xrange): 9
+    Value working on: 10.18.48.1
+    keys[x] is defined as gateway
+    Adding '10.18.48.1' to dict machine[cell][cel03][gateway]
+  Processing X (from xrange): 10
+    Value working on: nzrpce903priv1.nndc.kp.org
+    keys[x] is defined as bondib_hostname
+    Adding 'nzrpce903priv1.nndc.kp.org' to dict machine[cell][cel03][bondib_hostname]
+  Processing X (from xrange): 11
+    Value working on: Private:active-bond-ib:
+    keys[x] is defined as bondib_type
+    Adding 'Private:active-bond-ib:' to dict machine[cell][cel03][bondib_type]
+  Processing X (from xrange): 12
+    Value working on: 192.168.10.9
+    keys[x] is defined as bondib_ip
+    Adding '192.168.10.9' to dict machine[cell][cel03][bondib_ip]
+  Processing X (from xrange): 13
+    Value working on: 255.255.252.0
+    keys[x] is defined as bondib_netmask
+    Adding '255.255.252.0' to dict machine[cell][cel03][bondib_netmask]
+  Processing X (from xrange): 14
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] is defined as nameservers
+    Adding '172.18.44.21 10.21.13.54' to dict machine[cell][cel03][nameservers]
+  Processing X (from xrange): 15
+    Value working on: 172.18.33.225 172.21.128.95 172.18.33.227
+    keys[x] is defined as ntps
+    Adding '172.18.33.225 172.21.128.95 172.18.33.227' to dict machine[cell][cel03][ntps]
+  Processing X (from xrange): 16
+    Value working on: America/Los_Angeles
+    keys[x] is defined as timezone
+    Adding 'America/Los_Angeles' to dict machine[cell][cel03][timezone]
+  Processing X (from xrange): 17
+    Value working on: ilom:
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'ilom:' to dict machine[cell][cel03][Key17]
+  Processing X (from xrange): 18
+    Value working on: nzrpce903x-rb.nndc.kp.org
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'nzrpce903x-rb.nndc.kp.org' to dict machine[cell][cel03][Key18]
+  Processing X (from xrange): 19
+    Value working on: 10.18.53.230
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.53.230' to dict machine[cell][cel03][Key19]
+  Processing X (from xrange): 20
+    Value working on: 255.255.240.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.240.0' to dict machine[cell][cel03][Key20]
+  Processing X (from xrange): 21
+    Value working on: 10.18.48.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.48.1' to dict machine[cell][cel03][Key21]
+  Processing X (from xrange): 22
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.44.21 10.21.13.54' to dict machine[cell][cel03][Key22]
+  Processing X (from xrange): 23
+    Value working on: enabled
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'enabled' to dict machine[cell][cel03][Key23]
+  Processing X (from xrange): 24
+    Value working on: 172.18.33.225
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.33.225' to dict machine[cell][cel03][Key24]
+  Processing X (from xrange): 25
+    Value working on: 172.21.128.95
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.21.128.95' to dict machine[cell][cel03][Key25]
+  Processing 'line' nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+  data (split /,/) DUMP:
+[   'nzrpce902xm',
+    'nndc.kp.org',
+    'cell',
+    'eth0',
+    'eth0:::::::',
+    'Management',
+    '',
+    '10.18.53.227',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpce902priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.7',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpce902x-rb.nndc.kp.org',
+    '10.18.53.228',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    '']
+    Adding Cell 'cel02' to Hash
+  Adding Cell 'cel02' to machine dictionary.
+  Processing X (from xrange): 0
+    Value working on: nzrpce902xm
+    keys[x] is defined as hostname
+    Adding 'nzrpce902xm' to dict machine[cell][cel02][hostname]
+  Processing X (from xrange): 1
+    Value working on: nndc.kp.org
+    keys[x] is defined as domain
+    Adding 'nndc.kp.org' to dict machine[cell][cel02][domain]
+  Processing X (from xrange): 2
+    Value working on: cell
+    keys[x] is defined as node_type
+    Adding 'cell' to dict machine[cell][cel02][node_type]
+  Processing X (from xrange): 3
+    Value working on: eth0
+    keys[x] is defined as gateway_device
+    Adding 'eth0' to dict machine[cell][cel02][gateway_device]
+  Processing X (from xrange): 4
+    Value working on: eth0:::::::
+    keys[x] is defined as eth_interface
+    Adding 'eth0:::::::' to dict machine[cell][cel02][eth_interface]
+  Processing X (from xrange): 5
+    Value working on: Management
+    keys[x] is defined as eth_type
+    Adding 'Management' to dict machine[cell][cel02][eth_type]
+  Processing X (from xrange): 7
+    Value working on: 10.18.53.227
+    keys[x] is defined as ip
+    Adding '10.18.53.227' to dict machine[cell][cel02][ip]
+  Processing X (from xrange): 8
+    Value working on: 255.255.240.0
+    keys[x] is defined as netmask
+    Adding '255.255.240.0' to dict machine[cell][cel02][netmask]
+  Processing X (from xrange): 9
+    Value working on: 10.18.48.1
+    keys[x] is defined as gateway
+    Adding '10.18.48.1' to dict machine[cell][cel02][gateway]
+  Processing X (from xrange): 10
+    Value working on: nzrpce902priv1.nndc.kp.org
+    keys[x] is defined as bondib_hostname
+    Adding 'nzrpce902priv1.nndc.kp.org' to dict machine[cell][cel02][bondib_hostname]
+  Processing X (from xrange): 11
+    Value working on: Private:active-bond-ib:
+    keys[x] is defined as bondib_type
+    Adding 'Private:active-bond-ib:' to dict machine[cell][cel02][bondib_type]
+  Processing X (from xrange): 12
+    Value working on: 192.168.10.7
+    keys[x] is defined as bondib_ip
+    Adding '192.168.10.7' to dict machine[cell][cel02][bondib_ip]
+  Processing X (from xrange): 13
+    Value working on: 255.255.252.0
+    keys[x] is defined as bondib_netmask
+    Adding '255.255.252.0' to dict machine[cell][cel02][bondib_netmask]
+  Processing X (from xrange): 14
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] is defined as nameservers
+    Adding '172.18.44.21 10.21.13.54' to dict machine[cell][cel02][nameservers]
+  Processing X (from xrange): 15
+    Value working on: 172.18.33.225 172.21.128.95 172.18.33.227
+    keys[x] is defined as ntps
+    Adding '172.18.33.225 172.21.128.95 172.18.33.227' to dict machine[cell][cel02][ntps]
+  Processing X (from xrange): 16
+    Value working on: America/Los_Angeles
+    keys[x] is defined as timezone
+    Adding 'America/Los_Angeles' to dict machine[cell][cel02][timezone]
+  Processing X (from xrange): 17
+    Value working on: ilom:
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'ilom:' to dict machine[cell][cel02][Key17]
+  Processing X (from xrange): 18
+    Value working on: nzrpce902x-rb.nndc.kp.org
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'nzrpce902x-rb.nndc.kp.org' to dict machine[cell][cel02][Key18]
+  Processing X (from xrange): 19
+    Value working on: 10.18.53.228
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.53.228' to dict machine[cell][cel02][Key19]
+  Processing X (from xrange): 20
+    Value working on: 255.255.240.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.240.0' to dict machine[cell][cel02][Key20]
+  Processing X (from xrange): 21
+    Value working on: 10.18.48.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.48.1' to dict machine[cell][cel02][Key21]
+  Processing X (from xrange): 22
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.44.21 10.21.13.54' to dict machine[cell][cel02][Key22]
+  Processing X (from xrange): 23
+    Value working on: enabled
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'enabled' to dict machine[cell][cel02][Key23]
+  Processing X (from xrange): 24
+    Value working on: 172.18.33.225
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.33.225' to dict machine[cell][cel02][Key24]
+  Processing X (from xrange): 25
+    Value working on: 172.21.128.95
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.21.128.95' to dict machine[cell][cel02][Key25]
+  Processing 'line' nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+  data (split /,/) DUMP:
+[   'nzrpce901xm',
+    'nndc.kp.org',
+    'cell',
+    'eth0',
+    'eth0:::::::',
+    'Management',
+    '',
+    '10.18.53.225',
+    '255.255.240.0',
+    '10.18.48.1',
+    'nzrpce901priv1.nndc.kp.org',
+    'Private:active-bond-ib:',
+    '192.168.10.5',
+    '255.255.252.0',
+    '172.18.44.21 10.21.13.54',
+    '172.18.33.225 172.21.128.95 172.18.33.227',
+    'America/Los_Angeles',
+    'ilom:',
+    'nzrpce901x-rb.nndc.kp.org',
+    '10.18.53.226',
+    '255.255.240.0',
+    '10.18.48.1',
+    '172.18.44.21 10.21.13.54',
+    'enabled',
+    '172.18.33.225',
+    '172.21.128.95',
+    '',
+    '']
+    Adding Cell 'cel01' to Hash
+  Adding Cell 'cel01' to machine dictionary.
+  Processing X (from xrange): 0
+    Value working on: nzrpce901xm
+    keys[x] is defined as hostname
+    Adding 'nzrpce901xm' to dict machine[cell][cel01][hostname]
+  Processing X (from xrange): 1
+    Value working on: nndc.kp.org
+    keys[x] is defined as domain
+    Adding 'nndc.kp.org' to dict machine[cell][cel01][domain]
+  Processing X (from xrange): 2
+    Value working on: cell
+    keys[x] is defined as node_type
+    Adding 'cell' to dict machine[cell][cel01][node_type]
+  Processing X (from xrange): 3
+    Value working on: eth0
+    keys[x] is defined as gateway_device
+    Adding 'eth0' to dict machine[cell][cel01][gateway_device]
+  Processing X (from xrange): 4
+    Value working on: eth0:::::::
+    keys[x] is defined as eth_interface
+    Adding 'eth0:::::::' to dict machine[cell][cel01][eth_interface]
+  Processing X (from xrange): 5
+    Value working on: Management
+    keys[x] is defined as eth_type
+    Adding 'Management' to dict machine[cell][cel01][eth_type]
+  Processing X (from xrange): 7
+    Value working on: 10.18.53.225
+    keys[x] is defined as ip
+    Adding '10.18.53.225' to dict machine[cell][cel01][ip]
+  Processing X (from xrange): 8
+    Value working on: 255.255.240.0
+    keys[x] is defined as netmask
+    Adding '255.255.240.0' to dict machine[cell][cel01][netmask]
+  Processing X (from xrange): 9
+    Value working on: 10.18.48.1
+    keys[x] is defined as gateway
+    Adding '10.18.48.1' to dict machine[cell][cel01][gateway]
+  Processing X (from xrange): 10
+    Value working on: nzrpce901priv1.nndc.kp.org
+    keys[x] is defined as bondib_hostname
+    Adding 'nzrpce901priv1.nndc.kp.org' to dict machine[cell][cel01][bondib_hostname]
+  Processing X (from xrange): 11
+    Value working on: Private:active-bond-ib:
+    keys[x] is defined as bondib_type
+    Adding 'Private:active-bond-ib:' to dict machine[cell][cel01][bondib_type]
+  Processing X (from xrange): 12
+    Value working on: 192.168.10.5
+    keys[x] is defined as bondib_ip
+    Adding '192.168.10.5' to dict machine[cell][cel01][bondib_ip]
+  Processing X (from xrange): 13
+    Value working on: 255.255.252.0
+    keys[x] is defined as bondib_netmask
+    Adding '255.255.252.0' to dict machine[cell][cel01][bondib_netmask]
+  Processing X (from xrange): 14
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] is defined as nameservers
+    Adding '172.18.44.21 10.21.13.54' to dict machine[cell][cel01][nameservers]
+  Processing X (from xrange): 15
+    Value working on: 172.18.33.225 172.21.128.95 172.18.33.227
+    keys[x] is defined as ntps
+    Adding '172.18.33.225 172.21.128.95 172.18.33.227' to dict machine[cell][cel01][ntps]
+  Processing X (from xrange): 16
+    Value working on: America/Los_Angeles
+    keys[x] is defined as timezone
+    Adding 'America/Los_Angeles' to dict machine[cell][cel01][timezone]
+  Processing X (from xrange): 17
+    Value working on: ilom:
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'ilom:' to dict machine[cell][cel01][Key17]
+  Processing X (from xrange): 18
+    Value working on: nzrpce901x-rb.nndc.kp.org
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'nzrpce901x-rb.nndc.kp.org' to dict machine[cell][cel01][Key18]
+  Processing X (from xrange): 19
+    Value working on: 10.18.53.226
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.53.226' to dict machine[cell][cel01][Key19]
+  Processing X (from xrange): 20
+    Value working on: 255.255.240.0
+    keys[x] was blank (No header in preconf.csv)
+    Adding '255.255.240.0' to dict machine[cell][cel01][Key20]
+  Processing X (from xrange): 21
+    Value working on: 10.18.48.1
+    keys[x] was blank (No header in preconf.csv)
+    Adding '10.18.48.1' to dict machine[cell][cel01][Key21]
+  Processing X (from xrange): 22
+    Value working on: 172.18.44.21 10.21.13.54
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.44.21 10.21.13.54' to dict machine[cell][cel01][Key22]
+  Processing X (from xrange): 23
+    Value working on: enabled
+    keys[x] was blank (No header in preconf.csv)
+    Adding 'enabled' to dict machine[cell][cel01][Key23]
+  Processing X (from xrange): 24
+    Value working on: 172.18.33.225
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.18.33.225' to dict machine[cell][cel01][Key24]
+  Processing X (from xrange): 25
+    Value working on: 172.21.128.95
+    keys[x] was blank (No header in preconf.csv)
+    Adding '172.21.128.95' to dict machine[cell][cel01][Key25]
+"        RETURN: {'keys': ['hostname', 'domain', 'node_type', 'gateway_device', 'eth_interface', 'eth_type', 'mac_address', 'ip', 'netmask', 'gateway', 'bondib_hostname', 'bondib_type', 'bondib_ip', 'bondib_netmask', 'nameservers', 'ntps', 'timezone'], 'cell': {'cel01': {'domain': 'nndc.kp.org', 'ip': '10.18.53.225', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce901priv1.nndc.kp.org', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce901xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce901xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.5', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.226', 'Key18': 'nzrpce901x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel03': {'domain': 'nndc.kp.org', 'ip': '10.18.53.229', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce903priv1.nndc.kp.org', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce903xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce903xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.9', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.230', 'Key18': 'nzrpce903x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel02': {'domain': 'nndc.kp.org', 'ip': '10.18.53.227', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce902priv1.nndc.kp.org', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce902xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce902xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.7', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.228', 'Key18': 'nzrpce902x-rb.nndc.kp.org', 'Key17': 'ilom:'}}, 'compute': {'db02': {'domain': 'nndc.kp.org', 'ip': '10.18.33.240', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb902priv1.nndc.kp.org', 'Key37': '10.31.0.134', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb902xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb902xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.3', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.223', 'Key33': 'nzrpdb902xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.224', 'Key18': 'nzrpdb902x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}, 'db01': {'domain': 'nndc.kp.org', 'ip': '10.18.33.237', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb901priv1.nndc.kp.org', 'Key37': '10.31.0.132', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb901xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb901xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.1', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.218', 'Key33': 'nzrpdb901xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.219', 'Key18': 'nzrpdb901x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}}, 'preconfVer': 'XXX'}"
+[<--Sub] (Wed Jan 10 00:39:57 2024) _loadXXX: PreconfReader.
+
+  OneCommand version: XXX
+  OneCommand machineDescription: ZDLRA RA23 Elastic Rack HC 22TB
+[VAR] dbMachineModel: X7-X10-ZDLRA
+"        RETURN: {'keys': ['hostname', 'domain', 'node_type', 'gateway_device', 'eth_interface', 'eth_type', 'mac_address', 'ip', 'netmask', 'gateway', 'bondib_hostname', 'bondib_type', 'bondib_ip', 'bondib_netmask', 'nameservers', 'ntps', 'timezone'], 'cell': {'cel01': {'domain': 'nndc.kp.org', 'ip': '10.18.53.225', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce901priv1.nndc.kp.org', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce901xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce901xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.5', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.226', 'Key18': 'nzrpce901x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel03': {'domain': 'nndc.kp.org', 'ip': '10.18.53.229', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce903priv1.nndc.kp.org', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce903xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce903xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.9', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.230', 'Key18': 'nzrpce903x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel02': {'domain': 'nndc.kp.org', 'ip': '10.18.53.227', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce902priv1.nndc.kp.org', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce902xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce902xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.7', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.228', 'Key18': 'nzrpce902x-rb.nndc.kp.org', 'Key17': 'ilom:'}}, 'compute': {'db02': {'domain': 'nndc.kp.org', 'ip': '10.18.33.240', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb902priv1.nndc.kp.org', 'Key37': '10.31.0.134', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb902xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb902xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.3', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.223', 'Key33': 'nzrpdb902xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.224', 'Key18': 'nzrpdb902x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}, 'db01': {'domain': 'nndc.kp.org', 'ip': '10.18.33.237', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb901priv1.nndc.kp.org', 'Key37': '10.31.0.132', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb901xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb901xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.1', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.218', 'Key33': 'nzrpdb901xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.219', 'Key18': 'nzrpdb901x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}}, 'preconfVer': 'XXX'}"
+[<--Sub] (Wed Jan 10 00:39:57 2024) loadPreconf: PreconfReader.
+
+  preconfHash DUMP:
+{   'cell': {   'cel01': {   'Key17': 'ilom:',
+                             'Key18': 'nzrpce901x-rb.nndc.kp.org',
+                             'Key19': '10.18.53.226',
+                             'Key20': '255.255.240.0',
+                             'Key21': '10.18.48.1',
+                             'Key22': '172.18.44.21 10.21.13.54',
+                             'Key23': 'enabled',
+                             'Key24': '172.18.33.225',
+                             'Key25': '172.21.128.95',
+                             'NodeName': 'nzrpce901xm',
+                             'bondib_hostname': 'nzrpce901priv1.nndc.kp.org',
+                             'bondib_ip': '192.168.10.5',
+                             'bondib_netmask': '255.255.252.0',
+                             'bondib_type': 'Private:active-bond-ib:',
+                             'domain': 'nndc.kp.org',
+                             'eth_interface': 'eth0:::::::',
+                             'eth_type': 'Management',
+                             'gateway': '10.18.48.1',
+                             'gateway_device': 'eth0',
+                             'hostname': 'nzrpce901xm',
+                             'ip': '10.18.53.225',
+                             'nameservers': '172.18.44.21 10.21.13.54',
+                             'netmask': '255.255.240.0',
+                             'node_type': 'cell',
+                             'ntps': '172.18.33.225 172.21.128.95 172.18.33.227',
+                             'timezone': 'America/Los_Angeles'},
+                'cel02': {   'Key17': 'ilom:',
+                             'Key18': 'nzrpce902x-rb.nndc.kp.org',
+                             'Key19': '10.18.53.228',
+                             'Key20': '255.255.240.0',
+                             'Key21': '10.18.48.1',
+                             'Key22': '172.18.44.21 10.21.13.54',
+                             'Key23': 'enabled',
+                             'Key24': '172.18.33.225',
+                             'Key25': '172.21.128.95',
+                             'NodeName': 'nzrpce902xm',
+                             'bondib_hostname': 'nzrpce902priv1.nndc.kp.org',
+                             'bondib_ip': '192.168.10.7',
+                             'bondib_netmask': '255.255.252.0',
+                             'bondib_type': 'Private:active-bond-ib:',
+                             'domain': 'nndc.kp.org',
+                             'eth_interface': 'eth0:::::::',
+                             'eth_type': 'Management',
+                             'gateway': '10.18.48.1',
+                             'gateway_device': 'eth0',
+                             'hostname': 'nzrpce902xm',
+                             'ip': '10.18.53.227',
+                             'nameservers': '172.18.44.21 10.21.13.54',
+                             'netmask': '255.255.240.0',
+                             'node_type': 'cell',
+                             'ntps': '172.18.33.225 172.21.128.95 172.18.33.227',
+                             'timezone': 'America/Los_Angeles'},
+                'cel03': {   'Key17': 'ilom:',
+                             'Key18': 'nzrpce903x-rb.nndc.kp.org',
+                             'Key19': '10.18.53.230',
+                             'Key20': '255.255.240.0',
+                             'Key21': '10.18.48.1',
+                             'Key22': '172.18.44.21 10.21.13.54',
+                             'Key23': 'enabled',
+                             'Key24': '172.18.33.225',
+                             'Key25': '172.21.128.95',
+                             'NodeName': 'nzrpce903xm',
+                             'bondib_hostname': 'nzrpce903priv1.nndc.kp.org',
+                             'bondib_ip': '192.168.10.9',
+                             'bondib_netmask': '255.255.252.0',
+                             'bondib_type': 'Private:active-bond-ib:',
+                             'domain': 'nndc.kp.org',
+                             'eth_interface': 'eth0:::::::',
+                             'eth_type': 'Management',
+                             'gateway': '10.18.48.1',
+                             'gateway_device': 'eth0',
+                             'hostname': 'nzrpce903xm',
+                             'ip': '10.18.53.229',
+                             'nameservers': '172.18.44.21 10.21.13.54',
+                             'netmask': '255.255.240.0',
+                             'node_type': 'cell',
+                             'ntps': '172.18.33.225 172.21.128.95 172.18.33.227',
+                             'timezone': 'America/Los_Angeles'}},
+    'compute': {   'db01': {   'Key17': 'ilom:',
+                               'Key18': 'nzrpdb901x-rb.nndc.kp.org',
+                               'Key19': '10.18.53.219',
+                               'Key20': '255.255.240.0',
+                               'Key21': '10.18.48.1',
+                               'Key22': '172.18.44.21 10.21.13.54',
+                               'Key23': 'enabled',
+                               'Key24': '172.18.33.225',
+                               'Key25': '172.21.128.95',
+                               'Key27': 'eth0:::ssh-listen-disabled:::',
+                               'Key28': 'Management',
+                               'Key30': '10.18.53.218',
+                               'Key31': '255.255.240.0',
+                               'Key32': '10.18.48.1',
+                               'Key33': 'nzrpdb901xm.nndc.kp.org',
+                               'Key34': 'bondeth1:::ssh-listen-disabled:::',
+                               'Key35': 'Other',
+                               'Key36': 'eth9 eth10',
+                               'Key37': '10.31.0.132',
+                               'Key38': '255.255.254.0',
+                               'Key39': '10.31.0.1',
+                               'NodeName': 'nzrpdb901xe1',
+                               'bondib_hostname': 'nzrpdb901priv1.nndc.kp.org',
+                               'bondib_ip': '192.168.10.1',
+                               'bondib_netmask': '255.255.252.0',
+                               'bondib_type': 'Private:active-bond-ib:',
+                               'domain': 'nndc.kp.org',
+                               'eth_interface': 'bondeth0:lacp:::::',
+                               'eth_type': 'SCAN',
+                               'gateway': '10.18.32.1',
+                               'gateway_device': 'eth0',
+                               'hostname': 'nzrpdb901xe1',
+                               'ip': '10.18.33.237',
+                               'mac_address': 'eth1 eth2',
+                               'nameservers': '172.18.44.21 10.21.13.54',
+                               'netmask': '255.255.240.0',
+                               'node_type': 'db',
+                               'ntps': '172.18.33.225 172.21.128.95 172.18.33.227',
+                               'timezone': 'America/Los_Angeles'},
+                   'db02': {   'Key17': 'ilom:',
+                               'Key18': 'nzrpdb902x-rb.nndc.kp.org',
+                               'Key19': '10.18.53.224',
+                               'Key20': '255.255.240.0',
+                               'Key21': '10.18.48.1',
+                               'Key22': '172.18.44.21 10.21.13.54',
+                               'Key23': 'enabled',
+                               'Key24': '172.18.33.225',
+                               'Key25': '172.21.128.95',
+                               'Key27': 'eth0:::ssh-listen-disabled:::',
+                               'Key28': 'Management',
+                               'Key30': '10.18.53.223',
+                               'Key31': '255.255.240.0',
+                               'Key32': '10.18.48.1',
+                               'Key33': 'nzrpdb902xm.nndc.kp.org',
+                               'Key34': 'bondeth1:::ssh-listen-disabled:::',
+                               'Key35': 'Other',
+                               'Key36': 'eth9 eth10',
+                               'Key37': '10.31.0.134',
+                               'Key38': '255.255.254.0',
+                               'Key39': '10.31.0.1',
+                               'NodeName': 'nzrpdb902xe1',
+                               'bondib_hostname': 'nzrpdb902priv1.nndc.kp.org',
+                               'bondib_ip': '192.168.10.3',
+                               'bondib_netmask': '255.255.252.0',
+                               'bondib_type': 'Private:active-bond-ib:',
+                               'domain': 'nndc.kp.org',
+                               'eth_interface': 'bondeth0:lacp:::::',
+                               'eth_type': 'SCAN',
+                               'gateway': '10.18.32.1',
+                               'gateway_device': 'eth0',
+                               'hostname': 'nzrpdb902xe1',
+                               'ip': '10.18.33.240',
+                               'mac_address': 'eth1 eth2',
+                               'nameservers': '172.18.44.21 10.21.13.54',
+                               'netmask': '255.255.240.0',
+                               'node_type': 'db',
+                               'ntps': '172.18.33.225 172.21.128.95 172.18.33.227',
+                               'timezone': 'America/Los_Angeles'}},
+    'keys': [   'hostname',
+                'domain',
+                'node_type',
+                'gateway_device',
+                'eth_interface',
+                'eth_type',
+                'mac_address',
+                'ip',
+                'netmask',
+                'gateway',
+                'bondib_hostname',
+                'bondib_type',
+                'bondib_ip',
+                'bondib_netmask',
+                'nameservers',
+                'ntps',
+                'timezone'],
+    'preconfVer': 'XXX'}
+  [VAR] cellCount: 3
+
+  [VAR] dbCount: 2
+
+  [VAR] systemNodeCount: 5
+
+  [Normal Exadata] Entered because dbCount >= 1
+
+  Processing Compute Node:
+
+    [VAR] preconfHash['compute']['db01']['factory_ip'] = 192.168.1.107
+
+    [VAR] myMachine['db01]['ip'] = 192.168.1.107
+
+  Processing Compute Node:
+
+    [VAR] preconfHash['compute']['db02']['factory_ip'] = 192.168.1.108
+
+    [VAR] myMachine['db02]['ip'] = 192.168.1.108
+
+  Processing Cell Node:
+
+    [VAR] preconfHash['cell']['cel01']['factory_ip'] = 192.168.1.101
+
+    [VAR] myMachine['cel01]['ip'] = 192.168.1.101
+
+  Processing Cell Node:
+
+    [VAR] preconfHash['cell']['cel02']['factory_ip'] = 192.168.1.102
+
+    [VAR] myMachine['cel02]['ip'] = 192.168.1.102
+
+  Processing Cell Node:
+
+    [VAR] preconfHash['cell']['cel03']['factory_ip'] = 192.168.1.103
+
+    [VAR] myMachine['cel03]['ip'] = 192.168.1.103
+
+Press <Enter> to continue
+"        RETURN5_preconfHash: {'keys': ['hostname', 'domain', 'node_type', 'gateway_device', 'eth_interface', 'eth_type', 'mac_address', 'ip', 'netmask', 'gateway', 'bondib_hostname', 'bondib_type', 'bondib_ip', 'bondib_netmask', 'nameservers', 'ntps', 'timezone'], 'cell': {'cel01': {'domain': 'nndc.kp.org', 'ip': '10.18.53.225', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce901priv1.nndc.kp.org', 'factory_ip': '192.168.1.101', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce901xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce901xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.5', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.226', 'Key18': 'nzrpce901x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel03': {'domain': 'nndc.kp.org', 'ip': '10.18.53.229', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce903priv1.nndc.kp.org', 'factory_ip': '192.168.1.103', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce903xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce903xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.9', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.230', 'Key18': 'nzrpce903x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel02': {'domain': 'nndc.kp.org', 'ip': '10.18.53.227', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce902priv1.nndc.kp.org', 'factory_ip': '192.168.1.102', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce902xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce902xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.7', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.228', 'Key18': 'nzrpce902x-rb.nndc.kp.org', 'Key17': 'ilom:'}}, 'compute': {'db02': {'domain': 'nndc.kp.org', 'ip': '10.18.33.240', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb902priv1.nndc.kp.org', 'factory_ip': '192.168.1.108', 'Key37': '10.31.0.134', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb902xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb902xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.3', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.223', 'Key33': 'nzrpdb902xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.224', 'Key18': 'nzrpdb902x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}, 'db01': {'domain': 'nndc.kp.org', 'ip': '10.18.33.237', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb901priv1.nndc.kp.org', 'factory_ip': '192.168.1.107', 'Key37': '10.31.0.132', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb901xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb901xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.1', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.218', 'Key33': 'nzrpdb901xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.219', 'Key18': 'nzrpdb901x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}}, 'preconfVer': 'XXX'}"
+'        RETURN3_systemNodeCount: 5'
+'        RETURN2_dbCount: 2'
+'        RETURN1_cellCount: 3'
+"        RETURN4_myMachine: {'db02': {'ip': '192.168.1.108'}, 'db01': {'ip': '192.168.1.107'}, 'cel01': {'ip': '192.168.1.101'}, 'cel03': {'ip': '192.168.1.103'}, 'cel02': {'ip': '192.168.1.102'}}"
+[<--Sub] (Wed Jan 10 00:40:00 2024) _processPreConf: None
+
+
+[-->Sub] (Wed Jan 10 00:40:00 2024) _getMACSfromIPMItool: None
+"        myMachine: {'db02': {'ip': '192.168.1.108'}, 'db01': {'ip': '192.168.1.107'}, 'cel01': {'ip': '192.168.1.101'}, 'cel03': {'ip': '192.168.1.103'}, 'cel02': {'ip': '192.168.1.102'}}"
+'        configuringXn8: 0'
+
+When Processing STDERR
+
+[SEARCH]:Error: Unable to establish
+
+[SEARCH]:command not found
+
+[SEARCH]:not recognized as an internal or external command
+
+
+
+    [VARS] key[cel01] value[{'ip': '192.168.1.101'}] dbMachineModel[X7-X10-ZDLRA] configuringXn8[0]
+
+
+[-->Sub] (Wed Jan 10 00:40:00 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SYS/MB/NET0 fru_macaddress'
+'        ipValue: 192.168.1.101'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"'
+[<--Sub] (Wed Jan 10 00:40:00 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to get the MAC address.
+
+oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> show /SYS/MB/NET0 fru_macaddress
+
+
+   [STDOUT]:
+
+
+   [STDOUT]: /SYS/MB/NET0
+
+
+   [STDOUT]:    Properties:
+
+
+   [STDOUT]:        fru_macaddress = a8:69:8c:11:6f:04
+
+
+
+FRUmacaddress = 'a8:69:8c:11:6f:04'
+
+
+
+    [VARS] key[cel02] value[{'ip': '192.168.1.102'}] dbMachineModel[X7-X10-ZDLRA] configuringXn8[0]
+
+
+[-->Sub] (Wed Jan 10 00:40:01 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SYS/MB/NET0 fru_macaddress'
+'        ipValue: 192.168.1.102'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"'
+[<--Sub] (Wed Jan 10 00:40:01 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to get the MAC address.
+
+oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> show /SYS/MB/NET0 fru_macaddress
+
+
+   [STDOUT]:
+
+
+   [STDOUT]: /SYS/MB/NET0
+
+
+   [STDOUT]:    Properties:
+
+
+   [STDOUT]:        fru_macaddress = a8:69:8c:11:6f:80
+
+
+
+FRUmacaddress = 'a8:69:8c:11:6f:80'
+
+
+
+    [VARS] key[cel03] value[{'ip': '192.168.1.103'}] dbMachineModel[X7-X10-ZDLRA] configuringXn8[0]
+
+
+[-->Sub] (Wed Jan 10 00:40:03 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SYS/MB/NET0 fru_macaddress'
+'        ipValue: 192.168.1.103'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"'
+[<--Sub] (Wed Jan 10 00:40:03 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to get the MAC address.
+
+oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> show /SYS/MB/NET0 fru_macaddress
+
+
+   [STDOUT]:
+
+
+   [STDOUT]: /SYS/MB/NET0
+
+
+   [STDOUT]:    Properties:
+
+
+   [STDOUT]:        fru_macaddress = a8:69:8c:11:6e:c0
+
+
+
+FRUmacaddress = 'a8:69:8c:11:6e:c0'
+
+
+
+    [VARS] key[db01] value[{'ip': '192.168.1.107'}] dbMachineModel[X7-X10-ZDLRA] configuringXn8[0]
+
+
+[-->Sub] (Wed Jan 10 00:40:04 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SYS/MB/NET0 fru_macaddress'
+'        ipValue: 192.168.1.107'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"'
+[<--Sub] (Wed Jan 10 00:40:04 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to get the MAC address.
+
+oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> show /SYS/MB/NET0 fru_macaddress
+
+
+   [STDOUT]:
+
+
+   [STDOUT]: /SYS/MB/NET0
+
+
+   [STDOUT]:    Properties:
+
+
+   [STDOUT]:        fru_macaddress = a8:69:8c:11:59:98
+
+
+
+FRUmacaddress = 'a8:69:8c:11:59:98'
+
+
+
+    [VARS] key[db02] value[{'ip': '192.168.1.108'}] dbMachineModel[X7-X10-ZDLRA] configuringXn8[0]
+
+
+[-->Sub] (Wed Jan 10 00:40:06 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SYS/MB/NET0 fru_macaddress'
+'        ipValue: 192.168.1.108'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"'
+[<--Sub] (Wed Jan 10 00:40:06 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to get the MAC address.
+
+oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "show /SYS/MB/NET0 fru_macaddress"
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> show /SYS/MB/NET0 fru_macaddress
+
+
+   [STDOUT]:
+
+
+   [STDOUT]: /SYS/MB/NET0
+
+
+   [STDOUT]:    Properties:
+
+
+   [STDOUT]:        fru_macaddress = a8:69:8c:11:59:94
+
+
+
+FRUmacaddress = 'a8:69:8c:11:59:94'
+
+"        RETURN_myMachine: {'db02': {'ip': '192.168.1.108', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'ip': '192.168.1.107', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'ip': '192.168.1.101', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'ip': '192.168.1.103', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'ip': '192.168.1.102', 'mac': 'a8:69:8c:11:6f:80'}}"
+[<--Sub] (Wed Jan 10 00:40:08 2024) _getMACSfromIPMItool: None
+
+
+[-->Sub] (Wed Jan 10 00:40:09 2024) _getPreConfKeys: None
+"        preconfHash: {'keys': ['hostname', 'domain', 'node_type', 'gateway_device', 'eth_interface', 'eth_type', 'mac_address', 'ip', 'netmask', 'gateway', 'bondib_hostname', 'bondib_type', 'bondib_ip', 'bondib_netmask', 'nameservers', 'ntps', 'timezone'], 'cell': {'cel01': {'domain': 'nndc.kp.org', 'ip': '10.18.53.225', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce901priv1.nndc.kp.org', 'factory_ip': '192.168.1.101', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce901xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce901xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.5', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.226', 'Key18': 'nzrpce901x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel03': {'domain': 'nndc.kp.org', 'ip': '10.18.53.229', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce903priv1.nndc.kp.org', 'factory_ip': '192.168.1.103', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce903xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce903xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.9', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.230', 'Key18': 'nzrpce903x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel02': {'domain': 'nndc.kp.org', 'ip': '10.18.53.227', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce902priv1.nndc.kp.org', 'factory_ip': '192.168.1.102', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce902xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce902xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.7', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.228', 'Key18': 'nzrpce902x-rb.nndc.kp.org', 'Key17': 'ilom:'}}, 'compute': {'db02': {'domain': 'nndc.kp.org', 'ip': '10.18.33.240', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb902priv1.nndc.kp.org', 'factory_ip': '192.168.1.108', 'Key37': '10.31.0.134', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb902xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb902xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.3', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.223', 'Key33': 'nzrpdb902xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.224', 'Key18': 'nzrpdb902x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}, 'db01': {'domain': 'nndc.kp.org', 'ip': '10.18.33.237', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb901priv1.nndc.kp.org', 'factory_ip': '192.168.1.107', 'Key37': '10.31.0.132', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb901xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb901xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.1', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.218', 'Key33': 'nzrpdb901xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.219', 'Key18': 'nzrpdb901x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}}, 'preconfVer': 'XXX'}"
+    Reading Preconf keys: hostname
+
+    Reading Preconf keys: domain
+
+    Reading Preconf keys: node_type
+
+    Reading Preconf keys: gateway_device
+
+    Reading Preconf keys: eth_interface
+
+    Reading Preconf keys: eth_type
+
+    + Matched Ethernet Key 'eth_type' ('eth_type') in column: 5
+
+    Reading Preconf keys: mac_address
+
+    + Matched MAC Key 'mac_address' ('mac_address' or 'mac address') in column: 6
+
+    Reading Preconf keys: ip
+
+    + Matched IP Key 'ip' ('ip') in column: 7
+
+    Reading Preconf keys: netmask
+
+    Reading Preconf keys: gateway
+
+    Reading Preconf keys: bondib_hostname
+
+    Reading Preconf keys: bondib_type
+
+    Reading Preconf keys: bondib_ip
+
+    Reading Preconf keys: bondib_netmask
+
+    Reading Preconf keys: nameservers
+
+    Reading Preconf keys: ntps
+
+    Reading Preconf keys: timezone
+
+'        RETURN1_ip_key: 7'
+'        RETURN2_eth_type_key: 5'
+'        RETURN3_mac_kdy: 6'
+[<--Sub] (Wed Jan 10 00:40:09 2024) _getPreConfKeys: None
+
+
+[-->Sub] (Wed Jan 10 00:40:10 2024) _validateFilesExist: None
+'        tempPXEComputeNode: /tmp/PXEComputeNode.1704868789'
+'        cellCount: 3'
+'        dbCount: 2'
+'        tempPXECellNode: /tmp/PXECellNode.1704868789'
+"        imageVersionToDeploy: {'cell': '23.1.8.0.0_LINUX.X64_231109-1', 'compute': '23.1.8.0.0_LINUX.X64_231109-1'}"
+'        isoVersionToDeploy: '
+   tempFile = /tmp/PXECellNode.1704868789
+
+       line = set default 0
+
+
+       line = set timeout=10
+
+
+       line = 
+
+
+       line = menuentry 'Exadata cell Node' {
+
+
+       line =   echo "Loading efi/vmlinux"
+
+
+       line =   linuxefi efi/vmlinux-iso-23.1.8.0.0-231109-cell stit dhcp pxe boot-from=uefi factory reboot-on-success notests=diskgroup preconf=http://192.168.1.250/iso/preconf.csv iso_uri=http://192.168.1.250/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso console=ttyS0,115200n8
+
+
+    Init for Imaging: /tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-cell
+
+       line =   echo "Loading efi/initrd.img"
+
+
+       line =   initrdefi efi/initrd-iso-23.1.8.0.0-231109-cell.img
+
+
+    Init for Imaging: /tftpboot/efi/initrd-iso-23.1.8.0.0-231109-cell.img
+
+       line =   echo "Oracle ACS Exadata Reimaging....."
+
+
+       line = }
+
+
+       line = 
+
+
+    Image for Imaging: /u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso
+
+line starts with set
+
+line starts with set
+
+line starts with 
+
+line starts with menuentry
+
+line starts with echo
+
+line starts with linuxefi
+
+    Init for Imaging: /tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-compute
+
+line starts with echo
+
+line starts with initrdefi
+
+    Init for Imaging: /tftpboot/efi/initrd-iso-23.1.8.0.0-231109-compute.img
+
+line starts with echo
+
+line starts with }
+
+line starts with 
+
+    Image for Imaging: /u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso
+
+    MD5 for Image: /u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5
+
+  fileCheck DUMP:
+[   '/tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-cell',
+    '/tftpboot/efi/initrd-iso-23.1.8.0.0-231109-cell.img',
+    '/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso',
+    '/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5',
+    '/tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-compute',
+    '/tftpboot/efi/initrd-iso-23.1.8.0.0-231109-compute.img',
+    '/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso',
+    '/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5']
+  os.path.isfile(/tftpboot/efi/initrd-iso-23.1.8.0.0-231109-cell.img): True
+
+  os.path.islink(/tftpboot/efi/initrd-iso-23.1.8.0.0-231109-cell.img): False
+
+  os.access(/tftpboot/efi/initrd-iso-23.1.8.0.0-231109-cell.img): True
+
+  os.path.isfile(/tftpboot/efi/initrd-iso-23.1.8.0.0-231109-compute.img): True
+
+  os.path.islink(/tftpboot/efi/initrd-iso-23.1.8.0.0-231109-compute.img): False
+
+  os.access(/tftpboot/efi/initrd-iso-23.1.8.0.0-231109-compute.img): True
+
+  os.path.isfile(/tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-cell): True
+
+  os.path.islink(/tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-cell): False
+
+  os.access(/tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-cell): True
+
+  os.path.isfile(/tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-compute): True
+
+  os.path.islink(/tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-compute): False
+
+  os.access(/tftpboot/efi/vmlinux-iso-23.1.8.0.0-231109-compute): True
+
+  os.path.isfile(/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso): True
+
+  os.path.islink(/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso): False
+
+  os.access(/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso): True
+
+  os.path.isfile(/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5): True
+
+  os.path.islink(/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5): False
+
+  os.access(/u01/exadata_nfs/iso/cell_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5): True
+
+  os.path.isfile(/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso): True
+
+  os.path.islink(/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso): False
+
+  os.access(/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso): True
+
+  os.path.isfile(/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5): True
+
+  os.path.islink(/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5): False
+
+  os.access(/u01/exadata_nfs/iso/compute_23.1.8.0.0_LINUX.X64_231109-1.x86_64.iso.md5): True
+
+[<--Sub] (Wed Jan 10 00:40:10 2024) _validateFilesExist: None
+
+
+[-->Sub] (Wed Jan 10 00:40:11 2024) _buildPreConf: None
+'        eth_type_key: 5'
+'        mac_key: 6'
+"        precomfHash: {'keys': ['hostname', 'domain', 'node_type', 'gateway_device', 'eth_interface', 'eth_type', 'mac_address', 'ip', 'netmask', 'gateway', 'bondib_hostname', 'bondib_type', 'bondib_ip', 'bondib_netmask', 'nameservers', 'ntps', 'timezone'], 'cell': {'cel01': {'domain': 'nndc.kp.org', 'ip': '10.18.53.225', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce901priv1.nndc.kp.org', 'factory_ip': '192.168.1.101', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce901xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce901xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.5', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.226', 'Key18': 'nzrpce901x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel03': {'domain': 'nndc.kp.org', 'ip': '10.18.53.229', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce903priv1.nndc.kp.org', 'factory_ip': '192.168.1.103', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce903xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce903xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.9', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.230', 'Key18': 'nzrpce903x-rb.nndc.kp.org', 'Key17': 'ilom:'}, 'cel02': {'domain': 'nndc.kp.org', 'ip': '10.18.53.227', 'node_type': 'cell', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.48.1', 'bondib_hostname': 'nzrpce902priv1.nndc.kp.org', 'factory_ip': '192.168.1.102', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpce902xm', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'Management', 'Key24': '172.18.33.225', 'Key25': '172.21.128.95', 'NodeName': 'nzrpce902xm', 'eth_interface': 'eth0:::::::', 'gateway_device': 'eth0', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.7', 'bondib_netmask': '255.255.252.0', 'Key19': '10.18.53.228', 'Key18': 'nzrpce902x-rb.nndc.kp.org', 'Key17': 'ilom:'}}, 'compute': {'db02': {'domain': 'nndc.kp.org', 'ip': '10.18.33.240', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb902priv1.nndc.kp.org', 'factory_ip': '192.168.1.108', 'Key37': '10.31.0.134', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb902xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb902xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.3', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.223', 'Key33': 'nzrpdb902xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.224', 'Key18': 'nzrpdb902x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}, 'db01': {'domain': 'nndc.kp.org', 'ip': '10.18.33.237', 'node_type': 'db', 'timezone': 'America/Los_Angeles', 'gateway': '10.18.32.1', 'bondib_hostname': 'nzrpdb901priv1.nndc.kp.org', 'factory_ip': '192.168.1.107', 'Key37': '10.31.0.132', 'nameservers': '172.18.44.21 10.21.13.54', 'ntps': '172.18.33.225 172.21.128.95 172.18.33.227', 'hostname': 'nzrpdb901xe1', 'Key22': '172.18.44.21 10.21.13.54', 'Key23': 'enabled', 'Key20': '255.255.240.0', 'Key21': '10.18.48.1', 'eth_type': 'SCAN', 'Key27': 'eth0:::ssh-listen-disabled:::', 'Key24': '172.18.33.225', 'mac_address': 'eth1 eth2', 'Key28': 'Management', 'Key36': 'eth9 eth10', 'NodeName': 'nzrpdb901xe1', 'eth_interface': 'bondeth0:lacp:::::', 'Key25': '172.21.128.95', 'gateway_device': 'eth0', 'Key39': '10.31.0.1', 'netmask': '255.255.240.0', 'bondib_type': 'Private:active-bond-ib:', 'bondib_ip': '192.168.10.1', 'bondib_netmask': '255.255.252.0', 'Key31': '255.255.240.0', 'Key30': '10.18.53.218', 'Key33': 'nzrpdb901xm.nndc.kp.org', 'Key32': '10.18.48.1', 'Key35': 'Other', 'Key34': 'bondeth1:::ssh-listen-disabled:::', 'Key19': '10.18.53.219', 'Key18': 'nzrpdb901x-rb.nndc.kp.org', 'Key17': 'ilom:', 'Key38': '255.255.254.0'}}, 'preconfVer': 'XXX'}"
+'        systemNodeCount: 5'
+"        myMachine: {'db02': {'ip': '192.168.1.108', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'ip': '192.168.1.107', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'ip': '192.168.1.101', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'ip': '192.168.1.103', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'ip': '192.168.1.102', 'mac': 'a8:69:8c:11:6f:80'}}"
+'        preconfToUse: KP-KPMC-NNDC-nzrpdb901xm-20231215-nzrpdb901-preconf_04c2890c-6d7c-8170-88b7-f19a23c430ba.csv'
+'        ip_key: 7'
+   Assigning the following [compute] values to myMachine:
+
+   * myMachine[db02]['newname'] = nzrpdb902xe1
+
+   * myMachine[db02]['newip'] = 10.18.33.240
+
+   * myMachine[db02]['nodeType'] = db
+
+   * myMachine[db01]['newname'] = nzrpdb901xe1
+
+   * myMachine[db01]['newip'] = 10.18.33.237
+
+   * myMachine[db01]['nodeType'] = db
+
+   Assigning the following [cell] values to myMachine:
+
+   * myMachine[cel01]['newname'] = nzrpce901xm
+
+   * myMachine[cel01]['newip'] = 10.18.53.225
+
+   * myMachine[cel01]['nodeType'] = cell
+
+   * myMachine[cel03]['newname'] = nzrpce903xm
+
+   * myMachine[cel03]['newip'] = 10.18.53.229
+
+   * myMachine[cel03]['nodeType'] = cell
+
+   * myMachine[cel02]['newname'] = nzrpce902xm
+
+   * myMachine[cel02]['newip'] = 10.18.53.227
+
+   * myMachine[cel02]['nodeType'] = cell
+
+    myMachine DUMP:
+{   'cel01': {   'ip': '192.168.1.101',
+                 'mac': 'a8:69:8c:11:6f:04',
+                 'newip': '10.18.53.225',
+                 'newname': 'nzrpce901xm',
+                 'nodeType': 'cell'},
+    'cel02': {   'ip': '192.168.1.102',
+                 'mac': 'a8:69:8c:11:6f:80',
+                 'newip': '10.18.53.227',
+                 'newname': 'nzrpce902xm',
+                 'nodeType': 'cell'},
+    'cel03': {   'ip': '192.168.1.103',
+                 'mac': 'a8:69:8c:11:6e:c0',
+                 'newip': '10.18.53.229',
+                 'newname': 'nzrpce903xm',
+                 'nodeType': 'cell'},
+    'db01': {   'ip': '192.168.1.107',
+                'mac': 'a8:69:8c:11:59:98',
+                'newip': '10.18.33.237',
+                'newname': 'nzrpdb901xe1',
+                'nodeType': 'db'},
+    'db02': {   'ip': '192.168.1.108',
+                'mac': 'a8:69:8c:11:59:94',
+                'newip': '10.18.33.240',
+                'newname': 'nzrpdb902xe1',
+                'nodeType': 'db'}}
+    preconfLines DUMP:
+[   'Cell,Preconfig,version,11.2.2.1.0,,,,,,,\n',
+    '\n',
+    '# WARNING - DO NOT EDIT THIS FILE USING EXCEL\n',
+    '\n',
+    '# IMPORTANT - YOU DO NOT NEED TO MERGE THE MAC ADDRESSES INTO THIS FILE\n',
+    '\n',
+    '# OneCommand,XXX,ZDLRA RA23 Elastic Rack HC 22TB\n',
+    '\n',
+    '# This is a main format for 11.2.2.1.0\n',
+    '\n',
+    'hostname,domain,node type,gateway device,eth interface,eth type,mac address,ip,netmask,gateway,bondib hostname,bondib type,bondib ip,bondib netmask,nameservers,ntps,timezone\n',
+    '\n',
+    '# DO NOT edit the above lines\n',
+    '#\n',
+    '\n',
+    '#\n',
+    '#comp\n',
+    'nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org\n',
+    'nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org\n',
+    '#\n',
+    '#cell\n',
+    'nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,\n',
+    'nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,\n',
+    'nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,\n',
+    '\n',
+    '# Do NOT edit below this line\n',
+    ',,,,,,,,,,\n']
+    skipFilter DUMP:
+(',', '#', 'Cell', 'hostname', ' ', '\n', '\r\n')
+    [In skipFilter] Skipping: Cell,Preconfig,version,11.2.2.1.0,,,,,,,
+
+    [In skipFilter] Skipping: 
+
+    [In skipFilter] Skipping: # WARNING - DO NOT EDIT THIS FILE USING EXCEL
+
+    [In skipFilter] Skipping: 
+
+    [In skipFilter] Skipping: # IMPORTANT - YOU DO NOT NEED TO MERGE THE MAC ADDRESSES INTO THIS FILE
+
+    [In skipFilter] Skipping: 
+
+    [In skipFilter] Skipping: # OneCommand,XXX,ZDLRA RA23 Elastic Rack HC 22TB
+
+    [In skipFilter] Skipping: 
+
+    [In skipFilter] Skipping: # This is a main format for 11.2.2.1.0
+
+    [In skipFilter] Skipping: 
+
+    [In skipFilter] Skipping: hostname,domain,node type,gateway device,eth interface,eth type,mac address,ip,netmask,gateway,bondib hostname,bondib type,bondib ip,bondib netmask,nameservers,ntps,timezone
+
+    [In skipFilter] Skipping: 
+
+    [In skipFilter] Skipping: # DO NOT edit the above lines
+
+    [In skipFilter] Skipping: #
+
+    [In skipFilter] Skipping: 
+
+    [In skipFilter] Skipping: #
+
+    [In skipFilter] Skipping: #comp
+
+    Processing line: nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org
+
+    linelist DUMP:
+[         'nzrpdb902xe1',
+          'nndc.kp.org',
+          'db',
+          'eth0',
+          'bondeth0:lacp:::::',
+          'SCAN',
+          'eth1 eth2',
+          '10.18.33.240',
+          '255.255.240.0',
+          '10.18.32.1',
+          'nzrpdb902priv1.nndc.kp.org',
+          'Private:active-bond-ib:',
+          '192.168.10.3',
+          '255.255.252.0',
+          '172.18.44.21 10.21.13.54',
+          '172.18.33.225 172.21.128.95 172.18.33.227',
+          'America/Los_Angeles',
+          'ilom:',
+          'nzrpdb902x-rb.nndc.kp.org',
+          '10.18.53.224',
+          '255.255.240.0',
+          '10.18.48.1',
+          '172.18.44.21 10.21.13.54',
+          'enabled',
+          '172.18.33.225',
+          '172.21.128.95',
+          '',
+          'eth0:::ssh-listen-disabled:::',
+          'Management',
+          '',
+          '10.18.53.223',
+          '255.255.240.0',
+          '10.18.48.1',
+          'nzrpdb902xm.nndc.kp.org',
+          'bondeth1:::ssh-listen-disabled:::',
+          'Other',
+          'eth9 eth10',
+          '10.31.0.134',
+          '255.255.254.0',
+          '10.31.0.1',
+          'nzrpdb902xdr.nndc.kp.org\n']
+    Working on: Key cel01: Value {'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'mac': 'a8:69:8c:11:6f:04', 'nodeType': 'cell', 'newip': '10.18.53.225'}
+
+    Working on: Key cel02: Value {'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'mac': 'a8:69:8c:11:6f:80', 'nodeType': 'cell', 'newip': '10.18.53.227'}
+
+    Working on: Key cel03: Value {'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'mac': 'a8:69:8c:11:6e:c0', 'nodeType': 'cell', 'newip': '10.18.53.229'}
+
+    Working on: Key db01: Value {'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'mac': 'a8:69:8c:11:59:98', 'nodeType': 'db', 'newip': '10.18.33.237'}
+
+    Working on: Key db02: Value {'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'mac': 'a8:69:8c:11:59:94', 'nodeType': 'db', 'newip': '10.18.33.240'}
+
+    linelist[0] (nzrpdb902xe1) matched myMachine[db02]['newname'] (nzrpdb902xe1)
+
+    Assigned MAC a8:69:8c:11:59:94 to IP 10.18.33.240 (nzrpdb902xe1)
+
+    Client Naming Scheme since linelist[5] == SCAN
+
+    Assigning MAC to linelist[29]
+
+    Assigning linelist[0] (db02) to myMachine[nzrpdb902xe1]['AssignedNode']
+
+    Incrementing AssignmentsMadeCount (1)
+
+    New line for writing to preconf.ai: nzrpdb902xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.240,255.255.240.0,10.18.32.1,nzrpdb902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.3,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb902x-rb.nndc.kp.org,10.18.53.224,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,a8:69:8c:11:59:94,10.18.53.223,255.255.240.0,10.18.48.1,nzrpdb902xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.134,255.255.254.0,10.31.0.1,nzrpdb902xdr.nndc.kp.org
+
+
+    Processing line: nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org
+
+    linelist DUMP:
+[         'nzrpdb901xe1',
+          'nndc.kp.org',
+          'db',
+          'eth0',
+          'bondeth0:lacp:::::',
+          'SCAN',
+          'eth1 eth2',
+          '10.18.33.237',
+          '255.255.240.0',
+          '10.18.32.1',
+          'nzrpdb901priv1.nndc.kp.org',
+          'Private:active-bond-ib:',
+          '192.168.10.1',
+          '255.255.252.0',
+          '172.18.44.21 10.21.13.54',
+          '172.18.33.225 172.21.128.95 172.18.33.227',
+          'America/Los_Angeles',
+          'ilom:',
+          'nzrpdb901x-rb.nndc.kp.org',
+          '10.18.53.219',
+          '255.255.240.0',
+          '10.18.48.1',
+          '172.18.44.21 10.21.13.54',
+          'enabled',
+          '172.18.33.225',
+          '172.21.128.95',
+          '',
+          'eth0:::ssh-listen-disabled:::',
+          'Management',
+          '',
+          '10.18.53.218',
+          '255.255.240.0',
+          '10.18.48.1',
+          'nzrpdb901xm.nndc.kp.org',
+          'bondeth1:::ssh-listen-disabled:::',
+          'Other',
+          'eth9 eth10',
+          '10.31.0.132',
+          '255.255.254.0',
+          '10.31.0.1',
+          'nzrpdb901xdr.nndc.kp.org\n']
+    Working on: Key cel01: Value {'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'mac': 'a8:69:8c:11:6f:04', 'nodeType': 'cell', 'newip': '10.18.53.225'}
+
+    Working on: Key cel02: Value {'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'mac': 'a8:69:8c:11:6f:80', 'nodeType': 'cell', 'newip': '10.18.53.227'}
+
+    Working on: Key cel03: Value {'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'mac': 'a8:69:8c:11:6e:c0', 'nodeType': 'cell', 'newip': '10.18.53.229'}
+
+    Working on: Key db01: Value {'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'mac': 'a8:69:8c:11:59:98', 'nodeType': 'db', 'newip': '10.18.33.237'}
+
+    linelist[0] (nzrpdb901xe1) matched myMachine[db01]['newname'] (nzrpdb901xe1)
+
+    Assigned MAC a8:69:8c:11:59:98 to IP 10.18.33.237 (nzrpdb901xe1)
+
+    Client Naming Scheme since linelist[5] == SCAN
+
+    Assigning MAC to linelist[29]
+
+    Assigning linelist[0] (db01) to myMachine[nzrpdb901xe1]['AssignedNode']
+
+    Incrementing AssignmentsMadeCount (2)
+
+    Working on: Key db02: Value {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}
+
+    New line for writing to preconf.ai: nzrpdb901xe1,nndc.kp.org,db,eth0,bondeth0:lacp:::::,SCAN,eth1 eth2,10.18.33.237,255.255.240.0,10.18.32.1,nzrpdb901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.1,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpdb901x-rb.nndc.kp.org,10.18.53.219,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,eth0:::ssh-listen-disabled:::,Management,a8:69:8c:11:59:98,10.18.53.218,255.255.240.0,10.18.48.1,nzrpdb901xm.nndc.kp.org,bondeth1:::ssh-listen-disabled:::,Other,eth9 eth10,10.31.0.132,255.255.254.0,10.31.0.1,nzrpdb901xdr.nndc.kp.org
+
+
+    [In skipFilter] Skipping: #
+
+    [In skipFilter] Skipping: #cell
+
+    Processing line: nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+
+    linelist DUMP:
+[         'nzrpce903xm',
+          'nndc.kp.org',
+          'cell',
+          'eth0',
+          'eth0:::::::',
+          'Management',
+          '',
+          '10.18.53.229',
+          '255.255.240.0',
+          '10.18.48.1',
+          'nzrpce903priv1.nndc.kp.org',
+          'Private:active-bond-ib:',
+          '192.168.10.9',
+          '255.255.252.0',
+          '172.18.44.21 10.21.13.54',
+          '172.18.33.225 172.21.128.95 172.18.33.227',
+          'America/Los_Angeles',
+          'ilom:',
+          'nzrpce903x-rb.nndc.kp.org',
+          '10.18.53.230',
+          '255.255.240.0',
+          '10.18.48.1',
+          '172.18.44.21 10.21.13.54',
+          'enabled',
+          '172.18.33.225',
+          '172.21.128.95',
+          '',
+          '\n']
+    Working on: Key cel01: Value {'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'mac': 'a8:69:8c:11:6f:04', 'nodeType': 'cell', 'newip': '10.18.53.225'}
+
+    Working on: Key cel02: Value {'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'mac': 'a8:69:8c:11:6f:80', 'nodeType': 'cell', 'newip': '10.18.53.227'}
+
+    Working on: Key cel03: Value {'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'mac': 'a8:69:8c:11:6e:c0', 'nodeType': 'cell', 'newip': '10.18.53.229'}
+
+    linelist[0] (nzrpce903xm) matched myMachine[cel03]['newname'] (nzrpce903xm)
+
+    Assigned MAC a8:69:8c:11:6e:c0 to IP 10.18.53.229 (nzrpce903xm)
+
+    Normal Naming Scheme
+
+    Assigning MAC to linelist[6] (mac_key)
+
+    Assigning linelist[0] (cel03) to myMachine[nzrpce903xm]['AssignedNode']
+
+    Incrementing AssignmentsMadeCount (3)
+
+    Working on: Key db01: Value {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}
+
+    Working on: Key db02: Value {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}
+
+    New line for writing to preconf.ai: nzrpce903xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,a8:69:8c:11:6e:c0,10.18.53.229,255.255.240.0,10.18.48.1,nzrpce903priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.9,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce903x-rb.nndc.kp.org,10.18.53.230,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+
+
+    Processing line: nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+
+    linelist DUMP:
+[         'nzrpce902xm',
+          'nndc.kp.org',
+          'cell',
+          'eth0',
+          'eth0:::::::',
+          'Management',
+          '',
+          '10.18.53.227',
+          '255.255.240.0',
+          '10.18.48.1',
+          'nzrpce902priv1.nndc.kp.org',
+          'Private:active-bond-ib:',
+          '192.168.10.7',
+          '255.255.252.0',
+          '172.18.44.21 10.21.13.54',
+          '172.18.33.225 172.21.128.95 172.18.33.227',
+          'America/Los_Angeles',
+          'ilom:',
+          'nzrpce902x-rb.nndc.kp.org',
+          '10.18.53.228',
+          '255.255.240.0',
+          '10.18.48.1',
+          '172.18.44.21 10.21.13.54',
+          'enabled',
+          '172.18.33.225',
+          '172.21.128.95',
+          '',
+          '\n']
+    Working on: Key cel01: Value {'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'mac': 'a8:69:8c:11:6f:04', 'nodeType': 'cell', 'newip': '10.18.53.225'}
+
+    Working on: Key cel02: Value {'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'mac': 'a8:69:8c:11:6f:80', 'nodeType': 'cell', 'newip': '10.18.53.227'}
+
+    linelist[0] (nzrpce902xm) matched myMachine[cel02]['newname'] (nzrpce902xm)
+
+    Assigned MAC a8:69:8c:11:6f:80 to IP 10.18.53.227 (nzrpce902xm)
+
+    Normal Naming Scheme
+
+    Assigning MAC to linelist[6] (mac_key)
+
+    Assigning linelist[0] (cel02) to myMachine[nzrpce902xm]['AssignedNode']
+
+    Incrementing AssignmentsMadeCount (4)
+
+    Working on: Key cel03: Value {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}
+
+    Working on: Key db01: Value {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}
+
+    Working on: Key db02: Value {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}
+
+    New line for writing to preconf.ai: nzrpce902xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,a8:69:8c:11:6f:80,10.18.53.227,255.255.240.0,10.18.48.1,nzrpce902priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.7,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce902x-rb.nndc.kp.org,10.18.53.228,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+
+
+    Processing line: nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+
+    linelist DUMP:
+[         'nzrpce901xm',
+          'nndc.kp.org',
+          'cell',
+          'eth0',
+          'eth0:::::::',
+          'Management',
+          '',
+          '10.18.53.225',
+          '255.255.240.0',
+          '10.18.48.1',
+          'nzrpce901priv1.nndc.kp.org',
+          'Private:active-bond-ib:',
+          '192.168.10.5',
+          '255.255.252.0',
+          '172.18.44.21 10.21.13.54',
+          '172.18.33.225 172.21.128.95 172.18.33.227',
+          'America/Los_Angeles',
+          'ilom:',
+          'nzrpce901x-rb.nndc.kp.org',
+          '10.18.53.226',
+          '255.255.240.0',
+          '10.18.48.1',
+          '172.18.44.21 10.21.13.54',
+          'enabled',
+          '172.18.33.225',
+          '172.21.128.95',
+          '',
+          '\n']
+    Working on: Key cel01: Value {'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'mac': 'a8:69:8c:11:6f:04', 'nodeType': 'cell', 'newip': '10.18.53.225'}
+
+    linelist[0] (nzrpce901xm) matched myMachine[cel01]['newname'] (nzrpce901xm)
+
+    Assigned MAC a8:69:8c:11:6f:04 to IP 10.18.53.225 (nzrpce901xm)
+
+    Normal Naming Scheme
+
+    Assigning MAC to linelist[6] (mac_key)
+
+    Assigning linelist[0] (cel01) to myMachine[nzrpce901xm]['AssignedNode']
+
+    Incrementing AssignmentsMadeCount (5)
+
+    Working on: Key cel02: Value {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}
+
+    Working on: Key cel03: Value {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}
+
+    Working on: Key db01: Value {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}
+
+    Working on: Key db02: Value {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}
+
+    New line for writing to preconf.ai: nzrpce901xm,nndc.kp.org,cell,eth0,eth0:::::::,Management,a8:69:8c:11:6f:04,10.18.53.225,255.255.240.0,10.18.48.1,nzrpce901priv1.nndc.kp.org,Private:active-bond-ib:,192.168.10.5,255.255.252.0,172.18.44.21 10.21.13.54,172.18.33.225 172.21.128.95 172.18.33.227,America/Los_Angeles,ilom:,nzrpce901x-rb.nndc.kp.org,10.18.53.226,255.255.240.0,10.18.48.1,172.18.44.21 10.21.13.54,enabled,172.18.33.225,172.21.128.95,,
+
+
+    [In skipFilter] Skipping: 
+
+    [In skipFilter] Skipping: # Do NOT edit below this line
+
+    [In skipFilter] Skipping: ,,,,,,,,,,
+
+[<--Sub] (Wed Jan 10 00:40:11 2024) _buildPreConf: None
+
+
+[-->Sub] (Wed Jan 10 00:40:12 2024) _movePreConf: None
+    [VARS] preConfDir = /u01/exadata_nfs/iso
+
+    [VARS] preConfLocation = /u01/exadata_nfs/iso/preconf.csv
+
+    Copying new PXE preconf file successful
+
+    Permission change for PXE preconf file successful
+
+[<--Sub] (Wed Jan 10 00:40:12 2024) _movePreConf: None
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _createPXEFiles: None
+"        myMachine: {'db02': {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}}"
+'        dbCount: 2'
+'        cellCount: 3'
+'        tempPXECellNode: /tmp/PXECellNode.1704868789'
+'        tempPXEComputeNode: /tmp/PXEComputeNode.1704868789'
+    [VARS] MACAddressDir = /tftpboot/pxelinux.cfg
+
+    [VARS] MAC Address = a8:69:8c:11:6f:04
+
+    [VARS] fileName = a8:69:8c:11:6f:04
+
+    [VARS] dbPXEFiles = 0
+
+    [VARS] celPXEFiles = 0
+
+      [VARS] fileName = grub.cfg-01-a8-69-8c-11-6f-04
+
+      [VARS] myMachine[cel01]['nodeType'] = cell
+
+      Machine Key is Cell
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+'        tempPXENode: /tmp/PXECellNode.1704868789'
+'        targetFile: /tftpboot/pxelinux.cfg/grub.cfg-01-a8-69-8c-11-6f-04'
+[<--Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+
+    [VARS] MAC Address = a8:69:8c:11:6f:80
+
+    [VARS] fileName = a8:69:8c:11:6f:80
+
+    [VARS] dbPXEFiles = 0
+
+    [VARS] celPXEFiles = 1
+
+      [VARS] fileName = grub.cfg-01-a8-69-8c-11-6f-80
+
+      [VARS] myMachine[cel02]['nodeType'] = cell
+
+      Machine Key is Cell
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+'        tempPXENode: /tmp/PXECellNode.1704868789'
+'        targetFile: /tftpboot/pxelinux.cfg/grub.cfg-01-a8-69-8c-11-6f-80'
+[<--Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+
+    [VARS] MAC Address = a8:69:8c:11:6e:c0
+
+    [VARS] fileName = a8:69:8c:11:6e:c0
+
+    [VARS] dbPXEFiles = 0
+
+    [VARS] celPXEFiles = 2
+
+      [VARS] fileName = grub.cfg-01-a8-69-8c-11-6e-c0
+
+      [VARS] myMachine[cel03]['nodeType'] = cell
+
+      Machine Key is Cell
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+'        tempPXENode: /tmp/PXECellNode.1704868789'
+'        targetFile: /tftpboot/pxelinux.cfg/grub.cfg-01-a8-69-8c-11-6e-c0'
+[<--Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+
+    [VARS] MAC Address = a8:69:8c:11:59:98
+
+    [VARS] fileName = a8:69:8c:11:59:98
+
+    [VARS] dbPXEFiles = 0
+
+    [VARS] celPXEFiles = 3
+
+      [VARS] fileName = grub.cfg-01-a8-69-8c-11-59-98
+
+      [VARS] myMachine[db01]['nodeType'] = db
+
+      Machine Key is DB
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+'        tempPXENode: /tmp/PXEComputeNode.1704868789'
+'        targetFile: /tftpboot/pxelinux.cfg/grub.cfg-01-a8-69-8c-11-59-98'
+[<--Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+
+    [VARS] MAC Address = a8:69:8c:11:59:94
+
+    [VARS] fileName = a8:69:8c:11:59:94
+
+    [VARS] dbPXEFiles = 1
+
+    [VARS] celPXEFiles = 3
+
+      [VARS] fileName = grub.cfg-01-a8-69-8c-11-59-94
+
+      [VARS] myMachine[db02]['nodeType'] = db
+
+      Machine Key is DB
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+'        tempPXENode: /tmp/PXEComputeNode.1704868789'
+'        targetFile: /tftpboot/pxelinux.cfg/grub.cfg-01-a8-69-8c-11-59-94'
+[<--Sub] (Wed Jan 10 00:40:13 2024) _copyFromTempPXE: None
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _removeTempPXEFile: None
+'        tmpPXEFile: /tmp/PXEComputeNode.1704868789'
+[<--Sub] (Wed Jan 10 00:40:13 2024) _removeTempPXEFile: None
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _removeTempPXEFile: None
+'        tmpPXEFile: /tmp/PXECellNode.1704868789'
+[<--Sub] (Wed Jan 10 00:40:13 2024) _removeTempPXEFile: None
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _checkPXEFilesFound: None
+[<--Sub] (Wed Jan 10 00:40:13 2024) _checkPXEFilesFound: None
+
+
+[-->Sub] (Wed Jan 10 00:40:13 2024) _checkPXEFilesFound: None
+[<--Sub] (Wed Jan 10 00:40:13 2024) _checkPXEFilesFound: None
+
+[<--Sub] (Wed Jan 10 00:40:13 2024) _createPXEFiles: None
+
+
+[-->Sub] (Wed Jan 10 00:40:14 2024) _confirmRebootReimage: None
+"        myMachine: {'db02': {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}}"
+"        imageVersionToDeploy: {'cell': '23.1.8.0.0_LINUX.X64_231109-1', 'compute': '23.1.8.0.0_LINUX.X64_231109-1'}"
+[<--Sub] (Wed Jan 10 00:40:59 2024) _confirmRebootReimage: None
+
+
+[-->Sub] (Wed Jan 10 00:41:00 2024) _chkHostStorageDeviceStatusSingleNode: None
+'        key: db02'
+"        value: {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}"
+
+[-->Sub] (Wed Jan 10 00:41:00 2024) _issueIPMITOOLcommand: None
+'        ip: 192.168.1.108'
+'        cmmnd: show /SP/services/kvms/host_storage_device status'
+
+[-->Sub] (Wed Jan 10 00:41:00 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SP/services/kvms/host_storage_device status'
+'        ipValue: 192.168.1.108'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"'
+[<--Sub] (Wed Jan 10 00:41:00 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'show /SP/services/kvms/host_storage_device status'.
+
+oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"
+
+"        RETURN1: <open file '<fdopen>', mode 'wb' at 0x7fdcd7e4ddb0>"
+"        RETURN3: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+"        RETURN2: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4ded0>"
+[<--Sub] (Wed Jan 10 00:41:00 2024) _issueIPMITOOLcommand: None
+
+
+[-->Sub] (Wed Jan 10 00:41:00 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:41:01 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+   [STDOUT]:-> show /SP/services/kvms/host_storage_device status
+   [STDOUT]:
+   [STDOUT]: /SP/services/kvms/host_storage_device
+   [STDOUT]:    Properties:
+   [STDOUT]:        status = disabled
+   Words[status][disabled]
+   [STDOUT]:
+   [STDOUT]:
+   [STDOUT]:-> Session closed
+   [STDOUT]:Disconnected
+    foundErrors[0], foundDisabled[1]
+[<--Sub] (Wed Jan 10 00:41:03 2024) _chkHostStorageDeviceStatusSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:41:03 2024) _setBootDeviceWithIpmiToolSingleNode: None
+'        key: db02'
+"        value: {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}"
+
+When Processing STDERR
+
+[SEARCH]:Error: Unable to establish
+
+[SEARCH]:command not found
+
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+
+
+[-->Sub] (Wed Jan 10 00:41:03 2024) _chkSkipSetBootDevice: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:41:03 2024) _chkSkipSetBootDevice: None
+
+
+[-->Sub] (Wed Jan 10 00:41:03 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /Host boot_device=pxe'
+'        ipValue: 192.168.1.108'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"'
+[<--Sub] (Wed Jan 10 00:41:03 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /Host boot_device=pxe'.
+
+oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"
+
+
+[-->Sub] (Wed Jan 10 00:41:03 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4ded0>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:41:05 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /Host boot_device=pxe
+
+
+   [STDOUT]:Set 'boot_device' to 'pxe'
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:41:06 2024) _setBootDeviceWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:41:06 2024) _rebootSystemsWithIpmiToolSingleNode: None
+"        myMachine: {'db02': {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}}"
+'        key: db02'
+"        value: {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}"
+
+[-->Sub] (Wed Jan 10 00:41:06 2024) _chkSkipSystemReboot: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:41:06 2024) _chkSkipSystemReboot: None
+
+    [VARS] sleepSeconds = 60
+
+
+
+    key[db02]  MAC[a8:69:8c:11:59:94]  value[{'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}]
+
+[-->Sub] (Wed Jan 10 00:41:06 2024) _buildIPMITOOLcommand: None
+'        cliCommand: reset -script /SYS'
+'        ipValue: 192.168.1.108'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "reset -script /SYS"'
+[<--Sub] (Wed Jan 10 00:41:06 2024) _buildIPMITOOLcommand: None
+
+
+    Using ipmitool to 'reset -script /SYS'.
+
+oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "reset -script /SYS"
+
+
+[-->Sub] (Wed Jan 10 00:41:06 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:41:08 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> reset -script /SYS
+
+
+   [STDOUT]:Performing hard reset on /SYS
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+    Sleeping for 60 seconds... 
+
+
+Turning on indicator light to ensure re-imaging sequence and server racking are as expected.
+
+
+[-->Sub] (Wed Jan 10 00:42:08 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /SYSTEM locator_indicator=on'
+'        ipValue: 192.168.1.108'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"'
+[<--Sub] (Wed Jan 10 00:42:08 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /SYSTEM locator_indicator=on'.
+
+oraipmitool -I lanplus -H 192.168.1.108 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"
+
+
+[-->Sub] (Wed Jan 10 00:42:08 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e36030>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:42:10 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /SYSTEM locator_indicator=on
+
+
+   [STDOUT]:Set 'locator_indicator' to 'on' [On]
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:42:10 2024) _rebootSystemsWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:42:10 2024) _chkHostStorageDeviceStatusSingleNode: None
+'        key: db01'
+"        value: {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}"
+
+[-->Sub] (Wed Jan 10 00:42:10 2024) _issueIPMITOOLcommand: None
+'        ip: 192.168.1.107'
+'        cmmnd: show /SP/services/kvms/host_storage_device status'
+
+[-->Sub] (Wed Jan 10 00:42:10 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SP/services/kvms/host_storage_device status'
+'        ipValue: 192.168.1.107'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"'
+[<--Sub] (Wed Jan 10 00:42:10 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'show /SP/services/kvms/host_storage_device status'.
+
+oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"
+
+"        RETURN1: <open file '<fdopen>', mode 'wb' at 0x7fdcd7e4df60>"
+"        RETURN3: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+"        RETURN2: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4dc00>"
+[<--Sub] (Wed Jan 10 00:42:10 2024) _issueIPMITOOLcommand: None
+
+
+[-->Sub] (Wed Jan 10 00:42:10 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:42:11 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+   [STDOUT]:-> show /SP/services/kvms/host_storage_device status
+   [STDOUT]:
+   [STDOUT]: /SP/services/kvms/host_storage_device
+   [STDOUT]:    Properties:
+   [STDOUT]:        status = disabled
+   Words[status][disabled]
+   [STDOUT]:
+   [STDOUT]:
+   [STDOUT]:-> Session closed
+   [STDOUT]:Disconnected
+    foundErrors[0], foundDisabled[1]
+[<--Sub] (Wed Jan 10 00:42:13 2024) _chkHostStorageDeviceStatusSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:42:13 2024) _setBootDeviceWithIpmiToolSingleNode: None
+'        key: db01'
+"        value: {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}"
+
+When Processing STDERR
+
+[SEARCH]:Error: Unable to establish
+
+[SEARCH]:command not found
+
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+
+
+[-->Sub] (Wed Jan 10 00:42:13 2024) _chkSkipSetBootDevice: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:42:13 2024) _chkSkipSetBootDevice: None
+
+
+[-->Sub] (Wed Jan 10 00:42:13 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /Host boot_device=pxe'
+'        ipValue: 192.168.1.107'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"'
+[<--Sub] (Wed Jan 10 00:42:13 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /Host boot_device=pxe'.
+
+oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"
+
+
+[-->Sub] (Wed Jan 10 00:42:13 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4dc00>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:42:15 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /Host boot_device=pxe
+
+
+   [STDOUT]:Set 'boot_device' to 'pxe'
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:42:16 2024) _setBootDeviceWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:42:16 2024) _rebootSystemsWithIpmiToolSingleNode: None
+"        myMachine: {'db02': {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}}"
+'        key: db01'
+"        value: {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}"
+
+[-->Sub] (Wed Jan 10 00:42:16 2024) _chkSkipSystemReboot: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:42:16 2024) _chkSkipSystemReboot: None
+
+    [VARS] sleepSeconds = 60
+
+
+
+    key[db01]  MAC[a8:69:8c:11:59:98]  value[{'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}]
+
+[-->Sub] (Wed Jan 10 00:42:16 2024) _buildIPMITOOLcommand: None
+'        cliCommand: reset -script /SYS'
+'        ipValue: 192.168.1.107'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "reset -script /SYS"'
+[<--Sub] (Wed Jan 10 00:42:16 2024) _buildIPMITOOLcommand: None
+
+
+    Using ipmitool to 'reset -script /SYS'.
+
+oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "reset -script /SYS"
+
+
+[-->Sub] (Wed Jan 10 00:42:16 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:42:18 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> reset -script /SYS
+
+
+   [STDOUT]:Performing hard reset on /SYS
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+    Sleeping for 60 seconds... 
+
+
+Turning on indicator light to ensure re-imaging sequence and server racking are as expected.
+
+
+[-->Sub] (Wed Jan 10 00:43:19 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /SYSTEM locator_indicator=on'
+'        ipValue: 192.168.1.107'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"'
+[<--Sub] (Wed Jan 10 00:43:19 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /SYSTEM locator_indicator=on'.
+
+oraipmitool -I lanplus -H 192.168.1.107 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"
+
+
+[-->Sub] (Wed Jan 10 00:43:19 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e36030>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:43:20 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /SYSTEM locator_indicator=on
+
+
+   [STDOUT]:Set 'locator_indicator' to 'on' [On]
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:43:20 2024) _rebootSystemsWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:43:20 2024) _chkHostStorageDeviceStatusSingleNode: None
+'        key: cel03'
+"        value: {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}"
+
+[-->Sub] (Wed Jan 10 00:43:20 2024) _issueIPMITOOLcommand: None
+'        ip: 192.168.1.103'
+'        cmmnd: show /SP/services/kvms/host_storage_device status'
+
+[-->Sub] (Wed Jan 10 00:43:20 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SP/services/kvms/host_storage_device status'
+'        ipValue: 192.168.1.103'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"'
+[<--Sub] (Wed Jan 10 00:43:20 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'show /SP/services/kvms/host_storage_device status'.
+
+oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"
+
+"        RETURN1: <open file '<fdopen>', mode 'wb' at 0x7fdcd7e4ded0>"
+"        RETURN3: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+"        RETURN2: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4ddb0>"
+[<--Sub] (Wed Jan 10 00:43:20 2024) _issueIPMITOOLcommand: None
+
+
+[-->Sub] (Wed Jan 10 00:43:20 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:43:22 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+   [STDOUT]:-> show /SP/services/kvms/host_storage_device status
+   [STDOUT]:
+   [STDOUT]: /SP/services/kvms/host_storage_device
+   [STDOUT]:    Properties:
+   [STDOUT]:        status = disabled
+   Words[status][disabled]
+   [STDOUT]:
+   [STDOUT]:
+   [STDOUT]:-> Session closed
+   [STDOUT]:Disconnected
+    foundErrors[0], foundDisabled[1]
+[<--Sub] (Wed Jan 10 00:43:24 2024) _chkHostStorageDeviceStatusSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:43:24 2024) _setBootDeviceWithIpmiToolSingleNode: None
+'        key: cel03'
+"        value: {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}"
+
+When Processing STDERR
+
+[SEARCH]:Error: Unable to establish
+
+[SEARCH]:command not found
+
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+
+
+[-->Sub] (Wed Jan 10 00:43:24 2024) _chkSkipSetBootDevice: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:43:24 2024) _chkSkipSetBootDevice: None
+
+
+[-->Sub] (Wed Jan 10 00:43:24 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /Host boot_device=pxe'
+'        ipValue: 192.168.1.103'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"'
+[<--Sub] (Wed Jan 10 00:43:24 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /Host boot_device=pxe'.
+
+oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"
+
+
+[-->Sub] (Wed Jan 10 00:43:24 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4ddb0>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:43:25 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /Host boot_device=pxe
+
+
+   [STDOUT]:Set 'boot_device' to 'pxe'
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:43:26 2024) _setBootDeviceWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:43:26 2024) _rebootSystemsWithIpmiToolSingleNode: None
+"        myMachine: {'db02': {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}}"
+'        key: cel03'
+"        value: {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}"
+
+[-->Sub] (Wed Jan 10 00:43:26 2024) _chkSkipSystemReboot: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:43:26 2024) _chkSkipSystemReboot: None
+
+    [VARS] sleepSeconds = 60
+
+
+
+    key[cel03]  MAC[a8:69:8c:11:6e:c0]  value[{'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}]
+
+[-->Sub] (Wed Jan 10 00:43:26 2024) _buildIPMITOOLcommand: None
+'        cliCommand: reset -script /SYS'
+'        ipValue: 192.168.1.103'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "reset -script /SYS"'
+[<--Sub] (Wed Jan 10 00:43:26 2024) _buildIPMITOOLcommand: None
+
+
+    Using ipmitool to 'reset -script /SYS'.
+
+oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "reset -script /SYS"
+
+
+[-->Sub] (Wed Jan 10 00:43:26 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:43:29 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> reset -script /SYS
+
+
+   [STDOUT]:Performing hard reset on /SYS
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+    Sleeping for 60 seconds... 
+
+
+Turning on indicator light to ensure re-imaging sequence and server racking are as expected.
+
+
+[-->Sub] (Wed Jan 10 00:44:29 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /SYSTEM locator_indicator=on'
+'        ipValue: 192.168.1.103'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"'
+[<--Sub] (Wed Jan 10 00:44:29 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /SYSTEM locator_indicator=on'.
+
+oraipmitool -I lanplus -H 192.168.1.103 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"
+
+
+[-->Sub] (Wed Jan 10 00:44:29 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e36030>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:44:31 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /SYSTEM locator_indicator=on
+
+
+   [STDOUT]:Set 'locator_indicator' to 'on' [On]
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:44:31 2024) _rebootSystemsWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:44:31 2024) _chkHostStorageDeviceStatusSingleNode: None
+'        key: cel02'
+"        value: {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}"
+
+[-->Sub] (Wed Jan 10 00:44:31 2024) _issueIPMITOOLcommand: None
+'        ip: 192.168.1.102'
+'        cmmnd: show /SP/services/kvms/host_storage_device status'
+
+[-->Sub] (Wed Jan 10 00:44:31 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SP/services/kvms/host_storage_device status'
+'        ipValue: 192.168.1.102'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"'
+[<--Sub] (Wed Jan 10 00:44:31 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'show /SP/services/kvms/host_storage_device status'.
+
+oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"
+
+"        RETURN1: <open file '<fdopen>', mode 'wb' at 0x7fdcd7e4dc00>"
+"        RETURN3: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+"        RETURN2: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4df60>"
+[<--Sub] (Wed Jan 10 00:44:31 2024) _issueIPMITOOLcommand: None
+
+
+[-->Sub] (Wed Jan 10 00:44:31 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:44:32 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+   [STDOUT]:-> show /SP/services/kvms/host_storage_device status
+   [STDOUT]:
+   [STDOUT]: /SP/services/kvms/host_storage_device
+   [STDOUT]:    Properties:
+   [STDOUT]:        status = disabled
+   Words[status][disabled]
+   [STDOUT]:
+   [STDOUT]:
+   [STDOUT]:-> Session closed
+   [STDOUT]:Disconnected
+    foundErrors[0], foundDisabled[1]
+[<--Sub] (Wed Jan 10 00:44:34 2024) _chkHostStorageDeviceStatusSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:44:34 2024) _setBootDeviceWithIpmiToolSingleNode: None
+'        key: cel02'
+"        value: {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}"
+
+When Processing STDERR
+
+[SEARCH]:Error: Unable to establish
+
+[SEARCH]:command not found
+
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+
+
+[-->Sub] (Wed Jan 10 00:44:34 2024) _chkSkipSetBootDevice: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:44:34 2024) _chkSkipSetBootDevice: None
+
+
+[-->Sub] (Wed Jan 10 00:44:34 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /Host boot_device=pxe'
+'        ipValue: 192.168.1.102'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"'
+[<--Sub] (Wed Jan 10 00:44:34 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /Host boot_device=pxe'.
+
+oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"
+
+
+[-->Sub] (Wed Jan 10 00:44:34 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4df60>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:44:36 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /Host boot_device=pxe
+
+
+   [STDOUT]:Set 'boot_device' to 'pxe'
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:44:37 2024) _setBootDeviceWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:44:37 2024) _rebootSystemsWithIpmiToolSingleNode: None
+"        myMachine: {'db02': {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}}"
+'        key: cel02'
+"        value: {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}"
+
+[-->Sub] (Wed Jan 10 00:44:37 2024) _chkSkipSystemReboot: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:44:37 2024) _chkSkipSystemReboot: None
+
+    [VARS] sleepSeconds = 60
+
+
+
+    key[cel02]  MAC[a8:69:8c:11:6f:80]  value[{'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}]
+
+[-->Sub] (Wed Jan 10 00:44:37 2024) _buildIPMITOOLcommand: None
+'        cliCommand: reset -script /SYS'
+'        ipValue: 192.168.1.102'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "reset -script /SYS"'
+[<--Sub] (Wed Jan 10 00:44:37 2024) _buildIPMITOOLcommand: None
+
+
+    Using ipmitool to 'reset -script /SYS'.
+
+oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "reset -script /SYS"
+
+
+[-->Sub] (Wed Jan 10 00:44:37 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:44:40 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> reset -script /SYS
+
+
+   [STDOUT]:Performing hard reset on /SYS
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+    Sleeping for 60 seconds... 
+
+
+Turning on indicator light to ensure re-imaging sequence and server racking are as expected.
+
+
+[-->Sub] (Wed Jan 10 00:45:40 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /SYSTEM locator_indicator=on'
+'        ipValue: 192.168.1.102'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"'
+[<--Sub] (Wed Jan 10 00:45:40 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /SYSTEM locator_indicator=on'.
+
+oraipmitool -I lanplus -H 192.168.1.102 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"
+
+
+[-->Sub] (Wed Jan 10 00:45:40 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e36030>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:45:41 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /SYSTEM locator_indicator=on
+
+
+   [STDOUT]:Set 'locator_indicator' to 'on' [On]
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:45:41 2024) _rebootSystemsWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:45:41 2024) _chkHostStorageDeviceStatusSingleNode: None
+'        key: cel01'
+"        value: {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}"
+
+[-->Sub] (Wed Jan 10 00:45:41 2024) _issueIPMITOOLcommand: None
+'        ip: 192.168.1.101'
+'        cmmnd: show /SP/services/kvms/host_storage_device status'
+
+[-->Sub] (Wed Jan 10 00:45:41 2024) _buildIPMITOOLcommand: None
+'        cliCommand: show /SP/services/kvms/host_storage_device status'
+'        ipValue: 192.168.1.101'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"'
+[<--Sub] (Wed Jan 10 00:45:41 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'show /SP/services/kvms/host_storage_device status'.
+
+oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "show /SP/services/kvms/host_storage_device status"
+
+"        RETURN1: <open file '<fdopen>', mode 'wb' at 0x7fdcd7e4ddb0>"
+"        RETURN3: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+"        RETURN2: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4ded0>"
+[<--Sub] (Wed Jan 10 00:45:41 2024) _issueIPMITOOLcommand: None
+
+
+[-->Sub] (Wed Jan 10 00:45:41 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:45:43 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+   [STDOUT]:-> show /SP/services/kvms/host_storage_device status
+   [STDOUT]:
+   [STDOUT]: /SP/services/kvms/host_storage_device
+   [STDOUT]:    Properties:
+   [STDOUT]:        status = disabled
+   Words[status][disabled]
+   [STDOUT]:
+   [STDOUT]:
+   [STDOUT]:-> Session closed
+   [STDOUT]:Disconnected
+    foundErrors[0], foundDisabled[1]
+[<--Sub] (Wed Jan 10 00:45:45 2024) _chkHostStorageDeviceStatusSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:45:45 2024) _setBootDeviceWithIpmiToolSingleNode: None
+'        key: cel01'
+"        value: {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}"
+
+When Processing STDERR
+
+[SEARCH]:Error: Unable to establish
+
+[SEARCH]:command not found
+
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+
+
+[-->Sub] (Wed Jan 10 00:45:45 2024) _chkSkipSetBootDevice: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:45:45 2024) _chkSkipSetBootDevice: None
+
+
+[-->Sub] (Wed Jan 10 00:45:45 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /Host boot_device=pxe'
+'        ipValue: 192.168.1.101'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"'
+[<--Sub] (Wed Jan 10 00:45:45 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /Host boot_device=pxe'.
+
+oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "set /Host boot_device=pxe"
+
+
+[-->Sub] (Wed Jan 10 00:45:45 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4ded0>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:45:46 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /Host boot_device=pxe
+
+
+   [STDOUT]:Set 'boot_device' to 'pxe'
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:45:47 2024) _setBootDeviceWithIpmiToolSingleNode: None
+
+
+[-->Sub] (Wed Jan 10 00:45:47 2024) _rebootSystemsWithIpmiToolSingleNode: None
+"        myMachine: {'db02': {'newip': '10.18.33.240', 'nodeType': 'db', 'newname': 'nzrpdb902xe1', 'ip': '192.168.1.108', 'AssignedNode': 'nzrpdb902xe1', 'mac': 'a8:69:8c:11:59:94'}, 'db01': {'newip': '10.18.33.237', 'nodeType': 'db', 'newname': 'nzrpdb901xe1', 'ip': '192.168.1.107', 'AssignedNode': 'nzrpdb901xe1', 'mac': 'a8:69:8c:11:59:98'}, 'cel01': {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}, 'cel03': {'newip': '10.18.53.229', 'nodeType': 'cell', 'newname': 'nzrpce903xm', 'ip': '192.168.1.103', 'AssignedNode': 'nzrpce903xm', 'mac': 'a8:69:8c:11:6e:c0'}, 'cel02': {'newip': '10.18.53.227', 'nodeType': 'cell', 'newname': 'nzrpce902xm', 'ip': '192.168.1.102', 'AssignedNode': 'nzrpce902xm', 'mac': 'a8:69:8c:11:6f:80'}}"
+'        key: cel01'
+"        value: {'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}"
+
+[-->Sub] (Wed Jan 10 00:45:47 2024) _chkSkipSystemReboot: None
+'        ipmiTool: True'
+[<--Sub] (Wed Jan 10 00:45:47 2024) _chkSkipSystemReboot: None
+
+    [VARS] sleepSeconds = 60
+
+
+
+    key[cel01]  MAC[a8:69:8c:11:6f:04]  value[{'newip': '10.18.53.225', 'nodeType': 'cell', 'newname': 'nzrpce901xm', 'ip': '192.168.1.101', 'AssignedNode': 'nzrpce901xm', 'mac': 'a8:69:8c:11:6f:04'}]
+
+[-->Sub] (Wed Jan 10 00:45:47 2024) _buildIPMITOOLcommand: None
+'        cliCommand: reset -script /SYS'
+'        ipValue: 192.168.1.101'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "reset -script /SYS"'
+[<--Sub] (Wed Jan 10 00:45:47 2024) _buildIPMITOOLcommand: None
+
+
+    Using ipmitool to 'reset -script /SYS'.
+
+oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "reset -script /SYS"
+
+
+[-->Sub] (Wed Jan 10 00:45:47 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e4de40>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:45:50 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> reset -script /SYS
+
+
+   [STDOUT]:Performing hard reset on /SYS
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+    Sleeping for 60 seconds... 
+
+
+Turning on indicator light to ensure re-imaging sequence and server racking are as expected.
+
+
+[-->Sub] (Wed Jan 10 00:46:50 2024) _buildIPMITOOLcommand: None
+'        cliCommand: set /SYSTEM locator_indicator=on'
+'        ipValue: 192.168.1.101'
+'        RETURN1: oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"'
+[<--Sub] (Wed Jan 10 00:46:50 2024) _buildIPMITOOLcommand: None
+
+
+    Using (ora)ipmitool to 'set /SYSTEM locator_indicator=on'.
+
+oraipmitool -I lanplus -H 192.168.1.101 -U root -P welcome1 sunoem cli "set /SYSTEM locator_indicator=on"
+
+
+[-->Sub] (Wed Jan 10 00:46:50 2024) _processIpmiToolSTDERR: None
+"        stderr: <open file '<fdopen>', mode 'rb' at 0x7fdcd7e36030>"
+
+When Processing STDERR
+[SEARCH]:Error: Unable to establish
+[SEARCH]:command not found
+[SEARCH]:'ipmitool' is not recognized as an internal or external command
+[SEARCH]:Command Failed
+'        RETURN: 0'
+[<--Sub] (Wed Jan 10 00:46:51 2024) _processIpmiToolSTDERR: None
+
+   [STDOUT]:Connected. Use ^D to exit.
+
+
+   [STDOUT]:-> set /SYSTEM locator_indicator=on
+
+
+   [STDOUT]:Set 'locator_indicator' to 'on' [On]
+
+
+   [STDOUT]:
+
+
+   [STDOUT]:-> Session closed
+
+
+   [STDOUT]:Disconnected
+
+
+[<--Sub] (Wed Jan 10 00:46:51 2024) _rebootSystemsWithIpmiToolSingleNode: None
+
+[<--Sub] (Wed Jan 10 00:46:51 2024) imageExadata: None
+
