@@ -31,7 +31,7 @@ ls -ltr /usr/local/fastimage/u01/exadata_nfs/iso/
 # If required change the settings from the ILOM on file @/classes/fastimage/config/config.json
 ps -ef | grep tftpd
 ps -ef | grep dhcpd
-BASE_DIR=/Users/carlosduarte/Documents/Oracle/Clients/2024/KP/2344XL805K
+BASE_DIR=/Users/carlosduarte/Documents/Oracle/Clients/2024/Optum/cell_relocation/EP73_OEDA
 
 cd $BASE_DIR
 CSV_FILE=`ls *preconf*.csv`
@@ -41,4 +41,4 @@ echo "CSV File: [${CSV_FILE}]"
 ls -ltr ${BASE_DIR}/${CSV_FILE}
 cd ~/Documents/Projects/fastimage/classes/fastimage
 rm ~/.ssh/known_hosts
-node main.js ${BASE_DIR}/${CSV_FILE} -ilom ZdlraRack
+node main.js ${BASE_DIR}/${CSV_FILE} -ilom reimage
