@@ -5,17 +5,24 @@ total 4
 lrwxrwxrwx 1 root root   20 May  8  2018 iso -> /u01/exadata_nfs/iso
 
 # tftp Mac
+sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist 
 sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist 
 netstat -an | fgrep \*.69
-sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist 
+
+# nginx
+/opt/homebrew/etc/nginx/nginx.conf
 
 # Start the required servers
-nginx
-sudo tftpd -L -s /usr/local/fastimage/tftpboot/
+sudo nginx -g "daemon off;"
+<!-- sudo tftpd -L -s /usr/local/fastimage/tftpboot/ -->
 sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist
-sudo /usr/local/sbin/dhcpd -d -4 -f -cf /usr/local/etc/dhcpd.conf
+# Mac 13
+sudo /opt/homebrew/sbin/dhcpd -d -4 -f -cf /usr/local/etc/dhcpd.conf
+# Mac 15
+sudo /opt/homebrew/opt/isc-dhcp/sbin/dhcpd -d -4 -f -cf /opt/homebrew/etc/dhcpd.conf
+
 # x6 
-sudo /usr/local/sbin/dhcpd -d -4 -f -cf /usr/local/etc/dhcpd.conf.legacy
+sudo /opt/homebrew/sbin/dhcpd -d -4 -f -cf /usr/local/etc/dhcpd.conf.legacy
 
 # Extract image content
 cd ~/Documents/Projects/fastimage/bin
@@ -31,7 +38,7 @@ ls -ltr /usr/local/fastimage/u01/exadata_nfs/iso/
 # If required change the settings from the ILOM on file @/classes/fastimage/config/config.json
 ps -ef | grep tftpd
 ps -ef | grep dhcpd
-BASE_DIR=/Users/carlosduarte/Documents/Oracle/Clients/2024/Optum/cell_relocation/EP73_OEDA
+BASE_DIR=/Users/CADUARTE/Documents/Oracle/Clients/2024/cambia/AK00614350
 
 cd $BASE_DIR
 CSV_FILE=`ls *preconf*.csv`
@@ -41,4 +48,5 @@ echo "CSV File: [${CSV_FILE}]"
 ls -ltr ${BASE_DIR}/${CSV_FILE}
 cd ~/Documents/Projects/fastimage/classes/fastimage
 rm ~/.ssh/known_hosts
-node main.js ${BASE_DIR}/${CSV_FILE} -ilom reimage
+<!-- node main.js ${BASE_DIR}/${CSV_FILE} -ilom reimage -->
+node main.js ${BASE_DIR}/${CSV_FILE}
