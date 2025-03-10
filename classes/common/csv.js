@@ -63,7 +63,7 @@ class CsvUtil extends FileUtil {
     // var csvTableData = []
     var csvTable = new Table({
       // chars: { mid: "", "left-mid": "", "mid-mid": "", "right-mid": "", "right-mid": "" },
-      head: ["Type", "hostname", "MAC", "eth0", "ILOM", "Serial"],
+      head: ["Type", "hostname", "MAC", "eth0", "ILOM", "Serial", "Component", "Model"],
     });
     let serversFound = 0;
     for await (var element of jsonObj) {
@@ -104,10 +104,21 @@ class CsvUtil extends FileUtil {
         }
         const managementPos = line.indexOf('Management') + 1
         let ilomIp = reimageConfig[x];
+        _LOGGER.info(`Found ILOM ip: [${ilomIp}]`)
         sshUtil.setHost(ilomIp);
         const result = await sshUtil.run("show /SYS/MB/NET0 fru_macaddress");
-        const rawSerialNumber = await sshUtil.run("show /System/ component_serial_number");
-        const serialNumber = rawSerialNumber.output.split("=")[1].trim()
+        if (result.code == 1) {
+          _LOGGER.error(result.err);
+          process.exit(1)
+        }
+        const rawSerialNumber = await sshUtil.run("show /System/ component_serial_number component_model model");
+        const lines = rawSerialNumber.output.trim().split('\n').slice(2)
+        const hardwareDetail = lines.map(row => {
+          return row.split('=')[1].trim()
+        })
+        const serialNumber = hardwareDetail[0]
+        const componentModel = hardwareDetail[1]
+        const hardwareModel = hardwareDetail[2]
         if (result.code == 1) {
           _LOGGER.error(result.err);
           line[managementPos] = "ERROR";
@@ -127,9 +138,13 @@ class CsvUtil extends FileUtil {
           line[managementPos],
           line[7],
           ilomIp,
-          serialNumber
+          serialNumber,
+          componentModel,
+          hardwareModel
         ]);
-        csvTable.push([nodeType, line[0], line[managementPos], line[7], ilomIp, serialNumber]);
+        csvTable.push([nodeType, line[0], line[managementPos], line[7], ilomIp, serialNumber,
+          componentModel,
+          hardwareModel]);
         x++;
       }
       updatedCSV += element + "\n";
