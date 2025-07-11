@@ -43,10 +43,9 @@ class FastImagePXEImages extends BashUtil {
     });
     _uniqNodeTypes = [...new Set(nodeTypes)];
     this.logger.info(
-      `This reimage have ${
-        _uniqNodeTypes.length == 1
-          ? "only " + _uniqNodeTypes[0] + " server(s)"
-          : "both cell and db nodes"
+      `This reimage have ${_uniqNodeTypes.length == 1
+        ? "only " + _uniqNodeTypes[0] + " server(s)"
+        : "both cell and db nodes"
       }`
     );
   }
@@ -105,9 +104,8 @@ class FastImagePXEImages extends BashUtil {
     // return
     const cmd = `cd ${this.config.pxe.path.iso};ls ${this.decodeNodeType(
       nodeType
-    )}*${_selected[nodeType].version}*.iso;cd ${this.config.pxe.path.efi};ls *${
-      _selected[nodeType].version.replace(/_LINUX\.X64_/g, '-')
-    }*${this.decodeNodeType(nodeType)}* | sort`;
+    )}*${_selected[nodeType].version}*.iso;cd ${this.config.pxe.path.efi};ls *${_selected[nodeType].version.replace(/_LINUX\.X64_/g, '-')
+      }*${this.decodeNodeType(nodeType)}* | sort`;
     this.logger.debug(cmd);
     var { stdout, stderr } = await this.runCmd(cmd);
     const imageDetails = stdout.trim().split("\n");
@@ -123,10 +121,11 @@ class FastImagePXEImages extends BashUtil {
 
   async createGrubFiles() {
     console.log();
-    this.logger.info(`Using template of server [${_serverModel}]`);
-    const fileTemplate = this.config.pxe.templates[_serverModel];
     const pxecfg = this.config.pxe.path.pxecfg;
     for await (var element of _reimageData) {
+      const serverModel = element[element.length - 1].split(' ')[1]
+      this.logger.info(`Using template of server [${serverModel}]`);
+      const fileTemplate = this.config.pxe.templates[serverModel];
       const nodeType = element[0];
       const grubDetail = {
         nodeType: nodeType,

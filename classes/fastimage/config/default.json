@@ -52,7 +52,19 @@
         "db": "PXEComputeNode.template.1",
         "cell": "PXECellNode.template.1"
       },
+      "X9M": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
       "X10M-2": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X10M": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
+      "X11M": {
         "db": "PXEComputeNode.template.1",
         "cell": "PXECellNode.template.1"
       },
@@ -107,9 +119,20 @@
       "192.168.1.156",
       "192.168.1.155"
     ],
+    "test": [
+      "192.168.1.113"
+    ],
     "Elastic": [
+      "192.168.1.118",
+      "192.168.1.117",
+      "192.168.1.116",
+      "192.168.1.115",
       "192.168.1.114",
       "192.168.1.113",
+      "192.168.1.112",
+      "192.168.1.111",
+      "192.168.1.110",
+      "192.168.1.109",
       "192.168.1.108",
       "192.168.1.107",
       "192.168.1.106",

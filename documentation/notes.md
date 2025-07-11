@@ -54,4 +54,4 @@ ls -ltr ${BASE_DIR}/${CSV_FILE}
 cd ~/Documents/Projects/fastimage/classes/fastimage
 rm ~/.ssh/known_hosts
 <!-- node main.js ${BASE_DIR}/${CSV_FILE} -ilom reimage -->
-node main.js ${BASE_DIR}/${CSV_FILE} -ilom Quarter_x10
+node main.js ${BASE_DIR}/${CSV_FILE} -ilom Elastic
