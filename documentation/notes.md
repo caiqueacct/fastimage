@@ -17,7 +17,7 @@ netstat -an | fgrep \*.69
 /opt/homebrew/etc/nginx/nginx.conf
 
 # Start the required servers
-sudo nginx -g "daemon off;"
+sudo nginx -g "daemon off;" 
 <!-- sudo tftpd -L -s /usr/local/fastimage/tftpboot/ -->
 sudo /bin/launchctl unload -w /System/Library/LaunchDaemons/bootps.plist
 # Mac 13
