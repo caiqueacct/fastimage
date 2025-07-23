@@ -52,6 +52,10 @@
         "db": "PXEComputeNode.template.1",
         "cell": "PXECellNode.template.1"
       },
+      "X9M-8": {
+        "db": "PXEComputeNode.template.1",
+        "cell": "PXECellNode.template.1"
+      },
       "X9M": {
         "db": "PXEComputeNode.template.1",
         "cell": "PXECellNode.template.1"
@@ -110,14 +114,8 @@
       "10.12.139.45"
     ],
     "Custom": [
-      "192.168.1.162",
-      "192.168.1.161",
-      "192.168.1.160",
-      "192.168.1.159",
-      "192.168.1.158",
-      "192.168.1.157",
-      "192.168.1.156",
-      "192.168.1.155"
+      "10.203.184.199",
+      "10.203.184.197"
     ],
     "test": [
       "192.168.1.113"

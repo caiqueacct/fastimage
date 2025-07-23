@@ -54,4 +54,12 @@ ls -ltr ${BASE_DIR}/${CSV_FILE}
 cd ~/Documents/Projects/fastimage/classes/fastimage
 rm ~/.ssh/known_hosts
 <!-- node main.js ${BASE_DIR}/${CSV_FILE} -ilom reimage -->
-node main.js ${BASE_DIR}/${CSV_FILE} -ilom Elastic
+node main.js ${BASE_DIR}/${CSV_FILE} -ilom Custom
+
+<!-- BOOT MENU -->
+<!-- Copyright (C) 2023, 2024 Oracle and/or its affiliates.                          
+Version 2.22.1294. Copyright (C) 2024 AMI                                       
+BIOS Date: 11/25/2024 10:36:57 Ver: 90010600                                    
+Press F2 to run Setup (CTRL+E on serial keyboard)                               
+Press F8 for BBS Popup (CTRL+P on serial keyboard)                              
+Press F12 for network boot (CTRL+N on serial keyboard)  -->
