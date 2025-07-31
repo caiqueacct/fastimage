@@ -43,7 +43,8 @@ ls -ltr /usr/local/fastimage/u01/exadata_nfs/iso/
 # If required change the settings from the ILOM on file @/classes/fastimage/config/config.json
 ps -ef | grep tftpd
 ps -ef | grep dhcpd
-BASE_DIR=`pwd`
+ps -ef | grep nginx
+BASE_DIR=$(pwd)
 
 cd $BASE_DIR
 CSV_FILE=`ls *preconf*.csv`

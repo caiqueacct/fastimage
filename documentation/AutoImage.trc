@@ -2251,7 +2251,7 @@ FRUmacaddress = 'a8:69:8c:11:59:94'
 '        isoVersionToDeploy: '
    tempFile = /tmp/PXECellNode.1704868789
 
-       line = set default 0
+       line = set default=0
 
 
        line = set timeout=10
