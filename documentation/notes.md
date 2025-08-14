@@ -55,7 +55,7 @@ ls -ltr ${BASE_DIR}/${CSV_FILE}
 cd ~/Documents/Projects/fastimage/classes/fastimage
 rm ~/.ssh/known_hosts
 <!-- node main.js ${BASE_DIR}/${CSV_FILE} -ilom reimage -->
-node main.js ${BASE_DIR}/${CSV_FILE} -ilom Custom
+node main.js ${BASE_DIR}/${CSV_FILE} -ilom Quarter
 
 <!-- BOOT MENU -->
 <!-- Copyright (C) 2023, 2024 Oracle and/or its affiliates.                          
